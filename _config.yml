@@ -1,0 +1,105 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+lsi: false
+safe: true
+source: .
+incremental: false
+
+
+title: AI505 (S25) - Optimization
+email: marco@imada.sdu.dk
+description: >- # this means to ignore newlines until "baseurl:"
+  Course on linear algebra applications and scientific programming second year of Bachelor in Computer Science and Applied Mathematics at University of Southern Denmark.
+#  Write an awesome description for your new site here. You can edit this
+#  line in _config.yml. It will appear in your document head meta (for
+#  Google search results) and in your feed.xml site description.
+url: "https://ai-505.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+## For local hosting uncomment the following two lines
+# url: "https://imada.sdu.dk"
+# baseurl: "/u/march/Teaching/AY2024-2025/DM587"
+# twitter_username: jekyllrb
+github_username:  belzebuu
+
+repository: "https://github.com/AI-505/AI-505.github.io/"
+
+show_downloads: false
+# google_analytics: [Your Google Analytics tracking ID]
+
+
+exclude: []
+
+
+data_dir            : _data
+
+
+collections:
+  - solutions
+  - assignments
+  - exercises
+
+collections:
+  notes:
+    output: true
+    permalink: /:collection/:path
+  solutions:
+    output: true
+    permalink: /:collection/:path
+  assignments:
+    output: true
+    permalink: /:collection/:path
+  exercises:
+    output: true
+    permalink: /:collection/:path
+
+
+
+
+highlighter: rouge
+gist:
+  noscript: false
+
+# Build settings
+markdown: kramdown    
+kramdown:
+  #highlighter: rouge
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+
+# theme: minima
+#theme: jekyll-theme-slate
+theme: jekyll-theme-architect
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#
+
+github: [metadata]
