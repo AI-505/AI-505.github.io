@@ -270,84 +270,11 @@ w3.includeHTML();
 
 #### Recommended book:
 
-- [HJ1] [Python Essentials][1]. Jeffrey Humpherys and Tyler J. Jarvis,
-  managing editors
+- [] https://algorithmsbook.com/optimization/files/optimization.pdf
 
-- [HJ2]
-  [Data Science Essentials](https://github.com/Foundations-of-Applied-Mathematics/Labs/raw/master/docs/DataScienceEssentials.pdf). Jeffrey
-  Humpherys and Tyler J. Jarvis, managing editors
-
-<!--
-- [HJ2] [Labs for Foundations of Applied Mathematics. Volume 1. Mathematical Analysis](2)
-  Jeffrey Humpherys and Tyler J. Jarvis, managing editors
--->
 
 
 #### Other References:
-
-- [DB] David Beazley. [Python Tutorial Video](https://www.youtube.com/watch?v=lyDLAutA88s)
-
-- [HJ] Jeffrey Humpherys and Tyler
-  J. Jarvis. [Foundations of Applied Mathematics. Volume 1. Mathematical Analysis](http://bookstore.siam.org/ot152/). 2017. Society
-  for Industrial and Applied Mathematics.
-
-- [AR] Howard Anton and Chris Rorres. [Elementary Linear Algebra With
-  Supplemental Applications](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118677455.html). Edition
-  International Student Version. 11th Edition. 2014. Wiley
-
-
-- [PK] Philip N. Klein. [Coding the Matrix: Linear Algebra through
-  Applications to Computer
-  Science](https://www.amazon.com/dp/0615880991/). 1st Edition.
-  Newtonian Press; 1 edition, September 3, 2013
-
-- [AH] Martin Anthony and Michele Harvey, [Linear Algebra, Concepts and Methods](http://www.cambridge.org/us/academic/subjects/mathematics/algebra/linear-algebra-concepts-and-methods). 2012. Cambridge
-
-
-- [Le] Steven J. Leon, [Linear Algebra with
-  Applications](http://wps.aw.com/leon_linearalg_9/), Prentice Hall
-  (2010).
-
-
-- [FSV] [Computing with Python: An introduction to Python for science and engineering](https://www.packtpub.com/product/scientific-computing-with-python-3/9781786463517) Claus Führer, Jan Erik Solem, Olivier Verdier
-
-
-
-- [SAA] [Immersive linear algebra](http://immersivemath.com/ila/index.html) by J. Ström, K. Åström, and
-  T. Akenine-Möller. 2017. 
-
-- [MC] [Lecture Notes on Linear Regression][13] by Marco Chiarandini.
-
-
-- [NS]
-  [`numpy` API reference](https://docs.scipy.org/doc/numpy/reference/) and
-  its submodule
-  [linalg](https://docs.scipy.org/doc/numpy/reference/routines.linalg.html);
-  and [`scipy` API reference](https://docs.scipy.org/doc/scipy/reference/)
-  and its submodule
-  [linalg](https://docs.scipy.org/doc/scipy/reference/linalg.html).
-  (`scipy` is a superset of `numpy`.)
-
-- [Wi] Introduction to Graph Theory, Robin J. Wilson, 5th edition, 2010.
-
-- [BP] Brin, Sergey; Page, Lawrence. [The anatomy of a large-scale
-  hypertextual Web search
-  engine](https://doi.org/10.1016/S0169-7552(98)00110-X). Computer
-  Networks and ISDN Systems. Volume 30, Issues 1–7, April 1998, Pages
-  107-117
-
-- [PBMW] Page, Lawrence; Brin, Sergey; Motwani, Rajeev and Winograd,
-  Terry, [The PageRank citation ranking: Bringing order to the
-  Web](http://dbpubs.stanford.edu:8090/pub/showDoc.Fulltext?lang=en&doc=1999-66&format=pdf). 1999
-
-- [LM] Amy N. Langville; Carl D. Meyer. [A Survey of Eigenvector Methods
-  for Web Information
-  Retrieval](https://epubs.siam.org/doi/pdf/10.1137/S0036144503424786). SIAM
-  Review, Society for Industrial and Applied Mathematics, Vol. 47,
-  No. 1, pp. 135–161
-
-- [V] Robert J. Vanderbei, [Linear Programming: Foundations and Extensions](https://doi-org.proxy1-bib.sdu.dk/10.1007/978-1-4614-7630-6), Fourth Edition, Springer. 2014.
-
 
 
 
@@ -369,21 +296,6 @@ w3.includeHTML();
 [26]: {{ "https://github.com/Foundations-of-Applied-Mathematics/Labs/raw/master/docs/Volume1.pdf" | absolute_url }}
 
 
-
-<!-- External solutions -->
-
-
-
-
-
-
-
-<!-- Internal solutions --> 
-
-
-
-
-<!-- Sheets -->
 
 [40]: {{ "https://colab.research.google.com/github/DM561/dm561.github.io/blob/master/assets/Python_in_a_Nutshell.ipynb" | absolute_url }}
 
@@ -433,10 +345,6 @@ w3.includeHTML();
 [39]: {{ "exercises/sheet_09.html" | absolute_url }}
 [88]: {{ "https://roras18.github.io/dm561-TA-2020/sheet8_sol.pdf" }}
 
-
-
-
-<!-- Assignments -->
 
 [50]: {{ "/assignments/asg-tryout.html" | absolute_url }}
 [51]: {{ "/assignments/asg-vecmat.html" | absolute_url }}
