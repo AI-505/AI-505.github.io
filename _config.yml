@@ -34,9 +34,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://imada.sdu.dk"
 # baseurl: "/u/march/Teaching/AY2024-2025/DM587"
 # twitter_username: jekyllrb
-github_username:  belzebuu
 
-repository: "https://github.com/AI-505/AI-505.github.io/"
+
+# repository: "https://github.com/AI-505/AI-505.github.io/"
 
 show_downloads: false
 # google_analytics: [Your Google Analytics tracking ID]
@@ -107,6 +107,7 @@ kramdown:
 #
 
 github: 
-  repository: https://github.com/AI-505/AI-505.github.io
+  repository_name: AI-505/AI-505.github.io.git
   owner_name: Marco Chiarandini
   owner_url: https://imada.sdu.dk/u/marco/
+  username:  belzebuu
