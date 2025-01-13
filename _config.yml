@@ -19,10 +19,12 @@ source: .
 incremental: false
 
 
+
 title: AI505 (S25) - Optimization
 email: marco@imada.sdu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  Course on linear algebra applications and scientific programming second year of Bachelor in Computer Science and Applied Mathematics at University of Southern Denmark.
+  Course on optimization for the fourth semester of the Bachelor in Artificial
+  Intelligence at the University of Southern Denmark.
 #  Write an awesome description for your new site here. You can edit this
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
@@ -39,6 +41,7 @@ repository: "https://github.com/AI-505/AI-505.github.io/"
 show_downloads: false
 # google_analytics: [Your Google Analytics tracking ID]
 
+theme: jekyll-theme-slate
 
 exclude: 
   - vendor
@@ -84,10 +87,10 @@ kramdown:
 
 # theme: minima
 #theme: jekyll-theme-slate
-theme: jekyll-theme-architect
-plugins:
-  - jekyll-feed
-  - jekyll-github-metadata
+#theme: jekyll-theme-architect
+#plugins:
+#  - jekyll-feed
+#  - jekyll-github-metadata
 
 
 # Exclude from processing.

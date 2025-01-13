@@ -42,7 +42,7 @@ dockserve:
 
 
 install:
-	gem update --system # upgrade RubyGems
+	#gem update --system # upgrade RubyGems
 	gem install jekyll bundler # needed only once at system level
 	bundle install # all gems in Gemfile
 

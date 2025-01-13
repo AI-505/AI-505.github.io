@@ -120,6 +120,7 @@ w3.includeHTML();
 
 | Week | Sheet                      | Topic           | Solutions     | Assignments        |
 |------+----------------------------+---------------------------+---------------+--------------------|
+|||||
 |------+----------------------------+---------------------------+---------------+--------------------|
 
 ## References
@@ -129,3 +130,9 @@ w3.includeHTML();
 - [KW] Mykel J. Kochenderfer, Tim A. Wheeler. [Algorithms for Optimization](https://algorithmsbook.com/optimization/files/optimization.pdf). 2019. The MIT Press.
 
 #### Other References:
+
+
+
+
+
+{% include drawer.html %}
