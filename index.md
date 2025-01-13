@@ -132,6 +132,7 @@ w3.includeHTML();
 #### Other References:
 
 
+- [NW] J. Nocedal and S. J. Wright, Numerical Optimization, Second Edition. Springer Series in Operations Research, 2006.
 
 
 
