@@ -15,7 +15,7 @@ mathjax: true
 
 - Teacher: [Marco Chiarandini](https://imada.sdu.dk/u/marco)
 
-- Teacher assistants: [Bonnie Liefting](mailto:bliefting@imada.sdu.dk) (AI505: H1)
+- Teacher assistants: [Bonnie Liefting](mailto:bliefting@imada.sdu.dk) (AI505: H21)
 
 
 ## Schedule
