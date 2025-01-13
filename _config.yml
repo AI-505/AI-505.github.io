@@ -106,4 +106,7 @@ kramdown:
 #   - vendor/ruby/
 #
 
-github: [metadata]
+github: 
+  repository: https://github.com/AI-505/AI-505.github.io
+  owner_name: Marco Chiarandini
+  owner_url: https://imada.sdu.dk/u/marco/
