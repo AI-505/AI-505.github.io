@@ -1,0 +1,15 @@
+STATISTICS
+  Problem name     : prod
+  Variables        : 3 (0 binary, 0 integer, 0 implicit integer, 3 continuous)
+  Constraints      : 0 initial, 3 maximal
+OBJECTIVE
+  Sense            : maximize
+VARIABLES
+  [continuous] <x1>: obj=5, original bounds=[0,+inf]
+  [continuous] <x1>: obj=6, original bounds=[0,+inf]
+  [continuous] <x3>: obj=8, original bounds=[0,+inf]
+CONSTRAINTS
+  [linear] <c1>:  +6<x1>[C] +5<x1>[C] +10<x3>[C] <= 60;
+  [linear] <c2>:  +8<x1>[C] +4<x1>[C] +4<x3>[C] <= 40;
+  [linear] <c3>:  +4<x1>[C] +5<x1>[C] +6<x3>[C] <= 50;
+END

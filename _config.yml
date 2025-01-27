@@ -1,23 +1,24 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
+# This config file is meant for settings that affect your whole site, values
 # which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
+# yourself editing these this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# required by github actions
 lsi: false
 safe: true
 source: .
 incremental: false
-
 
 
 title: AI505 (S25) - Optimization
@@ -35,79 +36,115 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # baseurl: "/u/march/Teaching/AY2024-2025/DM587"
 # twitter_username: jekyllrb
 
-
 # repository: "https://github.com/AI-505/AI-505.github.io/"
 
 show_downloads: false
 # google_analytics: [Your Google Analytics tracking ID]
 
-theme: jekyll-theme-slate
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "vendor", "Dockerfile", "docker-compose.yml", "drafts", "_drafts"]
 
-exclude: 
-  - vendor
+timezone: "Europe/Copenhagen"
 
+# Theme settings
+# remote_theme: just-the-docs/just-the-docs@v0.7.0
+theme: just-the-docs
+color_scheme: light
+search_enabled: true
+heading_anchors: false
+permalink: pretty
+favicon_ico: "/assets/images/favicon.ico"
+aux_links:
+  Marco Chiarandini:
+    - 'https://imada.sdu.dk/u/marco'
+  Git repository:
+    - https://github.com/DM871/DM871.github.io/
+  # Just the Class on GitHub:
+  #  - 'https://github.com/kevinlin1/just-the-class'
+footer_content:
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%Y-%m-%d %H:%M" # %b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-data_dir            : _data
+# Back to top link
+# back_to_top: true
+# back_to_top_text: "Back to top"
 
+# nav_external_links:
+#  - title: Schedule
+#    url: ./assets/schedule.html
+#    nav_order: 2
 
+# Collections for website data
 collections:
-  - solutions
-  - assignments
-  - exercises
-
-collections:
-  notes:
+  staffers:
+  modules:
+    permalink: "/:collection/:path/"
     output: true
-    permalink: /:collection/:path
-  solutions:
+  #schedules:
+  tutorials:
+    permalink: "/:collection/:path/"
     output: true
-    permalink: /:collection/:path
-  assignments:
+  announcements:
+    permalink: "/:path"
     output: true
-    permalink: /:collection/:path
-  exercises:
-    output: true
-    permalink: /:collection/:path
 
 
+# Default layouts for each collection type
+defaults:
+  - scope:
+      path: ''
+      type: staffers
+    values:
+      layout: staffer
+      height: 300
+      subpath: '/assets/images/'
+      width: 300
+  # - scope:
+  #     path: ''
+  #     type: schedules
+  #   values:
+  #     layout: schedule
+  - scope:
+      path: ''
+      type: modules
+    values:
+      layout: module_page  
+  - scope:
+      path: ''
+      type: announcements
+    values:
+      layout: announcement
+
+
+just_the_docs:
+  collections:
+    modules:
+      name: Classes
+      nav_fold: false
+      # nav_exclude: true
+    tutorials:
+      name: Tutorials
+      nav_fold: false
+#      # nav_exclude: true
+        
+
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
 
 
 highlighter: rouge
 gist:
   noscript: false
-
-# Build settings
-markdown: kramdown    
 kramdown:
-  #highlighter: rouge
-  input: GFM
   math_engine: mathjax
   syntax_highlighter: rouge
-
-
-# theme: minima
-#theme: jekyll-theme-slate
-#theme: jekyll-theme-architect
-#plugins:
-#  - jekyll-feed
-#  - jekyll-github-metadata
-
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-#
-
-github: 
-  repository_name: AI-505/AI-505.github.io.git
-  owner_name: Marco Chiarandini
-  owner_url: https://imada.sdu.dk/u/marco/
-  username:  belzebuu
+#kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false

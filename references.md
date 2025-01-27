@@ -1,31 +1,65 @@
-
-- [DB] David Beazley. [Python Tutorial Video](https://www.youtube.com/watch?v=lyDLAutA88s)
-
-- [HJ] Jeffrey Humpherys and Tyler
-  J. Jarvis. [Foundations of Applied Mathematics. Volume 1. Mathematical Analysis](http://bookstore.siam.org/ot152/). 2017. Society
-  for Industrial and Applied Mathematics.
-
-- [AR] Howard Anton and Chris Rorres. [Elementary Linear Algebra With
-  Supplemental Applications](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-1118677455.html). Edition
-  International Student Version. 11th Edition. 2014. Wiley
+---
+title: References
+layout: home
+last_modified_date: 2024-01-29 16:50
+nav_order: 4
+---
 
 
-- [PK] Philip N. Klein. [Coding the Matrix: Linear Algebra through
-  Applications to Computer
-  Science](https://www.amazon.com/dp/0615880991/). 1st Edition.
-  Newtonian Press; 1 edition, September 3, 2013
+### Literature
 
-- [AH] Martin Anthony and Michele Harvey, [Linear Algebra, Concepts and Methods](http://www.cambridge.org/us/academic/subjects/mathematics/algebra/linear-algebra-concepts-and-methods). 2012. Cambridge
+#### Main References
 
 
-- [Le] Steven J. Leon, [Linear Algebra with
-  Applications](http://wps.aw.com/leon_linearalg_9/), Prentice Hall
-  (2010).
+- [F] M. Fischetti, [Introduction to Mathematical Optimization](https://www.amazon.com/Introduction-Mathematical-Optimization-Matteo-Fischetti/dp/1692792024)
+  Independently published, 2019
+
+- [Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 2021
+
+- [LN] M. Chiarandini. [Lecture Notes][20]. 2022.
 
 
-- [FSV] [Computing with Python: An introduction to Python for science and engineering](https://www.packtpub.com/product/scientific-computing-with-python-3/9781786463517) Claus Führer, Jan Erik Solem, Olivier Verdier
+#### Other References
 
 
+- [MG] J. Matousek and B. Gartner. [Understanding and Using Linear Programming](http://dx.doi.org/10.1007/978-3-540-30717-4). Springer Berlin Heidelberg, 2007
 
-- [SAA] [Immersive linear algebra](http://immersivemath.com/ila/index.html) by J. Ström, K. Åström, and
-  T. Akenine-Möller. 2017. 
+- [Da] G.B. Dantzig.  [Linear Programming](http://dx.doi.org/10.1287/opre.50.1.42.17798). Operations Research, 2002, 50(1), 42-47
+
+- [FM] Fourier, Moutzkin. [Wikipedia entry](http://en.wikipedia.org/wiki/Fourier%E2%80%93Motzkin_elimination)
+
+- [Wi] H.P. Williams. [Model building in mathematical programming](http://site.ebrary.com.proxy1-bib.sdu.dk:2048/lib/sdub/detail.action?docID=10657847). John Wiley & Sons, Chichester, Fifth Edition, 2013
+
+- [HL] Frederick S Hillier and Gerald J Lieberman, [Introduction to Operations Research](http://highered.mcgraw-hill.com/sites/0073376299/information_center_view0/), 9th edition, 2010. ISBN: 0073376299
+
+- [Ch] V. Chvatal. Linear Programming. W.H.Freeman, 1983
+
+- [Va] R. Vanderbei. [Linear Programming: Foundations and Extensions](http://dx.doi.org/10.1007/978-0-387-74388-2). Springer US, 2008
+
+- [AMO] R.K. Ahuja, T.L. Magnanti and J. Orlin. Network Flows: Theory, Algorithms, and Applications. Prentice Hall, 1993
+
+- [TR] Tim Roughgarden. [Beyond Worst-Case Analysis](https://cacm.acm.org/magazines/2019/3/234931-beyond-worst-case-analysis/fulltext). Communications of
+  the ACM, March 2019, Vol. 62 No. 3, Pages 88-96.
+
+<!-- 
+
+- [CL] J. Clausen and J. Larsen. Supplementary notes to networks and integer programming. Lecture Notes, DTU, 2009 
+
+- [CLRS] Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and
+  Clifford Stein, Introduction to Algorithms, Chapter 29. Fourth edition, 2009, The
+  MIT Press
+
+- [PRKM] João Pedro Pedroso, Abdur Rais, Mikio Kubo and Masakazu
+  Muramatsu. [[https://scipbook.readthedocs.io][/Mathematical Optimization: Solving Problems using SCIP and Python/]].
+
+- [An] E. Andersen. [[./Files/infeas.pdf][/How to use Farkas's Lemma to say something
+  important about linear infeasible problems/]]. MOSEK Technical Repot
+  TR-2011-1. 2011.
+
+- [KN] Ed Klotz Alexandra M. Newman [[http://www.google.dk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCYQFjAA&url=http%3A%2F%2Finside.mines.edu%2F~anewman%2FMIP_practice120212.pdf&ei=H8VpVYatKoHRsgGhrICQAQ&usg=A
+FQjCNGDviG6Bma4qepI-0s-GvdaIVc-6Q&sig2=5jT4rnDJkdBU2G1FJowLkQ][Practical Guidelines for Solving Difficult Mixed Integer Linear Programs]]. 2012
+
+--> 
+
+
+[20]: {{ "/assets/docs/dm545-main.pdf" | absolute_url }}
