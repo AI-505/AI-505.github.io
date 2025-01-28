@@ -8,7 +8,7 @@ description: A feed containing all of the class announcements.
 
 
 
-# Linear and Integer Programming
+# Optimization
 
 <br>
 

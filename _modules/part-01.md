@@ -1,35 +1,61 @@
 ---
-title: "Unit 1: Introductory Notions"
+title: "Unit 1: Introduction, Univariate Problems"
 ---
 
-### Sept 2: Lecture 1 
+### Feb 3: Lecture 1 - Introduction 
 
 Contents: 
+
 - Course Organization
-- Introductory elements: Notation, Graphs, Algebra  [MG ch 1,2, Appendix]
-- Resource allocation in factory planning  
-- Linear programming problems and geometrical interpretation [HL ch 1,2,3] 
+- Optimization problems
+- Classification
+- Constraints
+- Critical Points
+- Conditions for Local Minima
+- Contour Plots
+- Asymptotic Notation
+- Taylor Expansion
+- Convexity
+- Norms
+- Matrix Calculus
+- Positive Definiteness
+- Gaussian Distribution
 
 Lecture resources:
-- Slides: [[PDF]({{ "/assets/slides/dm545_handout_lec01_intro.pdf" | absolute_url }})]
-- LN pp 1-7: [[PDF]({{ "/assets/docs/dm545-main.pdf#intro" | absolute_url }})]
+- Slides
+- [KW]
 
-### Sept 5: Lecture 2
+### Feb 6: Lecture 2 - Derivatives and Gradients
 
 Contents:
-- Diet problem 
-- Fourier & Moutzkin elimination [Da]; [FM] 
-- Notation: polyhedral analysis [F ch 1, 2]; [MG ch 4]; [HL sc 5.1] 
 
+- Derivatives
+- Derivatives in Multiple Dimensions
+- Numerical Differentiation
+- Automatic Differentiation
 
 Lecture resources:
-- Slides: [[PDF]({{ "/assets/slides/dm545_handout_lec02_intro-2.pdf" | absolute_url }})]
-- LN pp 7-21: [[PDF]({{ "/assets/docs/dm545-main.pdf#diet" | absolute_url }})]
+- Slides
+- [KW]
 
-### Sept 12: Exercise Class 1
+
+### Feb 10: Lecture 3 - Bracketing
+
+Contents 
+
+- Unimodality
+- Finding an Initial Bracket
+- Fibonacci Search
+- Golden Section Search
+- Quadratic Fit Search
+- Shubert-Piyavskii Method
+- Bisection Method
+
+
+### Feb 13: Exercises 1
 <!-- **Exercises**{: .label .label-purple }  -->
 
-- Sheet 1: LP Modeling: [[PDF][510]]. Solutions: [[PDF][610]].
+- Sheet 1
 
 
 [510]: {{ "/assets/sheets/dm545_sheet1.pdf" | absolute_url }}
