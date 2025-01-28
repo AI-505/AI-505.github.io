@@ -20,8 +20,7 @@ last_modified_date: 2024-01-09 17:22
 
 ## Official at MitSDU:
 
-- <a href="https://skemaplan.sdu.dk/N330047101/e24" target="_blank">DM545</a>
-- <a href="https://skemaplan.sdu.dk/N340030101/e24" target="_blank">DM871</a>
+- <a href="" target="_blank">AI505</a>
 
 
 
@@ -31,10 +30,7 @@ last_modified_date: 2024-01-09 17:22
 
 ## Condensed view
 
-DM545
+AI505
 
-{% include dm545_m1.html %}
+{% include timetable.html %}
 
-DM871
-
-{% include dm871_h1.html %}

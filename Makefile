@@ -3,13 +3,13 @@ TAG=ai505
 pwd=.
 
 dockbuild:
-	docker build -t jekyll-builder .
+	docker build -t ${TAG}-jekyll-builder .
 
 dockrun:
-	docker run -it --rm -p 4000:4000 -v $(pwd):/srv/jekyll jekyll-builder
+	docker run -it --rm -p 4000:4000 -v $(pwd):/srv/jekyll ${TAG}-jekyll-builder
 
 dockinstall:
-	docker run -it --rm -p 4000:4000 -v $(pwd):/srv/jekyll jekyll-builder bundle install
+	docker run -it --rm -p 4000:4000 -v $(pwd):/srv/jekyll ${TAG}-jekyll-builder bundle install
 
 
 dockupdate:
