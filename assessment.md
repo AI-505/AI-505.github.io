@@ -6,23 +6,25 @@ nav_order: 5
 ---
 
 
+### Ordinary exam
 
-- Ordinary exam: two, 24h, take-home tests
+Portfolio consisting of:
 
-  1. Test 1: November 13, 2024, from 7 to 6:59 (of the day after)
-  2. Test 2: December 18, 2024, from 7 to 6:59 (of the day after)
+- mandatory assignments in groups of 2:
 
-  <!-- - Test 1: Friday, March 1, 2024; from 7:00 to 6:59 --> 
-   <!-- Wednesday, March 1, 2023; from 8:00 to 7:59 -->
-  <!-- - Test 2: Tuesday, March 26, 2024; from 7:00 to 6:59 -->
-  <!-- Monday, April 3, 2023; from 8:00 to 7:59  -->
+    1. assignment
+    2. assignment
+    3. assignment
+    4. assignment
 
+    Time line to be announced.
 
-- Reexam: two days take-home exam in March/April.
+- oral exam on June 11-13, 2025
 
+### Reexam
 
-- Preparation for the take-home assignments: see under Tutorials 
- 
+Portoflio consisting of:
 
+- mandatory assignments, time line to be annonced
 
-
+- oral exam on August 22, 2025

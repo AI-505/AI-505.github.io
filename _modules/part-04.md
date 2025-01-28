@@ -1,14 +1,11 @@
 ---
-title: "Unit 4: Optimization in Machine Learning" 
+title: "Unit 4: Optimization for Machine Learning" 
 ---
 
 
-### Oct 21: Lecture 7
+### Oct 21: Lecture 10 --- Machine Learning Applications
 
-
-
-# Machine Learning Applications
-Formal Optimization problems in ML
-Stochastic vs Batch Optimization Methods
-Stochastic Gradient Analysis
-Iterate Averaging Methods
+- Formal Optimization problems in ML
+- Stochastic vs Batch Optimization Methods
+- Stochastic Gradient Analysis
+- Iterate Averaging Methods

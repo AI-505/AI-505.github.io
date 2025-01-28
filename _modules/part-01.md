@@ -2,7 +2,7 @@
 title: "Unit 1: Introduction, Univariate Problems"
 ---
 
-### Feb 3: Lecture 1 - Introduction 
+### Feb 3: Lecture 1 --- Introduction 
 
 Contents: 
 
@@ -21,11 +21,12 @@ Contents:
 - Positive Definiteness
 - Gaussian Distribution
 
-Lecture resources:
+Resources:
+
 - Slides
 - [KW]
 
-### Feb 6: Lecture 2 - Derivatives and Gradients
+### Feb 6: Lecture 2 --- Derivatives and Gradients
 
 Contents:
 
@@ -34,14 +35,15 @@ Contents:
 - Numerical Differentiation
 - Automatic Differentiation
 
-Lecture resources:
+Resources:
+
 - Slides
 - [KW]
 
 
-### Feb 10: Lecture 3 - Bracketing
+### Feb 10: Lecture 3 --- Bracketing
 
-Contents 
+Contents: 
 
 - Unimodality
 - Finding an Initial Bracket

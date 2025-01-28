@@ -12,7 +12,7 @@ last_modified_date: 2024-01-29T16:22:00
 
 - [Official course description](https://odinlister.sdu.dk/fagbesk/internkode/AI505/)
 
-x- [ItsLearning](https://sdu.itslearning.com/main.aspx?CourseID=39556)
+- [ItsLearning](https://sdu.itslearning.com/main.aspx?CourseID=39556)
 
 
 
@@ -28,16 +28,14 @@ x- [ItsLearning](https://sdu.itslearning.com/main.aspx?CourseID=39556)
 {% assign num_teaching_assistants = teaching_assistants | size %}
 {% if num_teaching_assistants != 0 %}
 
-<!--
 
-## Instructors
+## Instructor
 
 {% for staffer in teaching_assistants %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
 
--->
 
 
 
