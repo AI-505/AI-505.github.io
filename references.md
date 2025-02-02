@@ -15,3 +15,7 @@ nav_order: 4
 #### Other References
 
 - [NW] J. Nocedal and S. J. Wright, Numerical Optimization, Second Edition. Springer Series in Operations Research, 2006.
+
+#### Links
+
+- List of Python [optimization packages](https://feloopy.github.io/blog/list-of-optimization-packages.html)
