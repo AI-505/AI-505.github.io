@@ -1,5 +1,5 @@
 ---
-title: Information
+title: AI505 | Information
 layout: home
 nav_order: 1
 last_modified_date: 2024-01-29T16:22:00

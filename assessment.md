@@ -1,5 +1,5 @@
 ---
-title: Assessment
+title: AI505 | Assessment
 layout: home
 last_modified_date: 2024-09-01 16:50
 nav_order: 5
@@ -23,8 +23,8 @@ Portfolio consisting of:
 
 ### Reexam
 
-Portoflio consisting of:
+Portfolio consisting of:
 
-- mandatory assignments, time line to be annonced
+- mandatory assignments, time line to be announced
 
 - oral exam on August 22, 2025

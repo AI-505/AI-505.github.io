@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Announcements
+title: AI505 | Announcements
 nav_exclude: false
 nav_order: 0
 description: A feed containing all of the class announcements.
