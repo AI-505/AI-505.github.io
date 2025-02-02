@@ -1,5 +1,5 @@
 ---
-title: AI505 | Assessment
+title: Assessment
 layout: home
 last_modified_date: 2024-09-01 16:50
 nav_order: 5

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AI505 | Schedule
+title: Schedule
 description: The weekly event schedule.
 nav_order: 2
 last_modified_date: 2025-01-28 17:22
