@@ -23,8 +23,8 @@ Contents:
 
 Resources:
 
-- Slides
-- [KW]
+- [Slides]({{ "/assets/ai505-lec01.pdf" | absolute_url }})
+- Chapter 1 of [KW]
 
 ### Feb 6: Lecture 2 --- Derivatives and Gradients
 
