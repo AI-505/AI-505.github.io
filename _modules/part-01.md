@@ -37,7 +37,7 @@ Contents:
 
 Resources:
 
-- [Slides]({{ "/assets/ai505-lec01.pdf" | absolute_url }})
+- [Slides]({{ "/assets/ai505-lec02.pdf" | absolute_url }})
 - Chapter 2 and Appendix of [KW]
 
 
