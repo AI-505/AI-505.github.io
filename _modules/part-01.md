@@ -37,8 +37,8 @@ Contents:
 
 Resources:
 
-- Slides
-- [KW]
+- [Slides]({{ "/assets/ai505-lec01.pdf" | absolute_url }})
+- Chapter 2 and Appendix of [KW]
 
 
 ### Feb 10: Lecture 3 --- Bracketing
