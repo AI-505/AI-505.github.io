@@ -53,6 +53,10 @@ Contents:
 - Shubert-Piyavskii Method
 - Bisection Method
 
+Resources
+
+- [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
+
 
 ### Feb 13: Exercises 1
 <!-- **Exercises**{: .label .label-purple }  -->
