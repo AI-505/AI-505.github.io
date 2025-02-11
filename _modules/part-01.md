@@ -65,3 +65,4 @@ Resources
 
 
 [51]: {{ "/assets/sheets/ai505_sheet01.pdf" | absolute_url }}
+[511]: {{ "/assets/sheets/ai505_sheet01_sol.pdf" | absolute_url }}
