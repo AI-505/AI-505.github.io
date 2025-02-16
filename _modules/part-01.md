@@ -61,7 +61,7 @@ Resources
 ### Feb 13: Exercises 1
 <!-- **Exercises**{: .label .label-purple }  -->
 
-- [Sheet 01][51]
+- [Sheet 01][51]. [Solutions][511]
 
 
 [51]: {{ "/assets/sheets/ai505_sheet01.pdf" | absolute_url }}
