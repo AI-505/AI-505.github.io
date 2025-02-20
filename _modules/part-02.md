@@ -3,7 +3,7 @@ title: "Unit 2: Multivariate Problems, Gradient-Based Methods"
 ---
 
 
-### Feb 16: Lecture 4 --- Local Descent
+### Feb 20: Lecture 4 --- Local Descent
 
 Contents:
 
@@ -13,7 +13,13 @@ Contents:
 - Trust Region Methods
 - Termination Conditions
 
-### Feb 16: Lecture 5 --- First-Order Methods
+
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec04.pdf" | absolute_url }})
+- Chapter 4 and Appendix of [KW]
+
+### Feb 25: Lecture 5 --- First-Order Methods
 
 Contents: 
 
@@ -27,7 +33,7 @@ Contents:
 - Adam
 - Hypergradient Descent
 
-### Feb 16: Lecture 6 --- Second-Order Methods
+### Feb 27: Lecture 6 --- Second-Order Methods
 
 Contents: 
 
