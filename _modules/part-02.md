@@ -34,8 +34,17 @@ Contents:
 - Hypergradient Descent
 
 
+### Feb 27: Exercises 2 
 
-### Feb 27: Lecture 6 --- Second-Order Methods
+
+- [Sheet 02][52]. 
+
+
+[52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
+[522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
+
+
+### March 3: Lecture 6 --- Second-Order Methods
 
 Contents: 
 
