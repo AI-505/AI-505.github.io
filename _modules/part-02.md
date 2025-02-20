@@ -33,6 +33,8 @@ Contents:
 - Adam
 - Hypergradient Descent
 
+
+
 ### Feb 27: Lecture 6 --- Second-Order Methods
 
 Contents: 
