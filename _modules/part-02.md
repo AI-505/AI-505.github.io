@@ -33,6 +33,8 @@ Contents:
 - Adam
 - Hypergradient Descent
 
+Resources:
+
 - [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }})
 - Chapter 5 of [KW]
 
