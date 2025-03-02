@@ -41,7 +41,7 @@ Resources:
 ### Feb 27: Exercises 2 
 
 
-- [Sheet 02][52]. 
+- [Sheet 02][52].  [Solution][522].
 
 
 [52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
@@ -55,3 +55,8 @@ Contents:
 - Newton’s Method
 - Secant Method
 - Quasi-Newton Methods
+
+
+### March 6: Exercise 3
+
+- Sheet 03
