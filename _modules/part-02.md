@@ -56,7 +56,15 @@ Contents:
 - Secant Method
 - Quasi-Newton Methods
 
+Resources:
+
+
+- [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }})
+- Chapter 6 of [KW]
 
 ### March 6: Exercise 3
 
 - Sheet 03
+
+[53]: {{ "/assets/sheets/ai505_sheet03.pdf" | absolute_url }}
+[533]: {{ "/assets/sheets/ai505_sheet03_sol.pdf" | absolute_url }}

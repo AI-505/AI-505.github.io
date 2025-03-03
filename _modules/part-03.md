@@ -3,7 +3,7 @@ title: "Unit 3: Derivative-Free Methods "
 ---
 
 
-### Feb 1: Lecture 7 --- Direct Methods
+### March 3: Lecture 7 --- Direct Methods
 
 Contents: 
 
@@ -14,7 +14,7 @@ Contents:
 - Nelder-Mead Simplex Method
 - Divided Rectangles
 
-### Feb 1: Lecture 8 --- Stochastic Methods
+### March: Lecture 8 --- Stochastic Methods
 
 Contents: 
 
@@ -25,7 +25,7 @@ Contents:
 - Natural Evolution Strategies
 - Covariance Matrix Adaptation
 
-### Feb 1: Lecture 9 --- Population Methods
+### March: Lecture 9 --- Population Methods
 
 Contents: 
 
