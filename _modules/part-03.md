@@ -14,6 +14,12 @@ Contents:
 - Nelder-Mead Simplex Method
 - Divided Rectangles
 
+Resources:
+
+
+- [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }})
+- Chapter 7 of [KW]
+
 ### March: Lecture 8 --- Stochastic Methods
 
 Contents: 
