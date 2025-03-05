@@ -64,7 +64,7 @@ Resources:
 
 ### March 6: Exercise 3
 
-- Sheet 03
+- [Sheet 03][53]
 
 [53]: {{ "/assets/sheets/ai505_sheet03.pdf" | absolute_url }}
 [533]: {{ "/assets/sheets/ai505_sheet03_sol.pdf" | absolute_url }}
