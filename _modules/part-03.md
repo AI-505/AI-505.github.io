@@ -1,27 +1,8 @@
 ---
-title: "Unit 3: Derivative-Free Methods " 
+title: "Unit 3: Beyond Local Optima" 
 ---
 
 
-### March 3: Lecture 7 --- Direct Methods
-
-Contents:
-
-- Cyclic Coordinate Search
-- Powell's Method
-- Hooke-Jeeves
-- Generalized Pattern Search
-- Nelder-Mead Simplex Method
-- Divided Rectangles
-
-Resources:
-
-- [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }})
-- Chapter 7 of [KW]
-
-Exercises:
-
-- see sheet03 in Unit 2
 
 ### March: Lecture 8 --- Stochastic Methods
 

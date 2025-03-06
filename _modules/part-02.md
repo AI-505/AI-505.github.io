@@ -48,9 +48,9 @@ Resources:
 [522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
 
 
-### March 3: Lecture 6 --- Second-Order Methods
+### March 3: Lecture 6 --- Second-Order Methods and Direct Methods
 
-Contents: 
+Second-Order Methods: 
 
 - Newton’s Method
 - Secant Method
@@ -58,9 +58,25 @@ Contents:
 
 Resources:
 
-
 - [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }})
 - Chapter 6 of [KW]
+
+
+Direct Methods:
+
+- Cyclic Coordinate Search
+- Powell's Method
+- Hooke-Jeeves
+- Generalized Pattern Search
+- Nelder-Mead Simplex Method
+- (Divided Rectangles)
+
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }})
+- Chapter 7 of [KW]
+
+
 
 ### March 6: Exercise 3
 
