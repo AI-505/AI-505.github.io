@@ -30,7 +30,7 @@ Contents:
 
 ### March 13: Exercise 4
 
-- [Sheet 03][53].
+- [Sheet 04]
 
 [53]: {{ "/assets/sheets/ai505_sheet04.pdf" | absolute_url }}
 [533]: {{ "/assets/sheets/ai505_sheet03_sol.pdf" | absolute_url }}
