@@ -12,10 +12,9 @@ Portfolio consisting of:
 
 - mandatory assignments in groups of 2:
 
-    1. assignment
+    1. [assignment][100]
     2. assignment
     3. assignment
-    4. assignment
 
     Time line to be announced.
 
@@ -28,3 +27,5 @@ Portfolio consisting of:
 - mandatory assignments, time line to be announced
 
 - oral exam on August 22, 2025
+
+[100]: {{ "/assignments/first.html" | absolute_url  }}

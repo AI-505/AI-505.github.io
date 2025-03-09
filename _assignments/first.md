@@ -4,150 +4,134 @@ title:  "Assignment 1"
 date: 2025-03-08 11:00:00 +0100
 date_show: 2025-03-08 08:27:19 +0100
 mathjax: true
+math: mathjax3
 week: 10
 sol_url: ""
 comments: true
 categories: assignments
 ---
 
+<!-- https://pdmosses.github.io/just-the-docs-tests-old/docs/math/mathjax3/ -->
 
 # Obligatory Assignment 1
 
-## Preface
+- Read the [preface]({{ "/assignments/preface.html" | absolute_url }})
 
-- This assignment will be graded and will contribute to your final
-  assessment in DM872. Overall there will be two assignments.
+- **Deadline: Monday, March 31, 2025, at 23:59**
 
-- This assignment must be carried out individually.
+## Task 1 -- Differentiation 
 
-- To complete the assignment you have to submit in ItsLearning a `.tgz` or `.zip` archive
-  named `asg1.tgz` or `asg1.zip` that decompress in the same structure as the
-  `asg1` directory in this repository:
+### Subtask 1.a -- Analytical Differentiation
 
-  ```{shell}
-  asg1/
-  ├── README.md
-  ├── data
-  ├── src
-  └── tex
-      └── main.pdf
-  ```
-  - `data` contains the problem instances
+Consider the following functions:
 
-  - `tex` contains your report in pdf format as concise as possible (by no way more than 10
-    pages) with the answers to the tasks. The report should be written
-    in Latex using this [template](tex/template.tex).
+- $$ f_1(x) = x^3 - 2x^2 + 3x - 5 $$
+- $$ f_2(x) = e^x \sin(x) $$
+- $$ f_3(x) = \frac{1}{1 + x^2} $$
 
-  - `src` must contain the Python code for the calculations you carried out.
+Write the analytical expressions for their derivatives.
 
-- **Deadline: Thursday, April 11, 2025, at 23:59**
+### Subtask 1.b -- Numerical Differentiation
 
-- Questions and answers about this assignment cannot be addressed to the
-  teachers but must be posted as issues in the github page
-  [Issues](https://github.com/DM872/Resources/issues). Start the title with
-  `[asg1]`. In this way, the communication will be visible to the others class
-  members as well.
+Implement finite difference methods in Python:
 
-- Changes to this document after publication on March 9 can be tracked using the
-  History link on the top right side of this page.
+- Forward difference:  $$ f'(x) \approx \frac{f(x+h) - f(x)}{h} $$
+- Central difference:  $$ f'(x) \approx \frac{f(x+h) - f(x-h)}{2h} $$
+- Backward difference: $$ f'(x) \approx \frac{f(x) - f(x-h)}{h} $$
+  
+Use a small step size $$ h = 10^{-5} $$ and compute numerical derivatives at $$
+x = 1 $$ for each function.  Compare the results with the analytical derivatives
+at the same point.  In case, analyze how different values of $$ h $$ affect the
+error.
 
-- You are recommended to read the Guide on the use of Generative AI at SDU
-  [https://mitsdu.dk/AIatSDU](https://mitsdu.dk/en/mit_studie/kandidat/matematik-oekonomi_kandidat/vejledning-og-support/aipaasdu).
-  In this assignment, you can use chatbots to help you resolving coding issues
-  but you are not allowed to use them to directly solve the tasks or to write
-  the text of the report. As setting clear boundaries is not an easy task, if
-  you use chatbots you must share the chat and provide the link in the report.
-  The chat can be left anonymous and always ensure you are not sharing sensitive
-  or personal information. If the chatbot does not support chat sharing, then
-  you can manually share the content by 1. copying the text from the chat; 2.
-  pasting it into a note/document (e.g., Google Docs, Notes, Word); 3.
-  generating a shareable link via that platform (if supported). Alternatively,
-  you can paste the chat in an appendix of the report beyond the page limit. The
-  content of the communication will not be used to determine whether you have
-  been cheating but rather as an indication of how much help you needed to solve
-  the assignment.
+### Subtask 1.c -- Automatic Differentiation
 
+Using an automatic differentiation (AD) library such as
+   [nanograd](https://github.com/rasmusbergpalm/nanograd/tree/main) (the
+preferred choice) or [autograd](https://autograd.readthedocs.io/en/latest/),
+compute the derivatives for the given functions at $$ x = 1 $$. Compare the
+results with both the analytical and numerical derivatives.
 
+### Subtask 1.d -- Multivariate and Higher-Order Differentiation
 
-# Tasks:
+Consider the following function:
 
-    Line Search and Bracketing (Theory + Implementation)
-    a) Describe the purpose of line search in optimization.
-    b) Implement the Golden Section Search or Bisection Method to bracket a minimum along a search direction.
-    c) Apply this method to a 1D quadratic function.
+$$
+f_4(x, y) = x^2 y + e^x \sin(y)
+$$
 
-    Gradient-Based Methods (First and Second Order)
-    a) Implement Gradient Descent with exact and inexact line search (e.g., Armijo rule or Wolfe conditions).
-    b) Implement Newton’s Method with backtracking line search.
-    c) Compare the convergence rate of both methods on convex functions like Rosenbrock’s function.
+1. Compute the gradient of the function analytically.
+2. Compute the gradient of the function by automatic differentiation using
+   nanograd or autograd at $$x=3$$ and $$y=5$$.
+3. Compare the analytical and automatic differentiation results.
+4. Compute the second derivative (Hessian) matrix analytically.
 
-    Derivative-Free Methods
-    a) Implement the Nelder-Mead Simplex method or Powell’s Method for functions where gradients are not available.
-    b) Test the method on non-smooth or noisy functions.
+## Task 2 -- Positive Definite Matrices 
 
-    Discussion
-        Analyze the performance of the methods on different objective functions.
-        Discuss the impact of line search choices on convergence.
-        Reflect on when derivative-free methods are preferable.
+### Subtask 2.a
 
-Bonus Task:
+Give an example of a matrix $$2 \times 2$$ that is not positive definite
+despite having all positive entries.
 
-Implement a hybrid method combining derivative-free methods with gradient-based techniques.
+### Subtask 2.b
 
+If $$A$$ is a positive definite matrix, must its diagonal elements all be
+positive? Explain.
 
+### Subtask 2.c
 
+For a matrix $$A$$ of size $$2\times 2$$ that is not positive definite:
 
-Derivatives
+- plot the quadratic function $$f(\vec x)=\frac{1}{2} \vec x A \vec x$$, 
+- describe the surface of $$f$$ and 
+- conclude whether it is convex or not. What kind of point is $$\vec x$$ if it
+  satisfies $$\nabla f(\vec x)=0$$?
 
-- Derivatives in Multiple Dimensions
-- Numerical Differentiation
-- Automatic Differentiation
+## Task 3 -- Descent Direction Iteration Methods
 
-Bracketing
+Compare, experimentally, different iterative descent methods on the `bbob`
+function suite of the [COCO test platform](https://coco-platform.org/).
 
-- Finding an Initial Bracket
-- Fibonacci Search
-- Golden Section Search
-- Quadratic Fit Search
-- Bisection Method
+The methods must be selected among those treated in the course and listed in
+this [page]({{ "/assignments/contents.html" | absolute_url }}).
 
-Descent Direction Iteration
+A high level classification of the methods with a few examples can be the
+following:
 
-Line Search
+- Gradient-Based Methods (First and Second Order)
+  - Gradient Descent with exact and inexact line search
+  - Newton's Method with backtracking line search.
+- Derivative-Free Methods
+  - Powell’s Method or Nelder-Mead Simplex method
 
-- Line Search
-- Approximate Line Search:
-  - Backtracking line search (Armijo line search)
-  - Strong backtracking line search (bracketing + zoom)
-  - Trust Region Methods
-- Termination Conditions
+It is important that you test algorithms from both these two classes. You can
+implement your own versions of algorithms, use those from libraries:
+`scipy.optimization`, `autograd`, etc. or use the results archived in COCO. You
+can also construct your own hybrid algorithms putting together different
+elements.
 
-First-Order Methods
+Remarks:
 
-- Gradient Descent
-- Conjugate Gradient
-- Momentum:
-  - Nesterov Momentum
-  - Adagrad
-  - RMSProp
-  - Adadelta
-  - Adam
-  - Hypergradient Descent
+- It is important that you provide a description of the algorithms you have
+  tested. The description should not leave space to misinterpretations and
+  unspecified parts but can refer to components studied in the course without
+  having to give the details about them. For example, it is sufficient to refer
+  to a strong backtracking line search to describe which approximated line
+  search has been used.
 
-Second-Order Methods:
+- You can use the COCO platform to run the experiments and create the analysis.
+  Beside the web page of the platform, you find examples on how to do this also
+  in the course web page in the solutions of exercise sheet 3. Note that letting
+  you explore the COCO platform and learn how to carry out tests and analysis
+  is one of the primary goals of this Task.
 
-- Newton’s Method
-- Secant Method
-- Quasi-Newton Methods:
-  - DFP
-  - BFGS
-  - L-BFGS
+- In the report, you must include a few meaningful visualization of the results.
+  Further, you must explain and reflect on the results you gathered and draw
+  conclusions. In particular, it is interesting observing differences in
+  algorithm performance under different conditions (functions, dimensions,
+  parameters) possibly putting in relation characteristics of the functions with
+  the performance of the algorithms (eg, non-smooth functions or noisy
+  functions).
 
-Direct Methods:
-
-- Cyclic Coordinate Search
-- Powell's Method
-- Hooke-Jeeves
-- Generalized Pattern Search
-- Nelder-Mead Simplex Method
-- (Divided Rectangles)
+- The number of algorithms to include in the comparison should be greater than
+  two but should not be too large that the plots become cluttered.

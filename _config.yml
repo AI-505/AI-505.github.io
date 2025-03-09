@@ -87,6 +87,10 @@ collections:
   announcements:
     permalink: "/:path"
     output: true
+  assignments:
+    permalink: "/:collection/:path/"
+    output: true
+  
 
 
 # Default layouts for each collection type
@@ -114,6 +118,11 @@ defaults:
       type: announcements
     values:
       layout: announcement
+  - scope:
+      path: ''
+      type: assignments
+    values:
+      layout: assignment_plain
 
 
 just_the_docs:
@@ -124,6 +133,10 @@ just_the_docs:
       # nav_exclude: true
     tutorials:
       name: Tutorials
+      nav_fold: false
+#      # nav_exclude: true
+    assignments:
+      name: Assignments
       nav_fold: false
 #      # nav_exclude: true
         
