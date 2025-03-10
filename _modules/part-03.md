@@ -15,6 +15,11 @@ Contents:
 - Natural Evolution Strategies
 - Covariance Matrix Adaptation
 
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec08.pdf" | absolute_url }})
+- Chapter 8 and Appendix of [KW]
+
 ### March 10: Lecture 9 --- Population Methods
 
 Contents:
