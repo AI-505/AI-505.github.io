@@ -28,4 +28,4 @@ Portfolio consisting of:
 
 - oral exam on August 22, 2025
 
-[100]: {{ "/assignments/first.html" | absolute_url  }}
+[100]: {{ "/assignments/first/" | absolute_url  }}
