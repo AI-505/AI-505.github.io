@@ -15,7 +15,7 @@ categories: assignments
 
 # Obligatory Assignment 1
 
-- Read the [preface]({{ "/assignments/preface.html" | absolute_url }})
+- Read the [preface]({{ "/assignments/preface/" | absolute_url }})
 
 - **Deadline: Monday, March 31, 2025, at 23:59**
 
