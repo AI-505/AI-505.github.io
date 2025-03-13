@@ -33,6 +33,11 @@ Contents:
 - Hybrid Methods
 
 
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec09.pdf" | absolute_url }})
+- Chapter 9 and Appendix of [KW]
+
 ### March 13: Exercise 4
 
 - [Sheet 04][54]
