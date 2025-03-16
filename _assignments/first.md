@@ -93,7 +93,7 @@ Compare, experimentally, different iterative descent methods on the `bbob`
 function suite of the [COCO test platform](https://coco-platform.org/).
 
 The methods must be selected among those treated in the course and listed in
-this [page]({{ "/assignments/contents.html" | absolute_url }}).
+this [page]({{ "/assignments/contents/" | absolute_url }}).
 
 A high level classification of the methods with a few examples can be the
 following:

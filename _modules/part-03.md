@@ -40,8 +40,7 @@ Resources:
 
 ### March 13: Exercise 4
 
-- [Sheet 04][54]
+- [Sheet 04][54]. [Solutions][544].
 
 [54]: {{ "/assets/sheets/ai505_sheet04.pdf" | absolute_url }}
 [544]: {{ "/assets/sheets/ai505_sheet04_sol.pdf" | absolute_url }}
-
