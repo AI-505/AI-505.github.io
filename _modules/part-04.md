@@ -9,3 +9,9 @@ title: "Unit 4: Optimization for Machine Learning"
 - Stochastic vs Batch Optimization Methods
 - Stochastic Gradient Analysis
 - Iterate Averaging Methods
+
+Resources 
+
+- Slides
+- Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018)
+- [An overview of gradient descent optimization algorithms](https://www.ruder.io/optimizing-gradient-descent/)
