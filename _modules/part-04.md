@@ -12,6 +12,6 @@ title: "Unit 4: Optimization for Machine Learning"
 
 Resources 
 
-- Slides
+- [Slides]({{ "/assets/ai505-lec10.pdf" | absolute_url }})
 - Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018)
 - [An overview of gradient descent optimization algorithms](https://www.ruder.io/optimizing-gradient-descent/)
