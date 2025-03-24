@@ -17,7 +17,7 @@ categories: assignments
 
 - Read the [preface]({{ "/assignments/preface/" | absolute_url }})
 
-- **Deadline: Monday, March 31, 2025, at 23:59**
+- **Deadline:** <s>Monday, March 31, 2025, at 23:59</s> **Deadline: Friday, April 4, 2025, at 23:59**
 
 ## Task 1 -- Differentiation 
 
