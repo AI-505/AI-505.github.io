@@ -37,3 +37,10 @@ Dynamic Sample Size Methods
 - Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for
   Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018) [Sec. 5]
 
+
+### March 27: Exercise Session 5
+
+- [Sheet 05][55]. 
+
+[55]: {{ "/assets/sheets/ai505_sheet05.pdf" | absolute_url }}
+[555]: {{ "/assets/sheets/ai505_sheet05_sol.pdf" | absolute_url }}
