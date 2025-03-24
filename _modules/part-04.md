@@ -23,3 +23,17 @@ Resources
 - [Slides]({{ "/assets/ai505-lec11.pdf" | absolute_url }})
 - Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018)
 - [An overview of gradient descent optimization algorithms](https://www.ruder.io/optimizing-gradient-descent/)
+
+
+
+
+### March 24: Lecture 12 --- Machine Learning Applications
+
+Dynamic Sample Size Methods
+
+- Iterated Averaging Methods
+- Gradient Aggregation
+- [Slides]({{ "/assets/ai505-lec12.pdf" | absolute_url }})
+- Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for
+  Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018) [Sec. 5]
+
