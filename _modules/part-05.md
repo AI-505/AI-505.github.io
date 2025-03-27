@@ -3,7 +3,7 @@ title: "Unit 5: Constrained Optimization, Linear Programming"
 ---
 
 
-### Apr 4: Lecture 11 --- Constraints
+### March 31: Lecture 13 --- Constraints
 
 - Constraint Types
 - Constrained Optimization
@@ -12,8 +12,25 @@ title: "Unit 5: Constrained Optimization, Linear Programming"
 - Interior Point Methods
 - Augmented Lagrange Method
 
-### Apr 4: Lecture 12 --- Linear Constrained Optimization
+- Chapter 10 and Appendix of [KW]
+
+### April 3: Exercise 6 --- Constraints
+
+- Sheet 06
+
+[56]: {{ "/assets/sheets/ai505_sheet06.pdf" | absolute_url }}
+[566]: {{ "/assets/sheets/ai505_sheet06_sol.pdf" | absolute_url }}
+
+
+### April 7: Lecture 14 --- Linear Constrained Optimization
 
 - Simplex Algorithm
 - Problem Formulation
 - Dual Certificates
+
+### April 10: Exercise 7 --- Linear Programming
+
+- Sheet 06
+
+[57]: {{ "/assets/sheets/ai505_sheet07.pdf" | absolute_url }}
+[577]: {{ "/assets/sheets/ai505_sheet07_sol.pdf" | absolute_url }}

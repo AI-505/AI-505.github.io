@@ -38,15 +38,12 @@ Resources:
 - [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }})
 - Chapter 5 of [KW]
 
-### Feb 27: Exercises 2 
-
+### Feb 27: Exercise Session 2
 
 - [Sheet 02][52].  [Solution][522].
 
-
 [52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
 [522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
-
 
 ### March 3: Lecture 6 --- Second-Order Methods and Direct Methods
 
@@ -78,7 +75,7 @@ Resources:
 
 
 
-### March 6: Exercise 3
+### March 6: Exercise Session 3
 
 - [Sheet 03][53]. [Solution][533]
 
