@@ -12,6 +12,10 @@ title: "Unit 5: Constrained Optimization, Linear Programming"
 - Interior Point Methods
 - Augmented Lagrange Method
 
+
+Resources:
+
+- Slides
 - Chapter 10 and Appendix of [KW]
 
 ### April 3: Exercise 6 --- Constraints
