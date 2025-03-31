@@ -15,8 +15,8 @@ title: "Unit 5: Constrained Optimization, Linear Programming"
 
 Resources:
 
-- Slides
-- Chapter 10 and Appendix of [KW]
+- [Slides]({{ "/assets/ai505-lec13.pdf" | absolute_url }})
+- Chapter 10 [KW]
 
 ### April 3: Exercise 6 --- Constraints
 
