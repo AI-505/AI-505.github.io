@@ -20,7 +20,7 @@ Resources:
 
 ### April 3: Exercise 6 --- Constraints
 
-- [Sheet 06][56]
+- [Sheet 06][56]. [Solutions][566]
 
 [56]: {{ "/assets/sheets/ai505_sheet06.pdf" | absolute_url }}
 [566]: {{ "/assets/sheets/ai505_sheet06_sol.pdf" | absolute_url }}
