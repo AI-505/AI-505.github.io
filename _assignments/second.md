@@ -22,7 +22,8 @@ categories: assignments
 
 ## Optimization for Machine Learning
 
-The [script fashionMNIST](./fashionMNIST.py) is taken from AI506 and implements a
+The [script fashionMNIST]({{ "./fashionMNIST.py" | absolute_url }}) is taken
+from AI506 and implements a
 convolutional neural network (CNN), specifically
 [LeNet5](https://en.wikipedia.org/wiki/LeNet), for the task of image
 classification.  
