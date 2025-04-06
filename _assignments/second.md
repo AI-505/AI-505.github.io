@@ -8,6 +8,7 @@ math: mathjax3
 week: 15
 sol_url: ""
 comments: true
+script: "
 categories: assignments
 ---
 
@@ -75,3 +76,10 @@ Test set: Average loss: 0.00469727886095643, Accuracy: 8926/10000
 In the report (that must not exceed 10 pages), you must give account of the
 methods tried and details of the method you finally indicated as the best.
 Include evidence for the conclusions you reach.
+
+
+
+
+```python
+{% include_relative {{ page.script }} %}
+```
