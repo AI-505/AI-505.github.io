@@ -20,11 +20,12 @@ categories: assignments
 
 - **Deadline:** Wednesday, April 30, 2025, at 23:59
 
-## Task 1 -- Optimization for Machine Learning
+## Optimization for Machine Learning
 
-The code available is taken from AI506 and implements a convolutional neural
-network (CNN), specifically [LeNet5](https://en.wikipedia.org/wiki/LeNet), for
-the task of image classification.  
+The [script](./fashionMNIST.py) is taken from AI506 and implements a
+convolutional neural network (CNN), specifically
+[LeNet5](https://en.wikipedia.org/wiki/LeNet), for the task of image
+classification.  
 
 The fashion data set consists of 70,000 images divided into 60,000 training and
 10,000 testing samples. Each image is a 28x28 grayscale image associated with
@@ -36,6 +37,8 @@ tutorial](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.ht
 and you are referred to that page for explanation and documentation. Before
 carrying out this task you should read the documentation of the [pytorch
 optimization package](https://pytorch.org/docs/stable/optim.html).  
+
+## Your Tasks
 
 Your task is to design and implement the best optimizer for the training task on
 the given data and assess the results on the test data.  You can experiment with
