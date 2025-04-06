@@ -32,11 +32,11 @@ The fashion data set consists of 70,000 images divided into 60,000 training and
 one of 10 classes. These classes include T-shirt/top, Trouser, Pullover, Dress,
 Coat, Sandal, Shirt, Sneaker, Bag, and Ankle boot.
 
-Except for a few minor changes, the code is taken from the [Pytorch optimization
-tutorial](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html)
-and you are referred to that page for explanation and documentation. Before
-carrying out this task you should read the documentation of the [pytorch
-optimization package](https://pytorch.org/docs/stable/optim.html).  
+The script is explained in the [Pytorch optimization
+tutorial](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html).
+Before carrying out the tasks below you are recommended to read also the
+documentation of the [pytorch optimization
+package](https://pytorch.org/docs/stable/optim.html).  
 
 ## Your Tasks
 
