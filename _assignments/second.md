@@ -57,7 +57,6 @@ with various **stochastic gradient descent (SGD) variants**, including:
 
 - Momentum-based optimization methods
 
-
 ## Scenarios
 
 You **must not modify the LeNet-5 architecture**. Instead, your task is to
