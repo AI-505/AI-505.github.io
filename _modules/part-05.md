@@ -32,6 +32,11 @@ Resources:
 - Problem Formulation
 - Dual Certificates
 
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec14.pdf" | absolute_url }})
+- Chapter 11 [KW]
+
 ### April 10: Exercise 7 --- Linear Programming
 
 - Sheet 06
