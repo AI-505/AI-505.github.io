@@ -39,7 +39,7 @@ Resources:
 
 ### April 10: Exercise 7 --- Linear Programming
 
-- Sheet 06
+- Sheet 07
 
 [57]: {{ "/assets/sheets/ai505_sheet07.pdf" | absolute_url }}
 [577]: {{ "/assets/sheets/ai505_sheet07_sol.pdf" | absolute_url }}
