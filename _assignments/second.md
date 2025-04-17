@@ -93,9 +93,10 @@ You **must not modify the data split** beyond what is implemented in the starter
 
 ## Performance Expectations
 
-- The **baseline mini-batch SGD implementation** in the starter code achieves **61.5% test accuracy**.
+- The **baseline mini-batch SGD implementation** in the starter code achieves
+  **61.5% test accuracy** ***(read the related discussion below)***.
 
-- An accuracy of **89.38% is easily achievable in 10 epochs**.
+- An accuracy of **89.38% can be achievable in 10 epochs**.
 
 - Your goal is to **outperform this result**.
 

@@ -8,6 +8,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from prettytable import PrettyTable
 
+seed = 42
+torch.manual_seed(seed)
+#random.seed(seed)
+np.random.seed(seed)
+torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.benchmark = False
+
 # Download the MNIST dataset
 transform = transforms.ToTensor()
 train_dataset = datasets.FashionMNIST(root='./data', train=True, download=True, transform=transform)
