@@ -2,7 +2,7 @@
 title: "Unit 7: Discrete Optimization and Heuristics" 
 ---
 
-### May 2: Lecture 15 --- Discrete Optimization
+### April 28: Lecture 16 --- Discrete Optimization
 
 - Integer Programs
 - Rounding
@@ -11,13 +11,18 @@ title: "Unit 7: Discrete Optimization and Heuristics"
 - Constraint Programming
 - Backtracking
 
-### May 2: Lecture 16 --- Heuristics
+
+### May 1: Exercises
+
+### May 5: Lecture 17 --- Heuristics
 
 - Construction Heuristics
 - Local Search
 - Metaheuristics
 
-### May 2: Lecture 17 --- Decision Making Applications
+### May 8: Exercises
+
+### May 12: Lecture 17 --- Decision Making Applications
 
 - Scheduling
 - Routing

@@ -3,8 +3,7 @@ title: "Unit 6: Sampling Methods"
 ---
 
 
-
-### Apr 22: Lecture 14 --- Sampling Plans
+### Apr 23: Lecture 15 --- Sampling Plans
 
 - Full Factorial
 - Random Sampling
@@ -13,6 +12,13 @@ title: "Unit 6: Sampling Methods"
 - Space-Filling Metrics
 - Space-Filling Subsets
 - Quasi-Random Sequences
+
+
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec15.pdf" | absolute_url }})
+- Chapter 13 of [KW]
+
 
 <!--
 ### Apr 23: Lecture 14 --- Surrogate Models
@@ -24,7 +30,6 @@ title: "Unit 6: Sampling Methods"
 - Model Selection
 -->
 
-### Apr 23: Exercise 8
+### Apr 24: Exercise 8
 
 - Sheet 08
-
