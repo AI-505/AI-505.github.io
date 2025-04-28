@@ -21,8 +21,8 @@ Resources:
 
 - [Sheet 09][59].
 
-[59]: {{ "/assets/sheets/ai505_sheet08.pdf" | absolute_url }}
-[599]: {{ "/assets/sheets/ai505_sheet08_sol.pdf" | absolute_url }}
+[59]: {{ "/assets/sheets/ai505_sheet09.pdf" | absolute_url }}
+[599]: {{ "/assets/sheets/ai505_sheet09_sol.pdf" | absolute_url }}
 
 ### May 5: Lecture 17 --- Heuristics
 
