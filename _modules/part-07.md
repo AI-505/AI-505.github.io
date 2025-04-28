@@ -9,8 +9,6 @@ title: "Unit 7: Discrete Optimization and Heuristics"
 - Cutting Planes
 - Branch and Bound
 - Dynamic Programming
-- Constraint Programming
-- Backtracking
 
 
 Resources:
@@ -28,6 +26,8 @@ Resources:
 
 ### May 5: Lecture 17 --- Heuristics
 
+- Constraint Programming
+- Backtracking
 - Construction Heuristics
 - Local Search
 - Metaheuristics
