@@ -32,7 +32,7 @@ Resources:
 
 ### Apr 24: Exercise 8
 
-- [Sheet 08][58]
+- [Sheet 08][58]. [Solutions][588]
 
 [58]: {{ "/assets/sheets/ai505_sheet08.pdf" | absolute_url }}
 [588]: {{ "/assets/sheets/ai505_sheet08_sol.pdf" | absolute_url }}
