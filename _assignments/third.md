@@ -21,7 +21,7 @@ categories: assignments
 - Groups can differ from those in asg1 and asg2. Experimenting to work with different
   persons can be instructive.
 
-- **Deadline:** Sunday, May 11, 2025, at 23:59
+- **Deadline:** Saturday, May 10, 2025, at 23:59
 
 ## Linear Programming Modelling and Solving
 
