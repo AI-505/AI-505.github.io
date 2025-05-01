@@ -58,9 +58,9 @@ competitions, if you like.)
 3. Model the problem of finding the optimal strategy for Antigonus as a linear
   programming problem. Assume that Antigonous, when playing some randomized
   allocation, expects Brasidas to play a best response against this allocation.
-  The goal of Antigonus is to maximize the worst-case expected payoff, say $v$.
+  The goal of Antigonus is to maximize the worst-case expected payoff, say $$v$$.
   In this way, by adopting his optimal strategy, he can assure himself of
-  winning $v$ on average.
+  winning $$v$$ on average.
 
 4. Solve the linear programming problem with the tools from the Python module
   `scipy.optimize` and highlight the optimal strategy found for Antigonus and
@@ -74,4 +74,4 @@ competitions, if you like.)
    uses a randomized strategy. Use the same payoff matrix constructed for
   Antigonus. What is the expected payoff for him? Does the result make sense?
 
-- Report your the previous points in the report.
+Collect evidence of your work in a short written report.
