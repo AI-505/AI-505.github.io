@@ -14,7 +14,7 @@ Portfolio consisting of:
 
     1. [assignment][101]
     2. [assignment][102]
-    3. assignment
+    3. [assignment][103]
     4. assignment
 
     Time line to be announced.
@@ -31,3 +31,4 @@ Portfolio consisting of:
 
 [101]: {{ "/assignments/first/" | absolute_url  }}
 [102]: {{ "/assignments/second/" | absolute_url  }}
+[103]: {{ "/assignments/third/" | absolute_url  }}
