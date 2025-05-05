@@ -19,7 +19,7 @@ Resources:
 
 ### May 1: Exercises
 
-- [Sheet 09][59].
+- [Sheet 09][59]. [Solutions][599]
 
 [59]: {{ "/assets/sheets/ai505_sheet09.pdf" | absolute_url }}
 [599]: {{ "/assets/sheets/ai505_sheet09_sol.pdf" | absolute_url }}
@@ -30,18 +30,26 @@ Resources:
 - Backtracking
 - Construction Heuristics
 - Local Search
-- Metaheuristics
-
 
 Resources:
 
 - [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
-- [Minizinc](https://www.minizinc.org/). [Book](https://docs.minizinc.dev/_/downloads/en/stable/pdf/)
+- [Minizinc](https://www.minizinc.org/).
+  [Book](https://docs.minizinc.dev/_/downloads/en/stable/pdf/), [Global Constraints](https://docs.minizinc.dev/en/stable/lib-globals.html)
 - [API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
 
 ### May 8: Exercises
 
+- [Sheet 10][60].
+
+[60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
+[600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
+
+
+
 ### May 12: Lecture 17 --- Decision Making Applications
 
+- Modeling in the ROAR-NET API specification
+- Metaheuristics
 - Scheduling
 - Routing
