@@ -32,6 +32,13 @@ Resources:
 - Local Search
 - Metaheuristics
 
+
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
+- [Minizinc](https://www.minizinc.org/). [Book](https://docs.minizinc.dev/_/downloads/en/stable/pdf/)
+- [API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
+
 ### May 8: Exercises
 
 ### May 12: Lecture 17 --- Decision Making Applications
