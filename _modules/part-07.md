@@ -41,6 +41,7 @@ Resources:
 ### May 8: Exercises
 
 - [Sheet 10][60].
+- [API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
 
 [60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
 [600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
