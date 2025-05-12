@@ -27,16 +27,20 @@ Resources:
 ### May 5: Lecture 17 --- Heuristics
 
 - Constraint Programming
-- Backtracking
+- Backtracking 
 - Construction Heuristics
-- Local Search
+- Local Search [MAK]
 
 Resources:
 
 - [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
 - [Minizinc](https://www.minizinc.org/).
-  [Book](https://docs.minizinc.dev/_/downloads/en/stable/pdf/), [Global Constraints](https://docs.minizinc.dev/en/stable/lib-globals.html)
-- [API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
+  [Book](https://docs.minizinc.dev/_/downloads/en/stable/pdf/), [Global
+  Constraints](https://docs.minizinc.dev/en/stable/lib-globals.html)
+- [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
+  Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
+  Heidelberg, 2007
+- [ROAR-NET API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
 
 ### May 8: Exercises
 
@@ -46,11 +50,34 @@ Resources:
 [60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
 [600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
 
+### May 12: Exercises
 
-
-### May 12: Lecture 17 --- Decision Making Applications
-
-- Modeling in the ROAR-NET API specification
+- Modeling in the ROAR-NET API specification [ROAR=-NET API, MAK]
+- Routing
 - Metaheuristics
 - Scheduling
+
+Resources:
+
+- [Sheet 11][61].
+- [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
+
+[61]: {{ "/assets/sheets/ai505_sheet11.pdf" | absolute_url }}
+
+### May 12: Exercises
+
+- Modeling in the ROAR-NET API specification
+- Metaheuristics [MAK, GP]
+- Scheduling
 - Routing
+
+Resources:
+
+- [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
+  Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
+  Heidelberg, 2007
+
+- [GP] Michel Gendreau and Jean-Yves Potvin (eds) [Handbook of
+  Metaheuristics](https://doi-org.proxy1-bib.sdu.dk/10.1007/978-3-319-91086-4).
+  2019. International Series in Operations Research & Management Science book
+  series (ISOR, volume 272)
