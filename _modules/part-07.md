@@ -44,32 +44,28 @@ Resources:
 
 ### May 8: Exercises
 
-- [Sheet 10][60].
-- [API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
+- [Sheet 10][60]. [Solutions][600]
+- [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
 
 [60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
 [600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
 
 ### May 12: Exercises
 
-- Modeling in the ROAR-NET API specification [ROAR=-NET API, MAK]
+- Modeling in the ROAR-NET API specification [ROAR-NET API, MAK]
 - Routing
-- Metaheuristics
-- Scheduling
 
 Resources:
 
 - [Sheet 11][61].
-- [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
+
 
 [61]: {{ "/assets/sheets/ai505_sheet11.pdf" | absolute_url }}
 
-### May 12: Exercises
+### May 15: Exercises
 
 - Modeling in the ROAR-NET API specification
-- Metaheuristics [MAK, GP]
 - Scheduling
-- Routing
 
 Resources:
 
@@ -77,7 +73,15 @@ Resources:
   Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
   Heidelberg, 2007
 
+
+### May 19: Lecture 18 --- Metaheuristics
+
+- Metaheuristics [MAK, GP]
+
+Resources:
+
 - [GP] Michel Gendreau and Jean-Yves Potvin (eds) [Handbook of
   Metaheuristics](https://doi-org.proxy1-bib.sdu.dk/10.1007/978-3-319-91086-4).
   2019. International Series in Operations Research & Management Science book
   series (ISOR, volume 272)
+

@@ -25,7 +25,8 @@ categories: assignments
 
 ## Candle Race
 
-The following problem was posed by Carlos Fonseca at the SIGEVO Summer School 2024.
+The following problem was posed by Carlos Fonseca and Alexandre Jesus at the
+SIGEVO Summer School 2024.
 
 In a race, there is a set of villages to be visited, $$V$$, and there is a candle in
 each village. Villages and the corresponding candles are identified by an index,
