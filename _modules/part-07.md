@@ -57,7 +57,7 @@ Resources:
 
 Resources:
 
-- [Sheet 11][61].
+- [Sheet 11][61]. [Solutions]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 
 
 [61]: {{ "/assets/sheets/ai505_sheet11.pdf" | absolute_url }}
@@ -69,6 +69,7 @@ Resources:
 
 Resources:
 
+- [Slides]({{ "/assets/ai505-lec18.pdf" | absolute_url }})
 - [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
   Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
   Heidelberg, 2007
@@ -80,6 +81,7 @@ Resources:
 
 Resources:
 
+- [Slides]({{ "/assets/ai505-lec19.pdf" | absolute_url }})
 - [GP] Michel Gendreau and Jean-Yves Potvin (eds) [Handbook of
   Metaheuristics](https://doi-org.proxy1-bib.sdu.dk/10.1007/978-3-319-91086-4).
   2019. International Series in Operations Research & Management Science book
