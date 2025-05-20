@@ -96,7 +96,8 @@ Three instances of the problem are available in this [archive]({{
 
 - The assignment is about Randomized Optimization Heuristics and you must follow
   the ROAR specification. An implementation thereof for the TSP has been made
-  availabe in Unit 7.
+  availabe in Unit 7. **A more complete implementation for the SMTWTP is
+  available as solution to Sheet 11**.
 
 - In the report you must provide information about your specific implementation
   of the problem modeling operations. In case of need to show algorithm
@@ -108,7 +109,12 @@ Three instances of the problem are available in this [archive]({{
 - If you have compared different algorithms give account of this in the report.
 
 - Use a time limit of 60 seconds per run. Report the results of your best
-  algorithm on each instance in a table.
+  algorithm on each instance in a table **in the report**.
   
 - The quality of the final solution has an impact on the grade of this
   assignment.
+
+- **The code submitted must execute your best algorithm taking as input the
+  filename of the instance and outputting the solution in the format described
+  above in a file with the same name as the instance but with the extension
+  `.out` placed in the same directory where the program is executed.** 
