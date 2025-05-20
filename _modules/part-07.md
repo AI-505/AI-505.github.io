@@ -40,11 +40,12 @@ Resources:
 - [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
   Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
   Heidelberg, 2007
-- [ROAR-NET API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
+
 
 ### May 8: Exercises
 
 - [Sheet 10][60]. [Solutions][600]
+- [ROAR-NET API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
 - [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
 - [ROAR-NET API Specification Implementation for TSP]({{ "/assets/spec.tsp.tgz" | absolute_url }})
 - [ROAR-NET API Specification Implementation for SMTWTP]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
