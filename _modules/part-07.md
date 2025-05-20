@@ -61,7 +61,6 @@ Resources:
 
 - [Sheet 11][61]. [Solutions]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 
-
 [61]: {{ "/assets/sheets/ai505_sheet11.pdf" | absolute_url }}
 
 ### May 15: Exercises
