@@ -46,6 +46,8 @@ Resources:
 
 - [Sheet 10][60]. [Solutions][600]
 - [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
+- [ROAR-NET API Specification Implementation for TSP]({{ "/assets/spec.tsp.tgz" | absolute_url }})
+- [ROAR-NET API Specification Implementation for SMTWTP]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 
 [60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
 [600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
@@ -70,9 +72,6 @@ Resources:
 Resources:
 
 - [Slides]({{ "/assets/ai505-lec18.pdf" | absolute_url }})
-- [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
-  Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
-  Heidelberg, 2007
 
 
 ### May 19: Lecture 18 --- Metaheuristics
@@ -82,6 +81,9 @@ Resources:
 Resources:
 
 - [Slides]({{ "/assets/ai505-lec19.pdf" | absolute_url }})
+- [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
+  Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
+  Heidelberg, 2007
 - [GP] Michel Gendreau and Jean-Yves Potvin (eds) [Handbook of
   Metaheuristics](https://doi-org.proxy1-bib.sdu.dk/10.1007/978-3-319-91086-4).
   2019. International Series in Operations Research & Management Science book
