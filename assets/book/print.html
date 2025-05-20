@@ -1,0 +1,1122 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ROAR-NET API Specification</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">ROAR-NET API Specification</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="roar-net-api-specification"><a class="header" href="#roar-net-api-specification">ROAR-NET API Specification</a></h1>
+<h2 id="about-roar-net-api"><a class="header" href="#about-roar-net-api">About ROAR-NET API</a></h2>
+<p>The ROAR-NET API defines a <strong>framework for black-box optimisation
+problem modelling</strong>. It is based on abstractions aimed at unifying
+black-box optimisation problems, and on a clear <strong>separation between
+problem modelling and randomised optimisation algorithms</strong>. The
+resulting standardisation of black-box problem modelling leads to the
+following advantages:</p>
+<ul>
+<li>Different optimisation algorithms can operate on the same problem
+model, e.g., branch-and-bound and local-search.</li>
+<li>Different optimisation problems (or models) can be solved by the same
+algorithms.</li>
+</ul>
+<h2 id="conceptualisation"><a class="header" href="#conceptualisation">Conceptualisation</a></h2>
+<p>The goal of this specification is to define a minimal,
+programming-language agnostic, interface to the optimisation problems
+that a wide variety of <strong>Randomised Optimisation Algorithms (ROAs)</strong> can
+use to solve these problems. In doing this, the specification should
+facilitate modelling of real life problems that can be solved by a wide
+range of algorithms and make it possible to easily benchmark problem
+models and ROAs.</p>
+<p>The specification defines the <strong>types</strong> and <strong>operations</strong> that have to
+be implemented when modelling an optimisation problem in order to allow
+supported ROAs to function.</p>
+<p>The API specification has the following design principles:</p>
+<ul>
+<li>it is <strong>agnostic of the programming language</strong>.</li>
+<li>it is <strong>agnostic of the programming paradigm</strong>.</li>
+<li>requires implementations of the API to <strong>only store problem-specific
+information</strong>. They must be completely free of any information about
+the optimisation algorithm to be used.</li>
+</ul>
+<h2 id="supported-features"><a class="header" href="#supported-features">Supported features</a></h2>
+<p>The API supports a broad range of problems and Randomised Optimisation
+Algorithms (ROAs).  The current version of the specification covers, but
+is not limited to, the following classes of <strong>single-objective</strong>
+optimisation problems:</p>
+<ul>
+<li><strong>combinatorial problems</strong></li>
+<li><strong>discrete problems</strong></li>
+</ul>
+<p>Furthermore, it considers the following main algorithmic approaches:</p>
+<ul>
+<li><strong>Constructive search</strong>: solutions are constructed iteratively. For
+example, by adding a component, or assigning the value of a decision
+variable, on each iteration.
+<ul>
+<li>Example of algorithms include, backtracking, branch-and-bound,
+greedy algorithms, and GRASP.</li>
+<li>Some of these algorithms may provide guarantees on the quality of
+the solution.</li>
+</ul>
+</li>
+<li><strong>Local search</strong>: solutions are found by modifying feasible
+solutions. For example, by exchanging some components of the solution,
+or changing the value of a decision variable.
+<ul>
+<li>Examples of algorithms include, first and best improvement local
+search, iterated local search, and simulated annealing.</li>
+<li>These algorithms typically do not provide a guarantee on the quality
+of the solution found but are usually able to find good
+approximations in a reasonable amount of time.</li>
+</ul>
+</li>
+</ul>
+<p>Extensions to multiple objectives, uncertainty settings, and support for
+further algorithms are currently under discussion on the <a href="https://github.com/roar-net/roar-net-api-specification">Github
+repository</a>,
+where everyone is welcome to contribute and propose new ideas.</p>
+<h2 id="acknowledgement"><a class="header" href="#acknowledgement">Acknowledgement</a></h2>
+<p>This specification is based upon work from COST Action <a href="https://www.roar-net.eu/">Randomised
+Optimisation Algorithms Research Network
+(ROAR-NET)</a>, CA22137, supported by COST
+(European Cooperation in Science and Technology).</p>
+<p>COST (<a href="https://www.cost.eu">European Cooperation in Science and
+Technology</a>) is a funding agency for research and
+innovation networks. Our Actions help connect research initiatives
+across Europe and enable scientists to grow their ideas by sharing them
+with their peers. This boosts their research, career and innovation.</p>
+<br/>
+<img
+  src="https://raw.githubusercontent.com/roar-net/.github/refs/heads/main/images/costeu.png"
+  alt="COST and European Union Logos"
+  width=460px
+/>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="background"><a class="header" href="#background">Background</a></h1>
+<h2 id="optimisation-problem"><a class="header" href="#optimisation-problem">Optimisation problem</a></h2>
+<p>Formally, we consider a <strong>(minimisation) problem</strong> in the form</p>
+<p>\[\min\{f(x) \mid x \in F\}\]</p>
+<p>The set \(F\) is the set of <strong>feasible solutions</strong>, which is a
+subset of the <strong>decision space</strong>, \(S\). The mapping \(f: S \to
+\mathbb{R}\) is an <strong>objective function</strong> that associates to each
+solution \(s\in S\) a real value in the <strong>objective space</strong>,
+\(\mathbb{R}\).</p>
+<!--The image of \\(F\\) under \\(f\\) is the image of the feasible
+solutions in the objective space. -->
+<p>In this case, the objective space is totally ordered, and the minimum
+is given by all solutions \(x^*\in F\) such that \(f(x^*)\leq
+f(x) \) holds for all \(x\in F\).  Such a solution \(x^*\) is
+called an <strong>optimal solution</strong>.  <strong>Maximisation problems</strong>, in which
+we are searching for the feasible solutions whose value is the maximum
+in the objective space, can be reduced to minimisation problems as
+\(\max\{f(s) \mid s \in F\}=-\min\{-f(s) \mid s \in F\}\).</p>
+<p>In this specification, optimisation problems are specified by means of
+a <code>Problem</code> type.</p>
+<h2 id="search-space"><a class="header" href="#search-space">Search space</a></h2>
+<p>The representation and the exploration of the <strong>search space</strong> of a
+problem implementing the API rely on how solutions are characterised,
+how they are generated, and on how they are evaluated.</p>
+<h3 id="candidate-solutions"><a class="header" href="#candidate-solutions">Candidate solutions</a></h3>
+<p>We assume that the details regarding the components of the solution
+are not exposed, nor the details of how to create or modify a
+solution. Instead, the API provides abstract operations that allow to
+generate and modify solutions in a black-box manner, and that is
+common to all algorithmic approaches covered.</p>
+<p>The API relies on the observation that:</p>
+<ul>
+<li>constructive search algorithms work by starting from an initial
+<em>state</em> and sequentially applying <em>actions</em> or <em>changes</em> to it to
+attain new states until a goal is reached.</li>
+<li>local search algorithms work by maintaining a set of states, and
+iterating through states that can be reached by applying (small)
+<em>changes</em> to the stored states.</li>
+</ul>
+<p>In both cases, such states represent <strong>candidate solutions</strong>. The
+changes that allow to modify a solution \(s\) to obtain another
+solution \(s'\) is called a <strong>move</strong>, in which case \(s'\) is
+called a <strong>neighbour</strong> of \(s\).</p>
+<p>A <strong>candidate solution</strong> is an element of the <em>decision space</em>,
+\(s\in S\), but not necessarily an element of the set of feasible
+solutions. Such solution can violate constraints or satisfy other
+constraints that are known to be necessary for optimal solutions. A
+candidate solution in ROAs can be:</p>
+<ul>
+<li>a <strong>partial solution</strong>, which may not contain yet all components of
+a feasible solution.</li>
+<li>a <strong>complete solution</strong>, which contains all components but may
+violate problem constraints and may not be optimal.</li>
+</ul>
+<!-- TODO: introduce here the notions of feasible/infeasible and
+valid/invalid solutions? -->
+<p>In this specification, solutions are specified by means of a
+<code>Solution</code> type.</p>
+<h3 id="neighbourhoods"><a class="header" href="#neighbourhoods">Neighbourhoods</a></h3>
+<p>We assume that the exploration of the search space relies on the
+concept of <em>neighbourhood structure</em>, which has a central role in
+ROAs. A <strong>neighbourhood structure</strong> is given by the definition of a
+neighbouring relation between solutions. That is, \(N(s,s')\) is a
+Boolean, whose value depends on whether \(s'\) can be obtained from
+\(s\) by means of the application of a small change operator, called
+<strong>move</strong>. The set of solutions \(s'\) that can be reached in this
+way from \(s\) forms the <strong>neighbourhood</strong> set of \(s\),
+\(N(s)\subseteq S\). <strong>Neighbourhood structures can be defined for
+both complete and partial solutions</strong>.</p>
+<p>In this specification, the neighbourhood structure is specified by
+means of a <code>Move</code> type and a <code>Neighbourhood</code> type, this latter
+implementing the generation of moves.</p>
+<h3 id="solution-evaluation"><a class="header" href="#solution-evaluation">Solution evaluation</a></h3>
+<p>The specification provides operations to query the feasibility and the
+objective value of candidate solutions.  We do not assume to have
+available a mathematical description of \(F\) nor \(f\), that is,
+we assume a <strong>black box</strong> scenario. Even if a mathematical description
+of the decision space is known, we assume that the feasibility and the
+objective value of <strong>candidate solutions are assessed in an oracle
+manner</strong>, that is, without exposing how these assessments have been
+computed; e.g., the feasibility and the objective value of candidate
+solutions could be assessed by executing a computationally costly
+simulation, but this information is not shared.  However, when
+present, mathematical descriptions can be exploited to improve the
+implementation of the specification.</p>
+<p>In ROA, the <strong>objective function</strong> is frequently replaced by an
+<strong>evaluation function</strong> \(g\), which is also a mapping of the
+decision space \(S\) to a set of real numbers \(\mathbb{R}\). The
+evaluation function can account for the objective function but also
+for penalties due to the violation of the problem constraints.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="types"><a class="header" href="#types">Types</a></h1>
+<p>The types to be defined by the user in this specification are:</p>
+<ul>
+<li>Problem</li>
+<li>Solution</li>
+<li>Move</li>
+<li>Neighbourhood</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="problem"><a class="header" href="#problem">Problem</a></h1>
+<h2 id="signature"><a class="header" href="#signature">Signature</a></h2>
+<pre><code class="language-text">Problem
+</code></pre>
+<h2 id="description"><a class="header" href="#description">Description</a></h2>
+<p>The type <code>Problem</code> specifies the data structure to represent the
+particular <em>instance</em> of the problem to solve.  An instance of a
+problem is the definition of the data related to the specific example
+of the abstract problem to solve.  Data can be numerical or
+categorical values and specify, for example, the size of solutions,
+the presence or not of particular constraints, the values of
+coefficients in mathematical constraints or objectives.</p>
+<h2 id="use-cases"><a class="header" href="#use-cases">Use cases</a></h2>
+<p>In the travelling salesman problem, <code>Problem</code> is a data structure
+containing at least the number of nodes to visit and the matrix of
+distances between the nodes. If the instance is geographical then the
+distance matrix can be replaced by the GPS coordinates of the nodes
+and by the formula to calculate the distance (Euclidean, haversine).</p>
+<p>If the problem is finding the inputs to a simulator that yield the
+desired results then the instance may be the number of parameters
+input to the simulator and their domain. If these parameters are
+conditioned over other parameters then the values of the conditioning
+parameters must be defined in <code>Problem</code>.</p>
+<h2 id="see-also"><a class="header" href="#see-also">See also</a></h2>
+<p><a href="types/./Solution.html">Solution</a>,
+<a href="types/./Neighbourhood.html">Neighbourhood</a>,
+<a href="types/../operations/empty_solution.html">empty_solution</a>,
+<a href="types/../operations/random_solution.html">random_solution</a>,
+<a href="types/../operations/construction_neighbourhood.html">construction_neighbourhood</a>,
+<a href="types/../operations/destruction_neighbourhood.html">destruction_neighbourhood</a>,
+<a href="types/../operations/local_neighbourhood.html">local_neighbourhood</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="candidate-solution"><a class="header" href="#candidate-solution">Candidate Solution</a></h1>
+<h2 id="signature-1"><a class="header" href="#signature-1">Signature</a></h2>
+<pre><code class="language-text">Solution
+</code></pre>
+<h2 id="description-1"><a class="header" href="#description-1">Description</a></h2>
+<p>The type <code>Solution</code> is a data structure defining a particular
+candidate solution. Therefore, <code>Solution</code> is an expression of the
+decision space. In case of combinatorial optimisation, <code>Solution</code> can
+be a particular combinatorial structure.</p>
+<p><code>Solution</code> instances are always associated to a problem instance,
+hence they have a reference to one such an instance. Additionally,
+associated to a <code>Solution</code> instance there is its evaluation value,
+that we assume to be of <code>float</code> type.</p>
+<p>Candidate solutions define the elementary decisions (or <em>components</em>)
+from the decision space. For example, in a problem that asks to
+determine the value of a set of decision variables taken from their
+domains an elementary decision is the value assigned to a single
+variable. Candidate solutions can be restricted to be <em>complete</em>, in
+that all its elementary decisions are defined. Alternatively, they can
+be allowed to include <em>partial</em> solutions where only a subset of
+components is defined. This distinction is not always relevant. For
+some problems where it makes sense for candidate solutions to be
+defined as sets the number of components is not known a priori. Sets
+can also be represented by indicator vectors in which case the
+distinction is again relevant but the vector representation might not
+be convenient for the specific problem.</p>
+<p>Instances of <code>Solution</code> must be candidate solutions but do not need to
+be <em>feasible</em>. For example, for a local search that works on complete
+solutions, these solutions do not need to satisfy all constraints of
+the problem but they do satisfy the requirement that all decisions are
+defined, even if they may break some other problem constraints. On the
+other hand, partial solutions would not be <em>valid</em> instances of
+<code>Solution</code> in that they do not satisfy the internal requirement of
+candidate solutions.</p>
+<p>Candidate solutions can be direct or indirect representations of
+solutions.  Indirect solution representations can be used when we can
+identify a smaller decision space, such that for a given member of
+this space a best corresponding solution for the original space can be
+derived in polynomial time. A somehow related distinction is done in
+evolutionary algorithms between genotype and phenotype. In this case,
+candidate solutions represent commonly genotypes.</p>
+<!-- Structural state vs evaluation state vs ???
+
+MC: I do not get what this means -->
+<p>Note, particular information used by the optimisation algorithm - tabu
+lists, pheromone matrix, etc - must be stored on the algorithm's side.</p>
+<p>However, <code>Solution</code> may contain auxiliary data structures to
+facilitate calculations, for example, of increments.</p>
+<h2 id="use-cases-1"><a class="header" href="#use-cases-1">Use cases</a></h2>
+<p>All algorithms need to be able to define, take as input and return as
+output instances of type <code>Solution</code>. Moreover, they need to be able to
+modify them via neighbourhoods and their moves.</p>
+<h2 id="see-also-1"><a class="header" href="#see-also-1">See also</a></h2>
+<p><a href="types/./Problem.html">Problem</a>,
+<a href="types/./Neighbourhood.html">Neighbourhood</a>,
+<a href="types/./Move.html">Move</a>,
+<a href="types/../operations/empty_solution.html">empty_solution</a>,
+<a href="types/../operations/random_solution.html">random_solution</a>,
+<a href="types/../operations/copy_solution.html">copy_solution</a>,
+<a href="types/../operations/lower_bound.html">lower_bound</a>,
+<a href="types/../operations/objective_value.html">objective_value</a>,
+<a href="types/../operations/moves.html">moves</a>,
+<a href="types/../operations/apply_move.html">apply_move</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="neighbourhood"><a class="header" href="#neighbourhood">Neighbourhood</a></h1>
+<h2 id="signature-2"><a class="header" href="#signature-2">Signature</a></h2>
+<pre><code class="language-text">Neighbourhood
+</code></pre>
+<h2 id="description-2"><a class="header" href="#description-2">Description</a></h2>
+<p>The <code>Neighbourhood</code> type represents a particular neighbourhood
+structure defined over the decision space of a given problem
+instance. Neighbourhood structures are constructive or destructive if
+they work with partial candidate solutions and local if they work with
+complete solutions.  Constructive neighbourhood structures consist of
+changes that add components to partial candidate solutions yielding
+partial or complete solutions.  Destructive neighbourhoods structures
+consist of changes that remove components from complete or partial
+solutions yielding partial solutions. Local neighbourhood structures
+consist of changes that leave solutions complete.</p>
+<p>Formally, a neighbourhood structure \(\cal N\) can be defined as:</p>
+<ul>
+<li>a function \(N : S_{\pi} \to 2^{S_{\pi}}\)</li>
+<li>a function \(N : S_{\pi} \times S_{\pi} \to {T , F } \)</li>
+<li>a subset of pairs of candidate solutions \(N \subseteq S_{\pi}
+\times S_{\pi}\)</li>
+<li>a subset of candidate solutions for every solution \(s\): \(N(s)
+:= {s' \in S | N (s, s')}\)</li>
+</ul>
+<p>Neighbourhoods are also characterised by:</p>
+<ul>
+<li>their size defined as \(|N(s)|\)</li>
+<li>symmetricity if \(s' \in N(s) \implies s \in N(s')\)</li>
+<li>neighbourhood graph of \((S, N, \pi)\) a directed graph: \(G_N
+:= (V , A)\) with \(V = S\) and \((uv) \in A \iff v \in N(u)\)
+(if symmetric neighbourhood then undirected graph)</li>
+</ul>
+<h2 id="use-cases-2"><a class="header" href="#use-cases-2">Use cases</a></h2>
+<p>The algorithms will need to access the <code>Neighbourhood</code> instances
+associated with the problem. The related operations
+<code>construction_neighbourhood</code>, <code>destruction_neighbourhood</code> and
+<code>local(-search)-neighbourhoods</code> are used by algorithms to determine
+the instances of the <code>Neighbourhood</code> types implemented.</p>
+<h2 id="see-also-2"><a class="header" href="#see-also-2">See also</a></h2>
+<p><a href="types/./Problem.html">Problem</a>,
+<a href="types/./Solution.html">Solution</a>,
+<a href="types/./Move.html">Move</a>,
+<a href="types/../operations/construction_neighbourhood.html">construction_neighbourhood</a>,
+<a href="types/../operations/destruction_neighbourhood.html">destruction_neighbourhood</a>,
+<a href="types/../operations/local_neighbourhood.html">local_neighbourhood</a>,
+<a href="types/../operations/moves.html">moves</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="move"><a class="header" href="#move">Move</a></h1>
+<pre><code class="language-text">Move
+</code></pre>
+<h2 id="description-3"><a class="header" href="#description-3">Description</a></h2>
+<p>The <code>Move</code> type identifies the changes between two neighbouring
+solutions.  Formally, for a problem instance \(\pi\), candidate
+solution space \(S_{\pi}\), and a neighbourhood structure \({\cal
+N}(\pi) \subseteq (S\times S)\), there is an instance of <code>Move</code> for
+every pair of candidate solutions, \(s, s' \in S\), \(s,s'\) in
+\(\cal N(\pi)\) containing the information used by an operator
+function \(\delta\) that applied to \(s\) yields \(s'\), that
+is, \(s'=\delta(s)\). The operation <code>apply</code> implements the operator
+function.</p>
+<p>It follows that a particular neighbourhood structure \({\cal N}(\pi)
+\subseteq (S\times S)\) can be fully represented by a collection of
+operator functions \(\Delta\) and that for each candidate solution
+\(s\in S\) the neighbourhood set \(N(s)\) associated to \(\cal
+N\) is generated by a subset of operator functions \(\Delta(s)
+\subseteq \Delta\). Hence, \(s'\in N(s) \iff
+s'=\delta(s),\delta\in\Delta(s)\). For each solution \(s\) the
+operator functions \(\delta \in \Delta(s)\) are described by a set
+of instantiations of <code>Moves</code> that is generated by move generators,
+like the operations <code>moves</code>.</p>
+<p>As an example, for candidate solutions that are linear permutations, a
+possible neighbourhood structure defines as neighbouring two solutions
+if they differ only in the position of two adjacent elements in the
+permutation. This neighbourhood structure can be represented by a
+<code>Move</code> with information about the position of the first element to
+swap. The operator function that uses this information will change the
+element indexed by <code>Move</code> with the following element in the
+permutation. The generator <code>moves</code> will instantiate all moves that are
+needed to reach all neighbouring solutions. In this case, there are as
+many moves as are the elements in the permutation each specifying a
+different index.</p>
+<h2 id="use-cases-3"><a class="header" href="#use-cases-3">Use cases</a></h2>
+<p>Each neighbourhood structure defines its own moves that are generated
+by move generators such as <code>moves</code> and are used by the operator
+<code>apply</code> to implement the changes to the solution. Hence, we need a
+different definition for <code>Move</code>, <code>moves</code> and <code>apply</code> for each
+neighbourhood structure.</p>
+<h2 id="see-also-3"><a class="header" href="#see-also-3">See also</a></h2>
+<p><a href="types/./Neighbourhood.html">Neighbourhood</a>,
+<a href="types/./Solution.html">Solution</a>,
+<a href="types/../operations/moves.html">moves</a>,
+<a href="types/../operations/apply_move.html">apply_move</a>,
+<a href="types/../operations/invert_move.html">invert_move</a>,
+<a href="types/../operations/lower_bound_increment.html">lower_bound_increment</a>,
+<a href="types/../operations/objective_value_increment.html">objective_value_increment</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="operations"><a class="header" href="#operations">Operations</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="empty-solution"><a class="header" href="#empty-solution">Empty solution</a></h1>
+<h2 id="signature-3"><a class="header" href="#signature-3">Signature</a></h2>
+<pre><code class="language-text">empty_solution(Problem) : Solution
+</code></pre>
+<h2 id="description-4"><a class="header" href="#description-4">Description</a></h2>
+<p>This function produces an empty solution for the given problem
+instance.</p>
+<h2 id="use-cases-4"><a class="header" href="#use-cases-4">Use cases</a></h2>
+<p>Empty solutions are typically used as initial solutions in
+constructive search.</p>
+<h2 id="see-also-4"><a class="header" href="#see-also-4">See also</a></h2>
+<p><a href="operations/../types/Problem.html">Problem</a>,
+<a href="operations/../types/Solution.html">Solution</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="heuristic-solution"><a class="header" href="#heuristic-solution">Heuristic solution</a></h1>
+<h2 id="signature-4"><a class="header" href="#signature-4">Signature</a></h2>
+<pre><code class="language-text">heuristic_solution(Problem) : Solution[0..1]
+</code></pre>
+<h2 id="description-5"><a class="header" href="#description-5">Description</a></h2>
+<p>This function produces a feasible solution for the given problem
+instance or none if the underlying heuristic fails to generate such a
+solution.</p>
+<h2 id="use-cases-5"><a class="header" href="#use-cases-5">Use cases</a></h2>
+<p>Heuristic solutions are often used as initial solutions in local
+search.</p>
+<h2 id="see-also-5"><a class="header" href="#see-also-5">See also</a></h2>
+<p><a href="operations/../types/Problem.html">Problem</a>,
+<a href="operations/../types/Solution.html">Solution</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="random-solution"><a class="header" href="#random-solution">Random solution</a></h1>
+<h2 id="signature-5"><a class="header" href="#signature-5">Signature</a></h2>
+<pre><code class="language-text">random_solution(Problem) : Solution
+</code></pre>
+<h2 id="description-6"><a class="header" href="#description-6">Description</a></h2>
+<p>This function samples the feasible decision space of the given problem
+instance uniformly at random (with replacement) and produces a
+feasible solution.</p>
+<h2 id="use-cases-6"><a class="header" href="#use-cases-6">Use cases</a></h2>
+<p>Random solutions are often used as initial solutions in local
+search. The initial population of evolutionary algorithms typically
+consists of solutions generated at random.</p>
+<h2 id="see-also-6"><a class="header" href="#see-also-6">See also</a></h2>
+<p><a href="operations/../types/Problem.html">Problem</a>,
+<a href="operations/../types/Solution.html">Solution</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="copy-solution"><a class="header" href="#copy-solution">Copy solution</a></h1>
+<h2 id="signature-6"><a class="header" href="#signature-6">Signature</a></h2>
+<pre><code class="language-text">copy_solution(Solution) : Solution
+</code></pre>
+<h2 id="description-7"><a class="header" href="#description-7">Description</a></h2>
+<p>This function produces a copy of the given solution.</p>
+<h2 id="use-cases-7"><a class="header" href="#use-cases-7">Use cases</a></h2>
+<p>Making copies of solutions may be required when keeping track of the
+best solution found so far. It is also required by optimisation
+algorithms such as beam search and evolutionary algorithms.</p>
+<h2 id="see-also-7"><a class="header" href="#see-also-7">See also</a></h2>
+<p><a href="operations/../types/Solution.html">Solution</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="lower-bound"><a class="header" href="#lower-bound">Lower bound</a></h1>
+<h2 id="signature-7"><a class="header" href="#signature-7">Signature</a></h2>
+<pre><code class="language-text">lower_bound(Solution) : double[0..1]
+</code></pre>
+<h2 id="description-8"><a class="header" href="#description-8">Description</a></h2>
+<p>This function produces a lower bound on the value taken by the
+objective function at any feasible solution that can be obtained by
+applying construction moves to the given, presumably partial,
+solution. If it is known that no feasible solution can be obtained by
+further construction, this function should produce no value.</p>
+<p>Evaluation of the lower bound must occur before this function returns,
+but the time at which the evaluation actually occurs is otherwise
+unspecified.</p>
+<p>It is assumed that the objective function is to be minimised.</p>
+<h2 id="use-cases-8"><a class="header" href="#use-cases-8">Use cases</a></h2>
+<p>Lower bounds are typically used in constructive search to guide
+solution construction or to stop it early (also known as <em>pruning</em>) by
+signalling that a better feasible solution than the best one known so
+far can no longer be constructed from a given partial solution.</p>
+<p>Lower-bound functions are strongly related to the notion of
+<em>admissible heuristics</em> in computer science.</p>
+<h2 id="see-also-8"><a class="header" href="#see-also-8">See also</a></h2>
+<p><a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/../types/Move.html">Move</a>,
+<a href="operations/./objective_value.html">objective_value</a>,
+<a href="operations/./empty_solution.html">empty_solution</a>,
+<a href="operations/./apply_move.html">apply_move</a>,
+<a href="operations/./lower_bound_increment.html">lower_bound_increment</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="objective-value"><a class="header" href="#objective-value">Objective value</a></h1>
+<h2 id="signature-8"><a class="header" href="#signature-8">Signature</a></h2>
+<pre><code class="language-text">objective_value(Solution) : double[0..1]
+</code></pre>
+<h2 id="description-9"><a class="header" href="#description-9">Description</a></h2>
+<p>This function produces the value of the objective function at the
+given solution if the solution is feasible, and no value otherwise. A
+solution is feasible if it satisfies all constraints of the
+problem. The objective value of an infeasible solution is undefined.</p>
+<p>In general, both complete and partial solutions may be feasible or
+infeasible.  Feasible partial solutions are common, for example, in
+models of the knapsack problem, as even an empty knapsack is a
+feasible solution. Infeasible complete solutions may arise, for
+example, when constructing solutions for the travelling salesman
+problem on incomplete graphs.</p>
+<p>Evaluation of the objective function must occur before this function
+returns, but the time at which the evaluation actually occurs is
+otherwise unspecified.</p>
+<p>It is assumed that the objective function is to be minimised.</p>
+<h2 id="use-cases-9"><a class="header" href="#use-cases-9">Use cases</a></h2>
+<p>Objective-value evaluation is required by all optimisation algorithms.</p>
+<h2 id="see-also-9"><a class="header" href="#see-also-9">See also</a></h2>
+<p><a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/./lower_bound.html">lower_bound</a>,
+<a href="operations/./objective_value_increment.html">objective_value_increment</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="construction-neighbourhood"><a class="header" href="#construction-neighbourhood">Construction neighbourhood</a></h1>
+<h2 id="signature-9"><a class="header" href="#signature-9">Signature</a></h2>
+<pre><code class="language-text">construction_neighbourhood(Problem) : Neighbourhood
+</code></pre>
+<h2 id="description-10"><a class="header" href="#description-10">Description</a></h2>
+<p>This function returns the construction neighbourhood structure of the
+given problem instance. In a constructive-search model of a
+combinatorial optimisation problem, the construction neighbourhood
+structure, or construction rule, specifies how partial solutions,
+including empty solutions, may be made progressively more complete
+until a complete solution is reached.</p>
+<h2 id="use-cases-10"><a class="header" href="#use-cases-10">Use cases</a></h2>
+<p>A construction neighbourhood structure is required by all constructive
+search approaches, including but not limited to greedy construction
+and ruin and recreate.</p>
+<h2 id="see-also-10"><a class="header" href="#see-also-10">See also</a></h2>
+<p><a href="operations/../types/Problem.html">Problem</a>,
+<a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/./destruction_neighbourhood.html">destruction_neighbourhood</a>,
+<a href="operations/./empty_solution.html">empty_solution</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="destruction-neighbourhood"><a class="header" href="#destruction-neighbourhood">Destruction neighbourhood</a></h1>
+<h2 id="signature-10"><a class="header" href="#signature-10">Signature</a></h2>
+<pre><code class="language-text">destruction_neighbourhood(Problem) : Neighbourhood
+</code></pre>
+<h2 id="description-11"><a class="header" href="#description-11">Description</a></h2>
+<p>This function returns the destruction neighbourhood structure of the
+given problem instance. In a constructive-search model of a
+combinatorial optimisation problem, the destruction neighbourhood
+structure, or destruction rule, dictates how complete or partial
+solutions may be made progressively less complete until an empty
+solution is reached.</p>
+<h2 id="use-cases-11"><a class="header" href="#use-cases-11">Use cases</a></h2>
+<p>A destruction neighbourhood structure is required by some constructive
+search approaches, such as ruin and recreate.</p>
+<h2 id="see-also-11"><a class="header" href="#see-also-11">See also</a></h2>
+<p><a href="operations/../types/Problem.html">Problem</a>,
+<a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/./construction_neighbourhood.html">construction_neighbourhood</a>,
+<a href="operations/./empty_solution.html">empty_solution</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="local-neighbourhood"><a class="header" href="#local-neighbourhood">Local neighbourhood</a></h1>
+<h2 id="signature-11"><a class="header" href="#signature-11">Signature</a></h2>
+<pre><code class="language-text">local_neighbourhood(Problem) : Neighbourhood
+</code></pre>
+<h2 id="description-12"><a class="header" href="#description-12">Description</a></h2>
+<p>This function returns the local neighbourhood structure of the given
+problem instance. In a local-search model of a combinatorial
+optimisation problem, the local neighbourhood structure specifies
+which feasible solutions, or neighbours, can be obtained from each
+feasible solution by means of a "small" modification.  The notion of
+local optimum is intrinsically tied to the definition of such a
+neighbourhood.</p>
+<h2 id="use-cases-12"><a class="header" href="#use-cases-12">Use cases</a></h2>
+<p>A local neighbourhood structure is required by all local search
+approaches, including but not limited to best-improvement,
+first-improvement and iterated local search, tabu search and
+evolutionary algorithms.</p>
+<h2 id="see-also-12"><a class="header" href="#see-also-12">See also</a></h2>
+<p><a href="operations/../types/Problem.html">Problem</a>,
+<a href="operations/../types/Neighbourhood.html">Neighbourhood</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="moves"><a class="header" href="#moves">Moves</a></h1>
+<h2 id="signature-12"><a class="header" href="#signature-12">Signature</a></h2>
+<pre><code class="language-text">moves(Neighbourhood, Solution) : Move[0..*]
+</code></pre>
+<h2 id="description-13"><a class="header" href="#description-13">Description</a></h2>
+<p>This function provides for the complete enumeration of the neighbours
+of a given solution by producing a sequence of moves in unspecified
+order.</p>
+<h2 id="pre-requisites"><a class="header" href="#pre-requisites">Pre-requisites</a></h2>
+<p>Both the given neighbourhood structure and the given solution must
+pertain to the same problem instance.</p>
+<h2 id="use-cases-13"><a class="header" href="#use-cases-13">Use cases</a></h2>
+<p>Move enumeration is appropriate when the optimisation algorithm
+performs a full exploration of the set of neighbours of a solution
+before deciding how to proceed. In this case, enumeration order is
+irrelevant to the algorithm.</p>
+<p>Greedy construction with random tie breaking and best-improvement
+local search are examples of algorithms where the whole set of
+neighbours is explored before the next move is accepted or the
+algorithm stops.</p>
+<h2 id="see-also-13"><a class="header" href="#see-also-13">See also</a></h2>
+<p><a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/../types/Move.html">Move</a>,
+<a href="operations/./random_moves_without_replacement.html">random_moves_without_replacement</a>,
+<a href="operations/./apply_move.html">apply_move</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="random-move"><a class="header" href="#random-move">Random move</a></h1>
+<h2 id="signature-13"><a class="header" href="#signature-13">Signature</a></h2>
+<pre><code class="language-text">random_move(Neighbourhood, Solution) : Move[0..1]
+</code></pre>
+<h2 id="description-14"><a class="header" href="#description-14">Description</a></h2>
+<p>This function provides for the random sampling of the neighbours of a
+given solution by producing a move drawn uniformly at random from the
+set of possible moves for that solution under the given neighbourhood
+structure or none if no such moves exist.</p>
+<h2 id="pre-requisites-1"><a class="header" href="#pre-requisites-1">Pre-requisites</a></h2>
+<p>Both the given neighbourhood structure and the given solution must
+pertain to the same problem instance.</p>
+<h2 id="use-cases-14"><a class="header" href="#use-cases-14">Use cases</a></h2>
+<p>Sampling moves uniformly at random is appropriate when only a partial
+exploration of the set of neighbours of a solution is performed by the
+optimisation algorithm. In this case, complete exploration of that set
+is neither expected nor detected.</p>
+<p>Randomised local search (RLS) and most evolutionary algorithms are
+examples of algorithms where a single move for each solution is
+typically generated at random and immediately applied.</p>
+<h2 id="see-also-14"><a class="header" href="#see-also-14">See also</a></h2>
+<p><a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/../types/Move.html">Move</a>,
+<a href="operations/./moves.html">moves</a>,
+<a href="operations/./apply_move.html">apply_move</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="random-moves-without-replacement"><a class="header" href="#random-moves-without-replacement">Random moves without replacement</a></h1>
+<h2 id="signature-14"><a class="header" href="#signature-14">Signature</a></h2>
+<pre><code class="language-text">random_moves_without_replacement(Neighbourhood, Solution) : Move[0..*]
+</code></pre>
+<h2 id="description-15"><a class="header" href="#description-15">Description</a></h2>
+<p>This function provides for the complete enumeration of the neighbours
+of a given solution by producing a sequence of moves in random order.</p>
+<h2 id="pre-requisites-2"><a class="header" href="#pre-requisites-2">Pre-requisites</a></h2>
+<p>Both the given neighbourhood structure and the given solution must
+pertain to the same problem instance.</p>
+<h2 id="use-cases-15"><a class="header" href="#use-cases-15">Use cases</a></h2>
+<p>Sampling at random without replacement is appropriate when the
+optimisation algorithm explores the set of neighbours of a solution
+sequentially and may decide to stop the exploration and proceed some
+other way after seeing each move. In this case, the order in which
+moves are presented may influence how long such a partial exploration
+takes. Sampling at random without replacement avoids the bias inherent
+to deterministic enumeration, while still allowing completion of the
+exploration to be detected.</p>
+<p>First-improvement local search is an example of an algorithm where
+moves are typically accepted before the whole set of neighbours is
+explored, but complete exploration is still performed in case no
+improving move is found.</p>
+<h2 id="see-also-15"><a class="header" href="#see-also-15">See also</a></h2>
+<p><a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/../types/Move.html">Move</a>,
+<a href="operations/./moves.html">moves</a>,
+<a href="operations/./apply_move.html">apply_move</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="apply-move"><a class="header" href="#apply-move">Apply move</a></h1>
+<h2 id="signature-15"><a class="header" href="#signature-15">Signature</a></h2>
+<pre><code class="language-text">apply_move(Move, Solution) : Solution
+</code></pre>
+<h2 id="description-16"><a class="header" href="#description-16">Description</a></h2>
+<p>This function applies a move to a solution in order to produce the
+corresponding neighbour.</p>
+<h2 id="pre-requisites-3"><a class="header" href="#pre-requisites-3">Pre-requisites</a></h2>
+<p>The given move must have been generated under some neighbourhood for
+the given solution or a pristine copy of it, or be the inverse of the
+move that produced the given solution.</p>
+<h2 id="use-cases-16"><a class="header" href="#use-cases-16">Use cases</a></h2>
+<p>Applying moves to solutions is required by all optimisation algorithms
+in order to visit new solutions.</p>
+<h2 id="see-also-16"><a class="header" href="#see-also-16">See also</a></h2>
+<p><a href="operations/../types/Move.html">Move</a>,
+<a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/./invert_move.html">invert_move</a>,
+<a href="operations/./moves.html">moves</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="invert-move"><a class="header" href="#invert-move">Invert move</a></h1>
+<h2 id="signature-16"><a class="header" href="#signature-16">Signature</a></h2>
+<pre><code class="language-text">invert_move(Move) : Move
+</code></pre>
+<h2 id="description-17"><a class="header" href="#description-17">Description</a></h2>
+<p>This function produces the inverse of a given move. If a given move
+can be applied to a solution A to obtain solution B, then applying its
+inverse to solution B must produce solution A. As a consequence, the
+inverse of a construction move must be a valid destruction move and
+vice-versa.</p>
+<h2 id="use-cases-17"><a class="header" href="#use-cases-17">Use cases</a></h2>
+<p>Obtaining the inverse of moves allows backtracking to be performed
+from a given solution by applying the inverse of each move previously
+applied to the solution in reverse order. This assumes that storing,
+inverting and applying moves is generally more efficient than copying
+and storing solutions.</p>
+<h2 id="see-also-17"><a class="header" href="#see-also-17">See also</a></h2>
+<p><a href="operations/../types/Move.html">Move</a>,
+<a href="operations/./apply_move.html">apply_move</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="lower-bound-increment"><a class="header" href="#lower-bound-increment">Lower-bound increment</a></h1>
+<h2 id="signature-17"><a class="header" href="#signature-17">Signature</a></h2>
+<pre><code class="language-text">lower_bound_increment(Move, Solution) : double[0..1]
+</code></pre>
+<h2 id="description-18"><a class="header" href="#description-18">Description</a></h2>
+<p>This function produces the difference between the lower bound of the
+solution that would be obtained by applying the given move to the
+given solution and the lower bound of the given solution. If lower
+bound of either solution is undefined, the lower-bound increment is
+also undefined, and this function produces no value.</p>
+<p>Since it is assumed that the objective function is to be minimised,
+the lower-bound increment resulting from a construction move cannot be
+negative, and that resulting from a destruction move cannot be
+positive.</p>
+<h2 id="pre-requisites-4"><a class="header" href="#pre-requisites-4">Pre-requisites</a></h2>
+<p>The given move must have been generated under some neighbourhood
+structure for the given solution or a pristine copy of it, or be the
+inverse of the move that produced the given solution.</p>
+<h2 id="use-cases-18"><a class="header" href="#use-cases-18">Use cases</a></h2>
+<p>The lower-bound increment provides a heuristic measure of move quality
+in constructive search. In algorithms such as GRASP, construction
+moves typically consist of adding components to the current solution,
+and move quality is often seen as an attribute of the components
+themselves. The lower-bound increment provides a more general, drop-in
+replacement for such move-quality heuristics in constructive search.</p>
+<p>Determining the lower-bound increment can often be performed faster
+than applying a move to a solution and computing the difference
+between the two lower-bound values. This avoids spending time applying
+moves to solutions that will be discarded immediately, and motivates
+further investment in efficient lower-bound increment evaluation, even
+if at the expense of some additional processing when moves are applied
+to solutions.</p>
+<h2 id="see-also-18"><a class="header" href="#see-also-18">See also</a></h2>
+<p><a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/../types/Move.html">Move</a>,
+<a href="operations/./lower_bound.html">lower_bound</a>,
+<a href="operations/./objective_value.html">objective_value</a>,
+<a href="operations/./objective_value_increment.html">objective_value_increment</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="objective-value-increment"><a class="header" href="#objective-value-increment">Objective-value increment</a></h1>
+<h2 id="signature-18"><a class="header" href="#signature-18">Signature</a></h2>
+<pre><code class="language-text">objective_value_increment(Move, Solution) : double[0..1]
+</code></pre>
+<h2 id="description-19"><a class="header" href="#description-19">Description</a></h2>
+<p>This function produces the difference between the value of the
+objective function at the solution that would be obtained by applying
+the given move to the given solution and the corresponding value at
+the given solution. If either solution is infeasible, the
+objective-value increment is undefined, and this function produces no
+value.</p>
+<p>It is assumed that the objective function is to be minimised.</p>
+<h2 id="pre-requisites-5"><a class="header" href="#pre-requisites-5">Pre-requisites</a></h2>
+<p>The given move must have been generated under some neighbourhood
+structure for the given solution or a pristine copy of it, or be the
+inverse of the move that produced the given solution.</p>
+<h2 id="use-cases-19"><a class="header" href="#use-cases-19">Use cases</a></h2>
+<p>The objective-value increment provides a measure of move quality,
+especially in local-search algorithms, but also in constructive search
+algorithms.</p>
+<p>Determining the objective-value increment can often be performed
+faster than applying a move to a solution and computing the difference
+between the two objective values. This avoids spending time applying
+moves to solutions that will be discarded immediately, and motivates
+further investment in efficient objective-value increment evaluation,
+even if at the expense of some additional processing when moves are
+applied to solutions.</p>
+<h2 id="see-also-19"><a class="header" href="#see-also-19">See also</a></h2>
+<p><a href="operations/../types/Solution.html">Solution</a>,
+<a href="operations/../types/Neighbourhood.html">Neighbourhood</a>,
+<a href="operations/../types/Move.html">Move</a>,
+<a href="operations/./objective_value.html">objective_value</a>,
+<a href="operations/./apply_move.html">apply_move</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="glossary"><a class="header" href="#glossary">Glossary</a></h1>
+<h2 id="complete-solution"><a class="header" href="#complete-solution">complete solution</a></h2>
+<p>A solution for which all (decision) components are decided on.</p>
+<h2 id="construction-neighbourhood-1"><a class="header" href="#construction-neighbourhood-1">construction neighbourhood</a></h2>
+<p>A neighbourhood structure for partial solutions where every neighbour
+solution is more complete, in the sense that more components are
+decided on, and may either be a partial or a complete solution. This
+means that, the consecutive application of (constructive) moves to a
+given partial solution will eventually lead to a complete solution.</p>
+<h2 id="decision-space"><a class="header" href="#decision-space">decision space</a></h2>
+<p>The domain of the optimisation problem, which contains the set of all
+partial and all complete (candidate) solutions for the given problem
+definition.</p>
+<h2 id="destruction-neighbourhood-1"><a class="header" href="#destruction-neighbourhood-1">destruction neighbourhood</a></h2>
+<p>A neighbourhood structure for partial and for complete solutions where
+every neighbour solution is less complete, in the sense that less
+components are decided on, and is a partial solution. This means that,
+the consecutive application of (destructive) moves to a given solution
+will eventually lead to an empty solution.</p>
+<h2 id="empty-solution-1"><a class="header" href="#empty-solution-1">empty solution</a></h2>
+<p>A solution for which no components are decided on.</p>
+<h2 id="feasible-set"><a class="header" href="#feasible-set">feasible set</a></h2>
+<p>The subset of the decision space consisting of all feasible solutions.</p>
+<h2 id="feasible-solution"><a class="header" href="#feasible-solution">feasible solution</a></h2>
+<p>A solution for which the objective function is defined.</p>
+<h2 id="infeasible-solution"><a class="header" href="#infeasible-solution">infeasible solution</a></h2>
+<p>A solution for which the objective function is undefined.</p>
+<h2 id="local-neighbourhood-1"><a class="header" href="#local-neighbourhood-1">local neighbourhood</a></h2>
+<p>A neighbourhood structure for solutions that are complete and
+feasible, and where each neighbour solution is also complete and
+feasible.</p>
+<h2 id="move-1"><a class="header" href="#move-1">move</a></h2>
+<p>A description of, or a data structure encoding, a set of changes to be
+applied to a solution to obtain a neighbour solution. A move is
+assumed to always be associated to some neighbourhood structure.</p>
+<h2 id="neighbour"><a class="header" href="#neighbour">neighbour</a></h2>
+<p>A solution that, under a given neighbourhood structure, can be
+obtained by applying a set of changes (a <em>move</em>) to a given solution,
+in which case the former solution is called a neighbour of the latter.</p>
+<h2 id="neighbourhood-size"><a class="header" href="#neighbourhood-size">neighbourhood size</a></h2>
+<p>The total number of neighbours of a given solution under a given
+neighbourhood structure.</p>
+<h2 id="neighbourhood-structure"><a class="header" href="#neighbourhood-structure">neighbourhood structure</a></h2>
+<p>A description of the neighbourhood of any given solution, which relies
+on a set of rules that define which solutions are neighbours of the
+given solution, and the <em>moves</em> that lead to them.</p>
+<h2 id="objective-function"><a class="header" href="#objective-function">objective function</a></h2>
+<p>A function mapping a solution in the decision space to an element of
+the objective space (in this case, a real value). Minimisation is
+assumed, that is, a solution is considered better than any other
+solution with a greater objective value.</p>
+<h2 id="objective-space"><a class="header" href="#objective-space">objective space</a></h2>
+<p>The codomain of the objective function. In this specification, the
+objective space is the set of real values, \(\mathbb{R}\).</p>
+<h2 id="partial-solution"><a class="header" href="#partial-solution">partial solution</a></h2>
+<p>A solution for which some of the components are not decided on.</p>
+<h2 id="solution"><a class="header" href="#solution">solution</a></h2>
+<p>An element of the decision space. A solution is described by a set of
+(decision) components, which may or may not be decided on.</p>
+<!-- TODO: To be added (in a future version?) -->
+<!-- ### invalid solution -->
+<!-- ### valid solution -->
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
+        });
+        </script>
+
+    </div>
+    </body>
+</html>

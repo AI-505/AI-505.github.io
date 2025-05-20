@@ -45,6 +45,7 @@ Resources:
 ### May 8: Exercises
 
 - [Sheet 10][60]. [Solutions][600]
+- [ROAR-NET API Specification]({{ "/assets/book/index.html" | absolute_url }})
 - [ROAR-NET API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
 - [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
 - [ROAR-NET API Specification Implementation for TSP]({{ "/assets/spec.tsp.tgz" | absolute_url }})

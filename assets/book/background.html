@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Background - ROAR-NET API Specification</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">ROAR-NET API Specification</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/roar-net/roar-net-api-specification/edit/main/src/background.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <!--
+SPDX-FileCopyrightText: © 2025 Authors of the ROAR-NET API Specification <https://github.com/roar-net/roar-net-api-spec/blob/main/AUTHORS>
+
+SPDX-License-Identifier: CC-BY-4.0
+-->
+<h1 id="background"><a class="header" href="#background">Background</a></h1>
+<h2 id="optimisation-problem"><a class="header" href="#optimisation-problem">Optimisation problem</a></h2>
+<p>Formally, we consider a <strong>(minimisation) problem</strong> in the form</p>
+<p>\[\min\{f(x) \mid x \in F\}\]</p>
+<p>The set \(F\) is the set of <strong>feasible solutions</strong>, which is a
+subset of the <strong>decision space</strong>, \(S\). The mapping \(f: S \to
+\mathbb{R}\) is an <strong>objective function</strong> that associates to each
+solution \(s\in S\) a real value in the <strong>objective space</strong>,
+\(\mathbb{R}\).</p>
+<!--The image of \\(F\\) under \\(f\\) is the image of the feasible
+solutions in the objective space. -->
+<p>In this case, the objective space is totally ordered, and the minimum
+is given by all solutions \(x^*\in F\) such that \(f(x^*)\leq
+f(x) \) holds for all \(x\in F\).  Such a solution \(x^*\) is
+called an <strong>optimal solution</strong>.  <strong>Maximisation problems</strong>, in which
+we are searching for the feasible solutions whose value is the maximum
+in the objective space, can be reduced to minimisation problems as
+\(\max\{f(s) \mid s \in F\}=-\min\{-f(s) \mid s \in F\}\).</p>
+<p>In this specification, optimisation problems are specified by means of
+a <code>Problem</code> type.</p>
+<h2 id="search-space"><a class="header" href="#search-space">Search space</a></h2>
+<p>The representation and the exploration of the <strong>search space</strong> of a
+problem implementing the API rely on how solutions are characterised,
+how they are generated, and on how they are evaluated.</p>
+<h3 id="candidate-solutions"><a class="header" href="#candidate-solutions">Candidate solutions</a></h3>
+<p>We assume that the details regarding the components of the solution
+are not exposed, nor the details of how to create or modify a
+solution. Instead, the API provides abstract operations that allow to
+generate and modify solutions in a black-box manner, and that is
+common to all algorithmic approaches covered.</p>
+<p>The API relies on the observation that:</p>
+<ul>
+<li>constructive search algorithms work by starting from an initial
+<em>state</em> and sequentially applying <em>actions</em> or <em>changes</em> to it to
+attain new states until a goal is reached.</li>
+<li>local search algorithms work by maintaining a set of states, and
+iterating through states that can be reached by applying (small)
+<em>changes</em> to the stored states.</li>
+</ul>
+<p>In both cases, such states represent <strong>candidate solutions</strong>. The
+changes that allow to modify a solution \(s\) to obtain another
+solution \(s'\) is called a <strong>move</strong>, in which case \(s'\) is
+called a <strong>neighbour</strong> of \(s\).</p>
+<p>A <strong>candidate solution</strong> is an element of the <em>decision space</em>,
+\(s\in S\), but not necessarily an element of the set of feasible
+solutions. Such solution can violate constraints or satisfy other
+constraints that are known to be necessary for optimal solutions. A
+candidate solution in ROAs can be:</p>
+<ul>
+<li>a <strong>partial solution</strong>, which may not contain yet all components of
+a feasible solution.</li>
+<li>a <strong>complete solution</strong>, which contains all components but may
+violate problem constraints and may not be optimal.</li>
+</ul>
+<!-- TODO: introduce here the notions of feasible/infeasible and
+valid/invalid solutions? -->
+<p>In this specification, solutions are specified by means of a
+<code>Solution</code> type.</p>
+<h3 id="neighbourhoods"><a class="header" href="#neighbourhoods">Neighbourhoods</a></h3>
+<p>We assume that the exploration of the search space relies on the
+concept of <em>neighbourhood structure</em>, which has a central role in
+ROAs. A <strong>neighbourhood structure</strong> is given by the definition of a
+neighbouring relation between solutions. That is, \(N(s,s')\) is a
+Boolean, whose value depends on whether \(s'\) can be obtained from
+\(s\) by means of the application of a small change operator, called
+<strong>move</strong>. The set of solutions \(s'\) that can be reached in this
+way from \(s\) forms the <strong>neighbourhood</strong> set of \(s\),
+\(N(s)\subseteq S\). <strong>Neighbourhood structures can be defined for
+both complete and partial solutions</strong>.</p>
+<p>In this specification, the neighbourhood structure is specified by
+means of a <code>Move</code> type and a <code>Neighbourhood</code> type, this latter
+implementing the generation of moves.</p>
+<h3 id="solution-evaluation"><a class="header" href="#solution-evaluation">Solution evaluation</a></h3>
+<p>The specification provides operations to query the feasibility and the
+objective value of candidate solutions.  We do not assume to have
+available a mathematical description of \(F\) nor \(f\), that is,
+we assume a <strong>black box</strong> scenario. Even if a mathematical description
+of the decision space is known, we assume that the feasibility and the
+objective value of <strong>candidate solutions are assessed in an oracle
+manner</strong>, that is, without exposing how these assessments have been
+computed; e.g., the feasibility and the objective value of candidate
+solutions could be assessed by executing a computationally costly
+simulation, but this information is not shared.  However, when
+present, mathematical descriptions can be exploited to improve the
+implementation of the specification.</p>
+<p>In ROA, the <strong>objective function</strong> is frequently replaced by an
+<strong>evaluation function</strong> \(g\), which is also a mapping of the
+decision space \(S\) to a set of real numbers \(\mathbb{R}\). The
+evaluation function can account for the objective function but also
+for penalties due to the violation of the problem constraints.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="types/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="types/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
