@@ -11,7 +11,7 @@ description: A feed containing all of the class announcements.
 # Optimization
 
 <br>
-[All slides in one file]({{ "/assets/ai505-main.pdf" | absolute_url }})
+
 
 
 {% assign units = site.modules %}
@@ -20,6 +20,7 @@ description: A feed containing all of the class announcements.
 {% endfor %}
 
 
+[**All slides in one file**]({{ "/assets/ai505-main.pdf" | absolute_url }})
 
 # Announcements
 
