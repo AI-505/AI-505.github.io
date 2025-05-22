@@ -20,6 +20,8 @@ description: A feed containing all of the class announcements.
 {% endfor %}
 
 
+[**Topics covered**]({{ "/assignments/map/" | absolute_url  }})
+
 [**All slides in one file**]({{ "/assets/ai505-main.pdf" | absolute_url }})
 
 # Announcements
@@ -30,5 +32,3 @@ description: A feed containing all of the class announcements.
 {% for announcement in announcements %}
 {{ announcement }}
 {% endfor %}
-
-
