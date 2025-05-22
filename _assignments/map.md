@@ -80,24 +80,24 @@ Direct Methods:
   - Nelder-Mead Simplex Method
   - (Divided Rectangles)
 
-### Beyond Local Optima:
+### Beyond Local Optima
 
-  -	Noisy Descent, 
-  - Stochastic Gradient Descent, 
-  - Mesh Adaptive Direct Search, 
-  - Simulated Annealing, 
-  - Cross-Entropy Method, 
-  - Natural Evolution Strategies, 
-  - Covariance Matrix Adaptation, 
-  - Genetic Algorithms, 
-  - Differential Evolution, 
+  -	Noisy Descent
+  - Stochastic Gradient Descent
+  - Mesh Adaptive Direct Search
+  - Simulated Annealing
+  - Cross-Entropy Method
+  - Natural Evolution Strategies
+  - Covariance Matrix Adaptation
+  - Genetic Algorithms
+  - Differential Evolution
   - Particle Swarm Optimization
 
-### Optimization for ML:
+### Optimization for ML
 
-ML tasks 
+ML tasks: 
 
-  - empirical risk minimization; 
+  - empirical risk minimization
   
 Convergence analysis of stochastic gradient
 
@@ -111,16 +111,16 @@ Beyond stochastic gradient:
 
 ### Constrained Optimization
 
-  -	Duality, 
-  - Penalty Methods, 
-  - Interior Point Methods, 
-  - Augmented Lagrange Method, 
-  - Linear Programming, 
-  - Simplex Method, 
-  - Modeling in LP, 
+  -	Duality
+  - Penalty Methods
+  - Interior Point Methods
+  - Augmented Lagrange Method
+  - Linear Programming
+  - Simplex Method
+  - Modeling in LP
   - Dual certificates
 
-### Sampling Methods:
+### Sampling Methods
 
   - Full Factorial 
   - Random Sampling
@@ -130,7 +130,7 @@ Beyond stochastic gradient:
   - Space-Filling Subsets
   - Quasi-Random Sequences
 
-### Discrete Optimization:
+### Discrete Optimization
 
   -	Integer Linear Programming
     - Branch and Bound
