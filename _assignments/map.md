@@ -23,6 +23,7 @@ The level of detail in the course is not uniform. Some topics are covered in dep
   - Lipschitz Continuity
   - Strongly Convex
   - Smoothness
+  - Positive Definitness
 
 ### Derivatives
 
