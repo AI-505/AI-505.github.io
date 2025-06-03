@@ -39,7 +39,7 @@ Resources:
   Constraints](https://docs.minizinc.dev/en/stable/lib-globals.html)
 - [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
   Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
-  Heidelberg, 2007
+  Heidelberg, 2007. Chapters 1, 2, 3, 4, 7 go more in depth than we did in class.
 
 
 ### May 8: Exercises
@@ -86,7 +86,7 @@ Resources:
   Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
   Heidelberg, 2007
 - [GP] Michel Gendreau and Jean-Yves Potvin (eds) [Handbook of
-  Metaheuristics](https://doi-org.proxy1-bib.sdu.dk/10.1007/978-3-319-91086-4).
-  2019. International Series in Operations Research & Management Science book
-  series (ISOR, volume 272)
-
+  Metaheuristics](https://doi-org.proxy1-bib.sdu.dk/10.1007/978-3-319-91086-4). 2019. International Series in Operations Research & Management Science book
+  series (ISOR, volume 272). This reference is only for those interested in going in depth on each
+  metaheuristic. There is one chapter per metaheuristic in the book. For the
+  exam, the slides should be sufficient.
