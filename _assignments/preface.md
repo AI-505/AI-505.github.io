@@ -53,7 +53,7 @@ categories: assignments
   color blue.
 
 - You are recommended to read the Guide on the use of Generative AI at SDU
-  [https://mitsdu.dk/AIatSDU](https://mitsdu.dk/en/mit_studie/kandidat/matematik-oekonomi_kandidat/vejledning-og-support/aipaasdu).
+  [https://mitsdu.dk/AIatSDU](https://mitsdu.dk/AIatSDU).
   In this assignment, you can use chatbots to help you resolving coding issues
   but you are not allowed to use them to directly solve the tasks or to write
   the text of the report. As setting clear boundaries is not an easy task, if
