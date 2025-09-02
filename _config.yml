@@ -33,7 +33,7 @@ url: "https://ai-505.github.io" # the base hostname & protocol for your site, e.
 baseurl: "" # the subpath of your site, e.g. /blog
 ## For local hosting uncomment the following two lines
 # url: "https://imada.sdu.dk"
-# baseurl: "/u/march/Teaching/AY2024-2025/DM587"
+# baseurl: "/u/march/Teaching/AY2024-2025/AI505"
 # twitter_username: jekyllrb
 
 # repository: "https://github.com/AI-505/AI-505.github.io/"
