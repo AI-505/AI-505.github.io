@@ -17,7 +17,10 @@ Contents:
 
 Resources:
 
+<!--
 - [Slides]({{ "/assets/ai505-lec08.pdf" | absolute_url }})
+-->
+
 - Chapter 8 and Appendix of [KW]
 
 ### March 10: Lecture 9 --- Population Methods
@@ -35,12 +38,18 @@ Contents:
 
 Resources:
 
+<!--
 - [Slides]({{ "/assets/ai505-lec09.pdf" | absolute_url }})
+-->
+
 - Chapter 9 and Appendix of [KW]
 
 ### March 13: Exercise Session 4
 
+<!--
 - [Sheet 04][54]. [Solutions][544].
+-->
+
 
 [54]: {{ "/assets/sheets/ai505_sheet04.pdf" | absolute_url }}
 [544]: {{ "/assets/sheets/ai505_sheet04_sol.pdf" | absolute_url }}

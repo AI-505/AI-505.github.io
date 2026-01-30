@@ -35,12 +35,12 @@ Contents:
 
 Resources:
 
-- [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }})
+<!-- - [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }}) -->
 - Chapter 5 of [KW]
 
 ### Feb 27: Exercise Session 2
 
-- [Sheet 02][52].  [Solution][522].
+<!-- - [Sheet 02][52].  [Solution][522]. -->
 
 [52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
 [522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
@@ -55,7 +55,7 @@ Second-Order Methods:
 
 Resources:
 
-- [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }})
+<!-- - [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }}) -->
 - Chapter 6 of [KW]
 
 
@@ -70,14 +70,14 @@ Direct Methods:
 
 Resources:
 
-- [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }})
+<!-- - [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }}) -->
 - Chapter 7 of [KW]
 
 
 
 ### March 6: Exercise Session 3
 
-- [Sheet 03][53]. [Solution][533]
+<!-- - [Sheet 03][53]. [Solution][533] -->
 
 [53]: {{ "/assets/sheets/ai505_sheet03.pdf" | absolute_url }}
 [533]: {{ "/assets/sheets/ai505_sheet03_sol.pdf" | absolute_url }}

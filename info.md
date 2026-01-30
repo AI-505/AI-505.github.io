@@ -10,8 +10,9 @@ last_modified_date: 2024-01-29T16:22:00
 ## General information
 
 
-- [Official course description AI505](https://odinlister.sdu.dk/fagbesk/internkode/AI505/)
-- [Official course description AI801](https://odinlister.sdu.dk/fagbesk/internkode/AI801/)
+- Official course description of
+  [AI505](https://odinlister.sdu.dk/fagbesk/internkode/AI505/) and of
+  [AI801](https://odinlister.sdu.dk/fagbesk/internkode/AI801/)
 
 - [ItsLearning](https://sdu.itslearning.com/main.aspx?CourseID=47194)
 

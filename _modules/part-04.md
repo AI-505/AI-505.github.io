@@ -10,7 +10,7 @@ title: "Unit 4: Optimization for Machine Learning"
 
 Resources:
 
-- [Slides]({{ "/assets/ai505-lec10.pdf" | absolute_url }})
+<!-- - [Slides]({{ "/assets/ai505-lec10.pdf" | absolute_url }}) -->
 - Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018)
 
 
@@ -22,7 +22,9 @@ Resources:
 
 Resources:
 
+<!-- 
 - [Slides]({{ "/assets/ai505-lec11.pdf" | absolute_url }})
+-->
 - Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018)
 - [An overview of gradient descent optimization algorithms](https://www.ruder.io/optimizing-gradient-descent/)
 
@@ -35,14 +37,17 @@ Dynamic Sample Size Methods
 
 Resources:
 
+<!--
 - [Slides]({{ "/assets/ai505-lec12.pdf" | absolute_url }})
+-->
 - Léon Bottou, Frank E. Curtis, Jorge Nocedal. [Optimization Methods for
   Large-Scale Machine Learning](https://arxiv.org/abs/1606.04838) (2018) [Sec. 5]
 
 
 ### March 27: Exercise Session 5
-
+<!--
 - [Sheet 05][55]. [Solutions][555].
+-->
 
 [55]: {{ "/assets/sheets/ai505_sheet05.pdf" | absolute_url }}
 [555]: {{ "/assets/sheets/ai505_sheet05_sol.pdf" | absolute_url }}

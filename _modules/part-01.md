@@ -24,10 +24,13 @@ Contents:
 
 Resources:
 
+- Slides
+<!-- 
 - [Slides]({{ "/assets/ai505-lec01.pdf" | absolute_url }})
+-->
 - Chapter 1 of [KW]
 
-### Feb 6: Lecture 2 --- Derivatives and Gradients
+### Feb 5: Lecture 2 --- Derivatives and Gradients
 
 Contents:
 
@@ -38,7 +41,7 @@ Contents:
 
 Resources:
 
-- [Slides]({{ "/assets/ai505-lec02.pdf" | absolute_url }})
+- Slides <!-- [Slides]({{ "/assets/ai505-lec02.pdf" | absolute_url }}) -->
 - Chapter 2 and Appendix of [KW]
 
 
@@ -56,14 +59,18 @@ Contents:
 
 Resources
 
+- Slides
+<!--
 - [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
+-->
 
-
-### Feb 13: Exercises 1
+### Feb 11: Exercises 1
 <!-- **Exercises**{: .label .label-purple }  -->
 
-- [Sheet 01][51]. [Solutions][511]
-
+- Sheet 01
+<!--
+- [Sheet 01][51]. [Solutions][511] 
+-->
 
 [51]: {{ "/assets/sheets/ai505_sheet01.pdf" | absolute_url }}
 [511]: {{ "/assets/sheets/ai505_sheet01_sol.pdf" | absolute_url }}
