@@ -19,10 +19,13 @@ description: A feed containing all of the class announcements.
 [{{ unit.title | escape }}]({{unit.url | relative_url }})
 {% endfor %}
 
-
+<!--
 [**Topics covered**]({{ "/assignments/map/" | absolute_url  }})
+-->
 
+<!--
 [**All slides in one file**]({{ "/assets/ai505-main.pdf" | absolute_url }})
+-->
 
 # Announcements
 
