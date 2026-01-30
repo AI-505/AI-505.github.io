@@ -10,16 +10,11 @@ nav_order: 5
 
 Portfolio consisting of:
 
-- mandatory assignments in groups of 2:
-
-    1. [assignment][101]
-    2. [assignment][102]
-    3. [assignment][103]
-    4. [assignment][104]
+- two mandatory assignments in groups of 2:
 
     Time line to be announced.
 
-- oral exam on June 11-13, 2025
+- oral exam on June 29-30, 2026
 
 ### Reexam
 
@@ -27,7 +22,7 @@ Portfolio consisting of:
 
 - mandatory assignments, time line to be announced
 
-- oral exam on August 22, 2025
+- oral exam on August 21, 2026
 
 [101]: {{ "/assignments/first/" | absolute_url  }}
 [102]: {{ "/assignments/second/" | absolute_url  }}

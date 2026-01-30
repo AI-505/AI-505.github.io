@@ -16,8 +16,11 @@ last_modified_date: 2025-01-28 17:22
 
 # Schedule
 
-- <a href="https://skemaplan.sdu.dk/N400005101/f25" target="_blank">Official at MitSDU</a>
+- <a href="https://skemaplan.sdu.dk/N400005101/f26" target="_blank">Official at MitSDU</a>
 
+
+<!--
 - Compact view:
 
 {% include timetable.html %}
+-->
