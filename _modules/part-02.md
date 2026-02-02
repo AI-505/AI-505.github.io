@@ -16,7 +16,10 @@ Contents:
 
 Resources:
 
+<!--
 - [Slides]({{ "/assets/ai505-lec04.pdf" | absolute_url }})
+-->
+
 - Chapter 4 and Appendix of [KW]
 
 ### Feb 25: Lecture 5 --- First-Order Methods
@@ -55,7 +58,8 @@ Second-Order Methods:
 
 Resources:
 
-<!-- - [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }}) -->
+<!-- [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }}) -->
+
 - Chapter 6 of [KW]
 
 
