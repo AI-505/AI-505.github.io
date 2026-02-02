@@ -60,6 +60,7 @@ Contents:
 Resources
 
 - Slides
+
 <!--
 - [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
 -->
@@ -68,6 +69,7 @@ Resources
 <!-- **Exercises**{: .label .label-purple }  -->
 
 - Sheet 01
+
 <!--
 - [Sheet 01][51]. [Solutions][511] 
 -->
