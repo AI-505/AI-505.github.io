@@ -3,7 +3,7 @@ title: "Unit 2: Multivariate Problems, Gradient-Based Methods"
 ---
 
 
-### Feb 20: Lecture 4 --- Local Descent
+### Feb 17: Lecture 4 --- Local Descent
 
 Contents:
 
@@ -22,7 +22,15 @@ Resources:
 
 - Chapter 4 and Appendix of [KW]
 
-### Feb 25: Lecture 5 --- First-Order Methods
+### Feb 18: Exercise Session 2
+
+<!-- - [Sheet 02][52].  [Solution][522]. -->
+
+[52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
+[522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
+
+
+### Feb 19: Lecture 5 --- First-Order Methods
 
 Contents: 
 
@@ -41,12 +49,9 @@ Resources:
 <!-- - [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }}) -->
 - Chapter 5 of [KW]
 
-### Feb 27: Exercise Session 2
 
-<!-- - [Sheet 02][52].  [Solution][522]. -->
+### Feb 25: Exercise Session 3
 
-[52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
-[522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
 
 ### March 3: Lecture 6 --- Second-Order Methods and Direct Methods
 
@@ -79,9 +84,13 @@ Resources:
 
 
 
-### March 6: Exercise Session 3
+### March 4: Exercise Session 3
 
 <!-- - [Sheet 03][53]. [Solution][533] -->
 
 [53]: {{ "/assets/sheets/ai505_sheet03.pdf" | absolute_url }}
 [533]: {{ "/assets/sheets/ai505_sheet03_sol.pdf" | absolute_url }}
+
+
+
+## March 5: Lecture 7 ---
