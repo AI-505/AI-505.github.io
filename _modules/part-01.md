@@ -27,7 +27,7 @@ Resources:
 - [Slides]({{ "/assets/ai505-lec01.pdf" | absolute_url }})
 - Chapter 1 of [KW]
 
-### Feb 5: Lecture 2 --- Derivatives and Gradients
+### Feb 5: Derivatives and Gradients
 
 Contents:
 
@@ -43,25 +43,9 @@ Resources:
 - Chapter 2 and Appendix of [KW]
 
 
-### Feb 10: Lecture 3 --- Bracketing
+### Feb 10: Definitions, Derivatives and Gradients
 
-Contents: 
-
-- Unimodality
-- Finding an Initial Bracket
-- Fibonacci Search
-- Golden Section Search
-- Quadratic Fit Search
-- Shubert-Piyavskii Method
-- Bisection Method
-
-Resources
-
-- Slides
-
-<!--
-- [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
--->
+We continued with the material from February 5.
 
 ### Feb 11: Exercises 1
 <!-- **Exercises**{: .label .label-purple }  -->
@@ -75,3 +59,4 @@ Resources
 
 [51]: {{ "/assets/sheets/ai505_sheet01.pdf" | absolute_url }}
 [511]: {{ "/assets/sheets/ai505_sheet01_sol.pdf" | absolute_url }}
+

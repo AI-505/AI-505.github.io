@@ -3,7 +3,30 @@ title: "Unit 2: Multivariate Problems, Gradient-Based Methods"
 ---
 
 
-### Feb 17: Lecture 4 --- Local Descent
+
+
+### Feb 17: 
+
+#### Bracketing
+
+Contents: 
+
+- Unimodality
+- Finding an Initial Bracket
+- Fibonacci Search
+- Golden Section Search
+- Quadratic Fit Search
+- Shubert-Piyavskii Method
+- Bisection Method
+
+Resources
+
+- Slides
+
+<!--
+- [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
+-->
+#### Local Descent
 
 Contents:
 
@@ -30,7 +53,7 @@ Resources:
 [522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
 
 
-### Feb 19: Lecture 5 --- First-Order Methods
+### Feb 19: First-Order Methods
 
 Contents: 
 
@@ -53,7 +76,7 @@ Resources:
 ### Feb 25: Exercise Session 3
 
 
-### March 3: Lecture 6 --- Second-Order Methods and Direct Methods
+### March 3: Second-Order Methods and Direct Methods
 
 Second-Order Methods: 
 
