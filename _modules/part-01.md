@@ -52,5 +52,5 @@ We continued with the material from February 5.
 
 - [Sheet 01][51]. [Solutions][511] 
 
-[51]: {{ "/assets/exercises/sheet01" | absolute_url }}
-[511]: {{ "/assets/exercises/solutions/sheet01" | absolute_url }}
+[51]: {{ "/assets/exercises/sheet01/sheet01.html" | absolute_url }}
+[511]: {{ "/assets/exercises/solutions/sheet01/sheet01.html" | absolute_url }}
