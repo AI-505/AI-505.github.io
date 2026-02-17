@@ -50,13 +50,7 @@ We continued with the material from February 5.
 ### Feb 11: Exercises 1
 <!-- **Exercises**{: .label .label-purple }  -->
 
-- [Sheet 01][51]. 
-  
-<!--
-- [Solutions][511] 
--->
+- [Sheet 01][51]. [Solutions][511] 
 
-
-[51]: {{ "/assets/sheets/ai505_sheet01.pdf" | absolute_url }}
-[511]: {{ "/assets/sheets/ai505_sheet01_sol.pdf" | absolute_url }}
-
+[51]: {{ "/assets/exercises/sheet01" | absolute_url }}
+[511]: {{ "/assets/exercises/solutions/sheet01" | absolute_url }}
