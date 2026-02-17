@@ -5,9 +5,7 @@ title: "Unit 2: Multivariate Problems, Gradient-Based Methods"
 
 
 
-### Feb 17: 
-
-#### Bracketing
+### Feb 17: Bracketing
 
 Contents: 
 
@@ -23,7 +21,8 @@ Resources
 
 - [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
 
-#### Local Descent
+
+### Feb 18: Local Descent
 
 Contents:
 
@@ -41,14 +40,6 @@ Resources:
 -->
 
 - Chapter 4 and Appendix of [KW]
-
-### Feb 18: Exercise Session 2
-
-<!-- - [Sheet 02][52].  [Solution][522]. -->
-
-[52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
-[522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
-
 
 ### Feb 19: First-Order Methods
 
@@ -68,6 +59,17 @@ Resources:
 
 <!-- - [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }}) -->
 - Chapter 5 of [KW]
+
+
+
+### Feb 24: Exercise Session 2
+
+<!-- - [Sheet 02][52].  [Solution][522]. -->
+
+[52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
+[522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
+
+
 
 
 ### Feb 25: Exercise Session 3
