@@ -64,8 +64,7 @@ Resources:
 
 ### Feb 24: Exercise Session 2
 
-
-- [Sheet 02][52]. 
+- [Sheet 02][52].
 
 [52]: {{ "/assets/exercises/sheet02/sheet02.html" | absolute_url }}
 [522]: {{ "/assets/exercises/solutions/sheet02sheet02.html" | absolute_url }}
