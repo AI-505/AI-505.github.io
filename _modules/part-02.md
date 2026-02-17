@@ -21,11 +21,8 @@ Contents:
 
 Resources
 
-- Slides
-
-<!--
 - [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
--->
+
 #### Local Descent
 
 Contents:
