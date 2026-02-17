@@ -64,12 +64,11 @@ Resources:
 
 ### Feb 24: Exercise Session 2
 
-<!-- - [Sheet 02][52].  [Solution][522]. -->
 
-[52]: {{ "/assets/sheets/ai505_sheet02.pdf" | absolute_url }}
-[522]: {{ "/assets/sheets/ai505_sheet02_sol.pdf" | absolute_url }}
+- [Sheet 02][52]. 
 
-
+[52]: {{ "/assets/exercises/sheet02" | absolute_url }}
+[522]: {{ "/assets/exercises/solutions/sheet02" | absolute_url }}
 
 
 ### Feb 25: Exercise Session 3
