@@ -35,9 +35,8 @@ Contents:
 
 Resources:
 
-<!--
 - [Slides]({{ "/assets/ai505-lec04.pdf" | absolute_url }})
--->
+
 
 - Chapter 4 and Appendix of [KW]
 
