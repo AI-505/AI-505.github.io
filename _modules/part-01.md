@@ -1,5 +1,5 @@
 ---
-title: "Unit 1: Introduction, Univariate Problems"
+title: "Unit 1: Preliminaries and Derivatives"
 ---
 
 

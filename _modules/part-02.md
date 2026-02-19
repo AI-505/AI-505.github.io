@@ -1,11 +1,10 @@
 ---
-title: "Unit 2: Multivariate Problems, Gradient-Based Methods" 
+title: "Unit 2: Unconstrained Optimization, Local Descent Methods" 
 ---
 
 
 
-
-### Feb 17: Bracketing
+### Feb 17: Bracketing for Line Search
 
 Contents: 
 
@@ -22,7 +21,7 @@ Resources
 - [Slides]({{ "/assets/ai505-lec03.pdf" | absolute_url }})
 
 
-### Feb 18: Local Descent
+### Feb 18: Line Search in Local Descent Methods
 
 Contents:
 
