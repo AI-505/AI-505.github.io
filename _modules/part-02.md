@@ -56,7 +56,7 @@ Contents:
 
 Resources:
 
-<!-- - [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }}) -->
+- [Slides]({{ "/assets/ai505-lec05.pdf" | absolute_url }}) 
 - Chapter 5 of [KW]
 
 
