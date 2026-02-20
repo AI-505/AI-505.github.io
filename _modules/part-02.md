@@ -113,11 +113,6 @@ Resources:
 
 ### March 4: Exercise Session 3
 
-<!-- - [Sheet 03][53]. [Solution][533] -->
-
-[53]: {{ "/assets/sheets/ai505_sheet03.pdf" | absolute_url }}
-[533]: {{ "/assets/sheets/ai505_sheet03_sol.pdf" | absolute_url }}
 
 
-
-## March 5: Lecture 7 ---
+### March 5: Lecture
