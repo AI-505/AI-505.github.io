@@ -65,10 +65,19 @@ Resources:
 - [Sheet 02][52].
 
 [52]: {{ "/assets/exercises/sheet02/sheet02.html" | absolute_url }}
-[522]: {{ "/assets/exercises/solutions/sheet02sheet02.html" | absolute_url }}
+[522]: {{ "/assets/exercises/solutions/sheet02/sheet02.html" | absolute_url }}
 
 
 ### Feb 25: Exercise Session 3
+
+
+- [Sheet 03][53]. 
+
+<!-- [Solution][533] -->
+
+[53]: {{ "/assets/exercises/sheet03/sheet03.html" | absolute_url }}
+[533]: {{ "/assets/exercises/solutions/sheet03/sheet03.html" | absolute_url }}
+
 
 
 ### March 3: Second-Order Methods and Direct Methods
