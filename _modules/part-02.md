@@ -62,7 +62,7 @@ Resources:
 
 ### Feb 24: Exercise Session 2
 
-- [Sheet 02][52].
+- [Sheet 02][52]. [Solutions][522].
 
 [52]: {{ "/assets/exercises/sheet02/sheet02.html" | absolute_url }}
 [522]: {{ "/assets/exercises/solutions/sheet02/sheet02.html" | absolute_url }}
@@ -71,9 +71,7 @@ Resources:
 ### Feb 25: Exercise Session 3
 
 
-- [Sheet 03][53]. 
-
-<!-- [Solution][533] -->
+- [Sheet 03][53]. [Solutions][533]. 
 
 [53]: {{ "/assets/exercises/sheet03/sheet03.html" | absolute_url }}
 [533]: {{ "/assets/exercises/solutions/sheet03/sheet03.html" | absolute_url }}
@@ -90,7 +88,7 @@ Second-Order Methods:
 
 Resources:
 
-<!-- [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }}) -->
+[Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }})
 
 - Chapter 6 of [KW]
 
@@ -111,8 +109,13 @@ Resources:
 
 
 
-### March 4: Exercise Session 3
+### March 4: Exercise Session 4
 
+
+- [Sheet 04][54]. [Solutions][544].
+
+[54]: {{ "/assets/exercises/sheet04/sheet04.html" | absolute_url }}
+[544]: {{ "/assets/exercises/solutions/sheet04/sheet04.html" | absolute_url }}
 
 
 ### March 5: Lecture
