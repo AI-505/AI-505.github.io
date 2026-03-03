@@ -45,13 +45,6 @@ Contents:
 
 - Gradient Descent
 - Conjugate Gradient
-- Momentum
-- Nesterov Momentum
-- Adagrad
-- RMSProp
-- Adadelta
-- Adam
-- Hypergradient Descent
 
 Resources:
 
@@ -78,7 +71,23 @@ Resources:
 
 
 
-### March 3: Second-Order Methods and Direct Methods
+### March 3: Second-Order Methods 
+
+First-Order Methods (Cntd):
+
+- Momentum
+- Nesterov Momentum
+- Adagrad
+- RMSProp
+- Adadelta
+- Adam
+- Hypergradient Descent
+
+
+Resources:
+
+- Slides from class on February 19
+- Chapter 5 of [KW]
 
 Second-Order Methods: 
 
@@ -93,6 +102,17 @@ Resources:
 - Chapter 6 of [KW]
 
 
+### March 4: Exercise Session 4
+
+
+- [Sheet 04][54]. [Solutions][544].
+
+[54]: {{ "/assets/exercises/sheet04/sheet04.html" | absolute_url }}
+[544]: {{ "/assets/exercises/solutions/sheet04/sheet04.html" | absolute_url }}
+
+
+### March 5: Direct Methods
+
 Direct Methods:
 
 - Cyclic Coordinate Search
@@ -106,16 +126,3 @@ Resources:
 
 <!-- - [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }}) -->
 - Chapter 7 of [KW]
-
-
-
-### March 4: Exercise Session 4
-
-
-- [Sheet 04][54]. [Solutions][544].
-
-[54]: {{ "/assets/exercises/sheet04/sheet04.html" | absolute_url }}
-[544]: {{ "/assets/exercises/solutions/sheet04/sheet04.html" | absolute_url }}
-
-
-### March 5: Lecture
