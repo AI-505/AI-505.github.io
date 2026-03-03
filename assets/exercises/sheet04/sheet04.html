@@ -3098,6 +3098,9 @@ window.Quarto = {
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"><span class="header-section-number">3</span> <span class="math inline">\(^*\)</span>  (6.2)</a></li>
   <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"><span class="header-section-number">4</span> <span class="math inline">\(^*\)</span>  (6.4, 6.9)</a></li>
   <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  (6.5)</a></li>
+  <li><a href="#strongly-convex-functions" id="toc-strongly-convex-functions" class="nav-link" data-scroll-target="#strongly-convex-functions"><span class="header-section-number">6</span> Strongly Convex Functions</a></li>
+  <li><a href="#strongly-convex-functions-1" id="toc-strongly-convex-functions-1" class="nav-link" data-scroll-target="#strongly-convex-functions-1"><span class="header-section-number">7</span> Strongly Convex Functions</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"><span class="header-section-number">8</span> </a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="sheet04.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
@@ -3158,6 +3161,67 @@ window.Quarto = {
 <li><p>Plot <span class="math inline">\(f&#39;\)</span> vs. <span class="math inline">\(x\)</span>. Overlay the progression of each method, drawing lines from <span class="math inline">\((x_i, f&#39;(x_i))\)</span> to <span class="math inline">\((x_{i+1}, 0)\)</span> to <span class="math inline">\((x_{i+1}, f&#39;(x_{i+1}))\)</span> for each transition.</p></li>
 </ol>
 <p>What can we conclude about this comparison?</p>
+</section>
+<section id="strongly-convex-functions" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Strongly Convex Functions</h1>
+<p>Consider:</p>
+<p><span class="math display">\[
+    f(x)=x^4.
+\]</span></p>
+<ul>
+<li><p>Show that <span class="math inline">\(f\)</span> is convex.</p></li>
+<li><p>Compute <span class="math inline">\(f&#39;&#39;(x)\)</span>.</p></li>
+<li><p>Show that <span class="math inline">\(f\)</span> is not strongly convex on <span class="math inline">\(\mathbb{R}\)</span>.</p></li>
+<li><p>Explain geometrically why the function fails to be strongly convex.</p></li>
+</ul>
+</section>
+<section id="strongly-convex-functions-1" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Strongly Convex Functions</h1>
+<p>Recall that for a symmetric matrix <span class="math inline">\(A\)</span>, <span class="math display">\[
+A\succeq 0
+\]</span> means that <span class="math inline">\(A\)</span> is positive semidefinite, i.e.</p>
+<p><span class="math display">\[
+\vec x^\top A\vec x \geq 0 \quad \forall \vec x \in \mathbb{R}^n.
+\]</span></p>
+<p>Hence, for <span class="math inline">\(Q\)</span> a symmetric matrix, and <span class="math inline">\(I\)</span> the identity matrix, the condition</p>
+<p><span class="math display">\[
+Q\succeq cI
+\]</span></p>
+<p>means:</p>
+<p><span class="math display">\[
+Q−cI\succeq 0.
+\]</span></p>
+<p>In scalar form this means:</p>
+<p><span class="math display">\[
+\vec x^T(Q-cI)\vec x=\vec x^⊤Q\vec x -c\|\vec x\|^2.
+\]</span></p>
+<p>So, in its easiest form, the condition is:</p>
+<p><span class="math display">\[
+\vec x^\top Q \vec x \geq c \|\vec x\|^2 \quad \forall \vec x.
+\]</span></p>
+<p>Assume <span class="math inline">\(f\)</span> is a twice-differentiable function (ie, <span class="math inline">\(f\in C^2(\mathbb{R}^n)\)</span>). Show that:</p>
+<p><span class="math display">\[ \text{$f$ is $c$-strongly convex} \iff \nabla^2 f(\vec x) \succeq cI \text{ for all }\vec x \in \mathbb{R}^n.
+\]</span></p>
+<p>(Hint: Use Taylor’s theorem with integral remainder.)</p>
+</section>
+<section id="section-5" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> </h1>
+<p>Implement gradient descent for:</p>
+<p><span class="math display">\[
+f(\vec x)=\frac{1}{2}\vec x^TQ\vec x
+\]</span></p>
+<p>where</p>
+<p><span class="math display">\[
+Q=\begin{bmatrix}
+1&amp;0\\0&amp;\gamma
+\end{bmatrix}.
+\]</span></p>
+<ul>
+<li>Run experiments for <span class="math inline">\(\gamma =1,10,100,1000\)</span>.</li>
+<li>Plot convergence.</li>
+<li>Relate the behavior to the condition number.</li>
+<li>Observe how increasing strong convexity improves convergence.</li>
+</ul>
 </section>
 
 </main>
