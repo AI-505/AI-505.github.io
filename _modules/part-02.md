@@ -97,15 +97,14 @@ Second-Order Methods:
 
 Resources:
 
-[Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }})
-
+- [Slides]({{ "/assets/ai505-lec06.pdf" | absolute_url }})
 - Chapter 6 of [KW]
 
 
 ### March 4: Exercise Session 4
 
 
-- [Sheet 04][54]. [Solutions][544].
+- [Sheet 04][54]. 
 
 [54]: {{ "/assets/exercises/sheet04/sheet04.html" | absolute_url }}
 [544]: {{ "/assets/exercises/solutions/sheet04/sheet04.html" | absolute_url }}
