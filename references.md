@@ -14,8 +14,24 @@ nav_order: 4
 
 #### Other References
 
-- [NW] J. Nocedal and S. J. Wright, Numerical Optimization, Second Edition. Springer Series in Operations Research, 2006.
+- [NW] J. Nocedal and S. J. Wright, Numerical Optimization, Second Edition.
+  Springer Series in Operations Research, 2006.
+
+- [SB] S. Bubeck [Convex Optimization: Algorithms and
+  Complexity](http://sbubeck.com/Bubeck15.pdf). Foundations and Trends in
+  Machine Learning, Vol. 8: No. 3-4, pp 231-357. Also at arXiv:1405.4980. 2015
+
+- [MC] K. B. Petersen, M. S. Pedersen, [The Matrix
+  Cookbook](https://www2.compute.dtu.dk/pubdb/pubs/3274-full.html). DTU. 2012
+
+
 
 #### Links
 
 - List of Python [optimization packages](https://feloopy.github.io/blog/list-of-optimization-packages.html)
+
+- [Benchmark functions for unconstrained continuous optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)
+
+- [Python implementation of benchmark functions](https://github.com/nathanrooy/landscapes)
+
+- [COmparing Continuous Optimizers Platform](https://coco-platform.org/)
