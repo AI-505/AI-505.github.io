@@ -3354,7 +3354,7 @@ f(\vec x_0)=-H\vec x_0\)</span> and <span class="math display">\[\alpha_0=-\frac
 <p>Newton’s method updates the estimate <span class="math inline">\(x_k\)</span> using the formula: <span class="math display">\[x_{k+1}=x_k-\frac{f&#39;(x_k)}{f&#39;&#39;(x_k)}\]</span></p>
 <p>The secant method updates the estimate <span class="math inline">\(x_n\)</span> using the formula: <span class="math display">\[x_{k+1}=x_k-f&#39;(x_k)\frac{x_k-x_{k-1}}{f(x_k)-f(x_{k-1})}\]</span></p>
 <p>Note that the secant method requires two initial guesses, <span class="math inline">\(x_0\)</span> and <span class="math inline">\(x_1\)</span>.</p>
-<div id="5692b8d7" class="cell" data-execution_count="1">
+<div id="19431ad0" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3494,7 +3494,7 @@ f(\vec x_0)=-H\vec x_0\)</span> and <span class="math display">\[\alpha_0=-\frac
 <p>Notice how the curvature goes to zero at the minimum. Strong convexity requires quadratic growth everywhere.</p>
 <p>In contrast, the function <span class="math inline">\(g(x)=x^2\)</span> is strongly convex with <span class="math inline">\(g&#39;&#39;(x)=2\)</span> and hence positive for all <span class="math inline">\(x\)</span>.</p>
 <p>Let’s compare these two functions graphically.</p>
-<div id="042a3645" class="cell" data-execution_count="2">
+<div id="b796e8d0" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3591,7 +3591,7 @@ f(\vec x)=\frac{1}{2}\vec x^TQ\vec x
 <p>where</p>
 <p><span class="math display">\[
 Q=\begin{bmatrix}
-1&amp;0\\0&amp;\gamma
+1&amp;0\\0&amp;1/\gamma
 \end{bmatrix}.
 \]</span></p>
 <ul>
@@ -3606,7 +3606,7 @@ Q=\begin{bmatrix}
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<div id="9452c69b" class="cell" data-execution_count="3">
+<div id="9963c4aa" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
