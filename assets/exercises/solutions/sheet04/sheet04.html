@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-04">
+<meta name="dcterms.date" content="2026-03-05">
 
 <title>AI505/AI801, Optimization – Exercise Sheet 04</title>
 <style>
@@ -3154,7 +3154,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 4, 2026</p>
+      <p class="date">March 5, 2026</p>
     </div>
   </div>
   
@@ -3352,9 +3352,9 @@ f(\vec x_0)=-H\vec x_0\)</span> and <span class="math display">\[\alpha_0=-\frac
 <p>Its first derivative is <span class="math inline">\(f&#39;(x)=2x+4x^3\)</span>.</p>
 <p>Its second derivative is <span class="math inline">\(f&#39;(x)=2+12x^2\)</span>.</p>
 <p>Newton’s method updates the estimate <span class="math inline">\(x_k\)</span> using the formula: <span class="math display">\[x_{k+1}=x_k-\frac{f&#39;(x_k)}{f&#39;&#39;(x_k)}\]</span></p>
-<p>The secant method updates the estimate <span class="math inline">\(x_n\)</span> using the formula: <span class="math display">\[x_{k+1}=x_k-f&#39;(x_k)\frac{x_k-x_{k-1}}{f(x_k)-f(x_{k-1})}\]</span></p>
+<p>The secant method updates the estimate <span class="math inline">\(x_n\)</span> using the formula: <span class="math display">\[x_{k+1}=x_k-f&#39;(x_k)\frac{x_k-x_{k-1}}{f&#39;(x_k)-f&#39;(x_{k-1})}\]</span></p>
 <p>Note that the secant method requires two initial guesses, <span class="math inline">\(x_0\)</span> and <span class="math inline">\(x_1\)</span>.</p>
-<div id="19431ad0" class="cell" data-execution_count="1">
+<div id="9e4f4f21" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3451,11 +3451,6 @@ f(\vec x_0)=-H\vec x_0\)</span> and <span class="math display">\[\alpha_0=-\frac
 </div>
 <p>The first plot illustrates how quickly each method converges to a local optimum.</p>
 <p>The second plot visualizes how each method approaches the root in the context of the derivative’s behavior.</p>
-<figure class="figure">
-<p>
-<img src="secant_function" style="width:48.0%" alt="image" class="figure-img"> <img src="secant_derivative" style="width:48.0%" alt="image" class="figure-img">
-</p>
-</figure>
 <p>Conclusions from the comparison:</p>
 <ul>
 <li><p>Convergence Rate: Newton’s method typically exhibits quadratic convergence, meaning the error decreases exponentially with each iteration when close to the root. The secant method generally has a convergence rate of approximately 1.618 (the golden ratio), which is superlinear but slower than Newton’s method.</p></li>
@@ -3494,7 +3489,7 @@ f(\vec x_0)=-H\vec x_0\)</span> and <span class="math display">\[\alpha_0=-\frac
 <p>Notice how the curvature goes to zero at the minimum. Strong convexity requires quadratic growth everywhere.</p>
 <p>In contrast, the function <span class="math inline">\(g(x)=x^2\)</span> is strongly convex with <span class="math inline">\(g&#39;&#39;(x)=2\)</span> and hence positive for all <span class="math inline">\(x\)</span>.</p>
 <p>Let’s compare these two functions graphically.</p>
-<div id="b796e8d0" class="cell" data-execution_count="2">
+<div id="509b7ab4" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3595,7 +3590,7 @@ Q=\begin{bmatrix}
 \end{bmatrix}.
 \]</span></p>
 <ul>
-<li>Run experiments for <span class="math inline">\(\gamma =1,10,100,1/1000\)</span>.</li>
+<li>Run experiments for <span class="math inline">\(\gamma =1,10,100,1000\)</span>.</li>
 <li>Plot convergence.</li>
 <li>Relate the behavior to the condition number.</li>
 <li>Observe how increasing strong convexity improves convergence.</li>
@@ -3606,7 +3601,7 @@ Q=\begin{bmatrix}
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<div id="9963c4aa" class="cell" data-execution_count="3">
+<div id="45b4a107" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -3728,12 +3723,10 @@ Q=\begin{bmatrix}
 </div>
 </div>
 <p>Note: try a fixed learning rate <span class="math inline">\(\alpha\)</span>. It will observe that gradient descent on this quadratic grows exponentially. With <span class="math inline">\(\alpha = 0.1\)</span> and<br>
-<span class="math inline">\(\gamma = 1000\)</span>, the update in the <span class="math inline">\(x_2\)</span> direction multiplies by <span class="math inline">\((1 - \alpha
-  \cdot 1000) = -99\)</span> each step.</p>
+<span class="math inline">\(\gamma = 1000\)</span>, the update in the <span class="math inline">\(x_2\)</span> direction multiplies by <span class="math inline">\((1 - \alpha  \cdot 1000) = -99\)</span> each step.</p>
 <p>Hence, it is crucial to adjust the learning rate according to the curvature of the function. For a quadratic function, the curvature is determined by the eigenvalues of <span class="math inline">\(Q\)</span>. The maximum eigenvalue <span class="math inline">\(\lambda_{\max}\)</span> dictates the largest stable learning rate.</p>
 <p>We can set <span class="math inline">\(\alpha = 1/\gamma\)</span> (i.e. <span class="math inline">\(1/\lambda_{\max}\)</span>) or doing line search as we have learned earlier. This will ensure that we operate within the stability range and achieve convergence.</p>
-<p>The convergence plots show that larger<br>
-<span class="math inline">\(\gamma\)</span> leads to slower convergence.</p>
+<p>The convergence plots show that larger <span class="math inline">\(\gamma\)</span> leads to slower convergence.</p>
 <p>We can relate this to the curvature. Since <span class="math inline">\(\lambda_{\min}(Q) \geq c\)</span> and <span class="math inline">\(\lambda_{\min}(Q)=1/\gamma\)</span>.</p>
 <p>This is also reflected in the <em>optimization condition number</em> which is usually defined as <span class="math inline">\(\kappa = L/c\)</span> where <span class="math inline">\(L\)</span> is the Lischitz gradient constant and <span class="math inline">\(c\)</span> is the strong convexity constant. For a quadratic function, <span class="math inline">\(L\)</span> is the maximum eigenvalue of <span class="math inline">\(Q\)</span> and <span class="math inline">\(c\)</span> is the minimum eigenvalue of <span class="math inline">\(Q\)</span>. Hence, the condition number can be expressed as: <span class="math inline">\(\kappa=\lambda_{\max}/\lambda_{\min}\)</span>. For quadratic problems, the <em>optimization condition number</em> is the same as the <em>matrix condition number</em> <span class="math inline">\(κ_2​(Q)=\|Q\|_2/\|Q^{-1}\|_2\)</span>.​ For our specific case, <span class="math inline">\(\lambda_{\max} = 1\)</span> and <span class="math inline">\(\lambda_{\min} = 1/\gamma\)</span>. Hence:</p>
 <ul>
@@ -3761,7 +3754,20 @@ Q=\begin{bmatrix}
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-
+<p>We prove equivalence.</p>
+<p>Using the fundamental theorem of calculus:</p>
+<p><span class="math display">\[
+\nabla f(\vec x)−\nabla f(\vec y)=\int_0^1\nabla^2f(\vec y+t(\vec x−\vec y))(\vec x−\vec y) dt.
+\]</span></p>
+<p>Multiplying by <span class="math inline">\((\vec x-\vec y)\)</span>: ​</p>
+<p><span class="math display">\[
+(\vec x-\vec y)^\top(\nabla f(\vec x)−\nabla f(\vec y))=\int_0^1(\vec x−\vec y)^\top\nabla^2f(\vec y+t(\vec x−\vec y))(\vec x−\vec y) dt.
+\]</span></p>
+<p>If <span class="math inline">\(\nabla^2f(\cdot)\succeq cI\)</span>, then: then:</p>
+<p><span class="math display">\[
+(\vec x−\vec y)^\top(\nabla f(\vec x)−\nabla f(\vec y))\geq c\|\vec x−\vec y\|^2.
+\]</span></p>
+<p>This is strong monotonicity. The reverse direction follows similarly.</p>
 </div>
 </div>
 </div>
