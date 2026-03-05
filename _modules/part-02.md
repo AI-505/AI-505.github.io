@@ -123,5 +123,5 @@ Direct Methods:
 
 Resources:
 
-<!-- - [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }}) -->
+- [Slides]({{ "/assets/ai505-lec07.pdf" | absolute_url }})
 - Chapter 7 of [KW]
