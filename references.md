@@ -35,3 +35,5 @@ nav_order: 4
 - [Python implementation of benchmark functions](https://github.com/nathanrooy/landscapes)
 
 - [COmparing Continuous Optimizers Platform](https://coco-platform.org/)
+
+- [A nice visualization](https://github.com/j-w-yun/optimizer-visualization/blob/master/README.md)
