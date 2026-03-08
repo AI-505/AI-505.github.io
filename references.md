@@ -32,7 +32,7 @@ nav_order: 4
 
 - [Benchmark functions for unconstrained continuous optimization](https://en.wikipedia.org/wiki/Test_functions_for_optimization)
 
-- [Python implementation of benchmark functions](https://github.com/nathanrooy/landscapes)
+- Python implementation of benchmark functions. [Fork for this course](https://github.com/belzebuu/landscapes). [Original repo](https://github.com/nathanrooy/landscapes). 
 
 - [COmparing Continuous Optimizers Platform](https://coco-platform.org/)
 

@@ -4,7 +4,7 @@ title: "Unit 3: Beyond Local Optima"
 
 
 
-### March 10: Lecture 8 --- Stochastic Methods
+### March 10: Stochastic Methods
 
 Contents:
 
@@ -17,13 +17,30 @@ Contents:
 
 Resources:
 
-<!--
+
 - [Slides]({{ "/assets/ai505-lec08.pdf" | absolute_url }})
--->
 
 - Chapter 8 and Appendix of [KW]
 
-### March 10: Lecture 9 --- Population Methods
+
+
+
+
+### March 11: Exercise Session 5 on Direct Methods and Stochastic Methods
+
+- [Sheet 05][55]. 
+
+<!-- [Solutions][555]. -->
+
+
+[55]: {{ "/assets/exercises/sheet05/sheet05.html" | absolute_url }}
+[555]: {{ "/assets/exercises/solutions/sheet05/sheet05.html" | absolute_url }}
+
+
+
+
+
+### March 17: Population Methods
 
 Contents:
 
@@ -43,13 +60,3 @@ Resources:
 -->
 
 - Chapter 9 and Appendix of [KW]
-
-### March 13: Exercise Session 4
-
-<!--
-- [Sheet 04][54]. [Solutions][544].
--->
-
-
-[54]: {{ "/assets/sheets/ai505_sheet04.pdf" | absolute_url }}
-[544]: {{ "/assets/sheets/ai505_sheet04_sol.pdf" | absolute_url }}
