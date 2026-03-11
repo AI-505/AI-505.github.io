@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-09">
+<meta name="dcterms.date" content="2026-03-11">
 
 <title>AI505/AI801, Optimization – Exercise Sheet 05</title>
 <style>
@@ -2384,7 +2384,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 9, 2026</p>
+      <p class="date">March 11, 2026</p>
     </div>
   </div>
   
@@ -2406,7 +2406,7 @@ window.Quarto = {
 <p>Below you find an implementation of Nelder-Mead algorithm in Python. Analyze it and use it to solve a few <a href="https://en.wikipedia.org/wiki/Test_functions_for_optimization">Benchmark functions for unconstrained continuous optimization</a>. You can use the <a href="https://github.com/belzebuu/landscapes">Python implementations</a>.</p>
 <p>Plot the evolution of the simplex throughout the search (you can get help from AI assistants to code the plotting facilities).</p>
 <p>Then, compare the results with the implementation of Nelder-Mead in the <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize">scipy library</a>. You can use the <a href="https://coco-platform.org/">COCO test suite</a> to carry out this part or write yourself everything you need.</p>
-<div id="ea96fe14" class="cell" data-execution_count="1">
+<div id="6f3099e4" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> nelder_mead(f, S, eps, max_iterations, alpha<span class="op">=</span><span class="fl">1.0</span>, beta<span class="op">=</span><span class="fl">2.0</span>, gamma<span class="op">=</span><span class="fl">0.5</span>):</span>
@@ -2471,7 +2471,8 @@ window.Quarto = {
 <section id="section-4" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  (8.4)</h1>
 <p>The maximum likelihood estimates are the parameter values that maximize the likelihood of sampling the points <span class="math inline">\(\{\vec x_1,\ldots,\vec x_m\}\)</span>.</p>
-<p>Derive the maximum likelihood estimate for the cross-entropy method that uses multivariate normal distributions: <span class="math inline">\({\cal N}(\vec x\mid \vec \mu, \Sigma)\)</span>.</p>
+<p>In the slides it was given the analytical solution for the mean and variance of a multivariate Gaussian distribution: <span class="math inline">\({\cal N}(\vec x\mid \vec \mu, \Sigma)\)</span>.</p>
+<p>Derive here those results that are used in the cross-entropy method that uses multivariate normal distributions.</p>
 </section>
 <section id="section-5" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> <span class="math inline">\(^*\)</span>  </h1>
