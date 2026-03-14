@@ -3,7 +3,7 @@ title: "Unit 5: Constrained Optimization, Linear Programming"
 ---
 
 
-### March 31: Lecture 13 --- Constraints
+### Constraints
 
 - Constraint Types
 - Constrained Optimization
@@ -18,7 +18,7 @@ Resources:
 <!-- - [Slides]({{ "/assets/ai505-lec13.pdf" | absolute_url }}) -->
 - Chapter 10 [KW]
 
-### April 3: Exercise 6 --- Constraints
+### Exercises: Constraints
 
 <!-- - [Sheet 06][56]. [Solutions][566] -->
 
@@ -26,7 +26,7 @@ Resources:
 [566]: {{ "/assets/sheets/ai505_sheet06_sol.pdf" | absolute_url }}
 
 
-### April 7: Lecture 14 --- Linear Constrained Optimization
+### Linear Constrained Optimization
 
 - Simplex Algorithm
 - Problem Formulation
@@ -37,7 +37,7 @@ Resources:
 <!-- - [Slides]({{ "/assets/ai505-lec14.pdf" | absolute_url }}) -->
 - Chapter 11 [KW]
 
-### April 10: Exercise 7 --- Linear Programming
+### Exercises: Linear Programming
 
 <!-- - [Sheet 07][57]. [Solutions][577] -->
 
