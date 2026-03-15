@@ -53,16 +53,14 @@ Contents:
 
 Resources:
 
-<!--
+
 - [Slides]({{ "/assets/ai505-lec09.pdf" | absolute_url }})
--->
+
 
 - Chapter 9 and Appendix of [KW]
 
 
-
-
-### Apr 14: Sampling Plans
+### Sampling Plans
 
 - Full Factorial
 - Random Sampling
@@ -75,17 +73,19 @@ Resources:
 
 Resources:
 
-<!-- - [Slides]({{ "/assets/ai505-lec15.pdf" | absolute_url }}) -->
+- [Slides]({{ "/assets/ai505-lec10.pdf" | absolute_url }}) -->
 - Chapter 13 of [KW]
 
 
 
-### Apr 15: Exercise 8
+### March 18: Exercises
 
-<!-- - [Sheet 08][58]. [Solutions][588] -->
+- [Sheet 06][56]. <!--[Solutions][566] -->
 
-[58]: {{ "/assets/sheets/ai505_sheet08.pdf" | absolute_url }}
-[588]: {{ "/assets/sheets/ai505_sheet08_sol.pdf" | absolute_url }}
+
+[56]: {{ "/assets/exercises/sheet06/sheet06.html" | absolute_url }}
+[566]: {{ "/assets/exercises/solutions/sheet06/sheet06.html" | absolute_url }}
+
 
 
 <!--
