@@ -38,16 +38,14 @@ Resources:
 
 
 
-### March 17: Population Methods
+### March 17: Population Methods and Sampling Plans
 
-Contents:
+Population Methods:
 
 - Initialization
 - Genetic Algorithms
 - Differential Evolution
 - Particle Swarm Optimization
-- Firefly Algorithm
-- Cuckoo Search
 - Hybrid Methods
 
 
@@ -60,7 +58,7 @@ Resources:
 - Chapter 9 and Appendix of [KW]
 
 
-### Sampling Plans
+Sampling Plans
 
 - Full Factorial
 - Random Sampling
