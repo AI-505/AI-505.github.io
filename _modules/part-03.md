@@ -73,7 +73,7 @@ Resources:
 
 Resources:
 
-- [Slides]({{ "/assets/ai505-lec10.pdf" | absolute_url }}) -->
+- [Slides]({{ "/assets/ai505-lec10.pdf" | absolute_url }}) 
 - Chapter 13 of [KW]
 
 
