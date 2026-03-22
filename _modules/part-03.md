@@ -78,7 +78,7 @@ Resources:
 
 ### March 18: Exercises
 
-- [Sheet 06][56]. <!--[Solutions][566] -->
+- [Sheet 06][56]. [Solutions][566]
 
 
 [56]: {{ "/assets/exercises/sheet06/sheet06.html" | absolute_url }}
