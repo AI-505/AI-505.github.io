@@ -1,6 +1,6 @@
 ---
 layout: assignment_plain
-title:  "Preface"
+title:  "Preface asg 1"
 date: 2025-03-08 11:00:00 +0100
 date_show: 2025-03-07 08:27:19 +0100
 mathjax: true
@@ -16,12 +16,11 @@ categories: assignments
 
 # Obligatory Assignment 1
 
+## Preface
+
 - **Deadline:** **Sunday, April 19, 2026, at 23:59**
 
 - Read the whole preface below before you start working.
-
-
-## Preface
 
 - This is the first of two obligatory assignments for the course AI505/AI801.
 
@@ -67,8 +66,7 @@ categories: assignments
   color blue.
 
 
-
-- SDU rules on AI assistants \url{https://mitsdu.dk/en/aiatsdu} apply to this
+- SDU rules on AI assistants https://mitsdu.dk/en/aiatsdu apply to this
    exam. In particular:
 
   - in your you have to add an Appendix where you declare to which extent you
