@@ -7,7 +7,7 @@ mathjax: true
 week: 10
 nav_order: 1
 sol_url: ""
-comments: false
+comments: true
 categories: assignments
 ---
 
@@ -26,8 +26,8 @@ categories: assignments
 - This is the first of two obligatory assignments for the course AI505/AI801.
 
 - It consists of two cases:
-  - Case 1: [Path Planning]({{ "/assignments/pathplan/" | absolute_url }})
-  - Case 2: [Optimization for Machine Learning]({{ "/assignments/ml/" | absolute_url }})
+  - Case 1: [Path Planning]({{ "/assets/exercises/asg1/asg1_1.html" | absolute_url }})
+  - Case 2: [Optimization for Machine Learning]({{ "/assets/exercises/asg1/asg1_2.html" | absolute_url }})
 
 
 - This assignment should be carried out in groups of two. Groups
