@@ -10,9 +10,11 @@ nav_order: 5
 
 Portfolio consisting of:
 
+
 - two mandatory assignments in groups of 2:
 
-    Time line to be announced.
+    - [mandatory assignment 1]({{ "/assignments/preface_1/" | absolute_url }})
+    - mandatory assignment 2
 
 - oral exam on June 29-30, 2026
 
@@ -20,7 +22,7 @@ Portfolio consisting of:
 
 Portfolio consisting of:
 
-- mandatory assignments, time line to be announced
+- Two mandatory assignments. Time line to be announced
 
 - oral exam on August 21, 2026
 

@@ -66,7 +66,7 @@ categories: assignments
   color blue.
 
 
-- SDU rules on AI assistants https://mitsdu.dk/en/aiatsdu apply to this
+- SDU rules on AI assistants [https://mitsdu.dk/en/aiatsdu] apply to this
    exam. In particular:
 
   - in your you have to add an Appendix where you declare to which extent you
