@@ -3134,10 +3134,8 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#scenarios" id="toc-scenarios" class="nav-link" data-scroll-target="#scenarios">Scenarios</a></li>
   <li><a href="#evaluation-criteria" id="toc-evaluation-criteria" class="nav-link" data-scroll-target="#evaluation-criteria">Evaluation Criteria</a></li>
-  </ul></li>
   <li><a href="#performance-expectations" id="toc-performance-expectations" class="nav-link" data-scroll-target="#performance-expectations">Performance Expectations</a></li>
-  <li><a href="#computational-considerations" id="toc-computational-considerations" class="nav-link" data-scroll-target="#computational-considerations">Computational Considerations</a>
-  <ul class="collapse">
+  <li><a href="#computational-considerations" id="toc-computational-considerations" class="nav-link" data-scroll-target="#computational-considerations">Computational Considerations</a></li>
   <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
   </ul></li>
   <li><a href="#starter-code" id="toc-starter-code" class="nav-link" data-scroll-target="#starter-code">Starter Code</a></li>
@@ -3222,13 +3220,12 @@ AI505 is on optimization rather than architectural changes.
 </ul>
 <p>You <strong>must not modify the data split</strong> beyond what is implemented in the starter code.</p>
 </section>
-</section>
-<section id="performance-expectations" class="level2">
-<h2 class="anchored" data-anchor-id="performance-expectations">Performance Expectations</h2>
+<section id="performance-expectations" class="level3">
+<h3 class="anchored" data-anchor-id="performance-expectations">Performance Expectations</h3>
 <p>Run the <strong>mini-batch SGD implementation</strong> from the code handed out. Its result will be your baseline. Your goal is to <strong>outperform this result</strong>.</p>
 </section>
-<section id="computational-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="computational-considerations">Computational Considerations</h2>
+<section id="computational-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="computational-considerations">Computational Considerations</h3>
 <p>You may use as many <strong>epochs and computational resources</strong> as needed. However, achieving <strong>strong results with fewer computations</strong> is highly desirable.</p>
 <!--
 Test set: Average loss: 0.01783597499728203, Accuracy: 6155/10000 (61.54999923706055%)
@@ -3245,6 +3242,7 @@ In the report (that must not exceed 10 pages), you must give account of the
 methods tried and details of the method you finally indicated as the best.
 Include evidence for the conclusions you reach.
 -->
+</section>
 <section id="discussion" class="level3">
 <h3 class="anchored" data-anchor-id="discussion">Discussion</h3>
 <p>Assess the baseline in your own computational environment.</p>
@@ -3258,7 +3256,7 @@ print(f&quot;Using {device} device&quot;)</code></pre>
 </section>
 <section id="starter-code" class="level2">
 <h2 class="anchored" data-anchor-id="starter-code">Starter Code</h2>
-<div id="2f2aa0af" class="cell" data-execution_count="1">
+<div id="3cb6bace" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn.functional <span class="im">as</span> F</span>
@@ -3379,36 +3377,37 @@ print(f&quot;Using {device} device&quot;)</code></pre>
 <span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a>    test_loss <span class="op">/=</span> <span class="bu">len</span>(test_loader.dataset)</span>
 <span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>    test_losses.append((step, test_loss))</span>
-<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&#39;Test set: Average loss: </span><span class="sc">{</span>test_loss<span class="sc">}</span><span class="ss">, Accuracy: </span><span class="sc">{</span>correct<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span><span class="bu">len</span>(test_loader.dataset)<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span><span class="fl">100.</span> <span class="op">*</span> correct <span class="op">/</span> <span class="bu">len</span>(test_loader.dataset)<span class="sc">}</span><span class="ss">%)&#39;</span>)</span>
-<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f&#39;Test set: Average loss: </span><span class="sc">{</span>test_loss<span class="sc">}</span><span class="ss">, </span><span class="ch">\</span></span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a><span class="ss">        Accuracy: </span><span class="sc">{</span>correct<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span><span class="bu">len</span>(test_loader.dataset)<span class="sc">}</span><span class="ss"> (</span><span class="sc">{</span><span class="fl">100.</span> <span class="op">*</span> correct <span class="op">/</span> <span class="bu">len</span>(test_loader.dataset)<span class="sc">}</span><span class="ss">%)&#39;</span>)</span>
 <span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a><span class="co"># plot train and test losses to file loss.png</span></span>
-<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>train_steps, train_loss <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>train_losses)</span>
-<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a>test_steps, test_loss <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>test_losses)</span>
-<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>), sharex<span class="op">=</span><span class="va">True</span>)  <span class="co"># sharex aligns x-axes</span></span>
-<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the first</span></span>
-<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(train_steps, train_loss, label<span class="op">=</span><span class="st">&quot;Train Loss&quot;</span>, color<span class="op">=</span><span class="st">&quot;blue&quot;</span>)</span>
-<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;Loss&quot;</span>)</span>
-<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].legend()</span>
-<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].grid(<span class="va">True</span>)</span>
-<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the second</span></span>
-<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(test_steps, test_loss, label<span class="op">=</span><span class="st">&quot;Test Loss, Average&quot;</span>, color<span class="op">=</span><span class="st">&quot;red&quot;</span>)</span>
-<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a>interval <span class="op">=</span> <span class="bu">int</span>(np.ceil(<span class="bu">len</span>(train_dataset)<span class="op">/</span>batch_size))</span>
-<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xticks(<span class="bu">range</span>(<span class="dv">0</span>,interval<span class="op">*</span>(n_epochs<span class="op">+</span><span class="dv">1</span>),interval))</span>
-<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xticklabels(<span class="bu">range</span>(n_epochs<span class="op">+</span><span class="dv">1</span>))</span>
-<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xlabel(<span class="st">&quot;Epoch&quot;</span>)</span>
-<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;Loss&quot;</span>)</span>
-<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].legend()</span>
-<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].grid(<span class="va">True</span>)</span>
-<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a><span class="co"># Adjust layout and show the plot</span></span>
-<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a><span class="co"># plt.show()</span></span>
-<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;loss2.png&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="co"># plot train and test losses to file loss.png</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a>train_steps, train_loss <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>train_losses)</span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>test_steps, test_loss <span class="op">=</span> <span class="bu">zip</span>(<span class="op">*</span>test_losses)</span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">2</span>, <span class="dv">1</span>, figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>), sharex<span class="op">=</span><span class="va">True</span>)  <span class="co"># sharex aligns x-axes</span></span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the first</span></span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].plot(train_steps, train_loss, label<span class="op">=</span><span class="st">&quot;Train Loss&quot;</span>, color<span class="op">=</span><span class="st">&quot;blue&quot;</span>)</span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].set_ylabel(<span class="st">&quot;Loss&quot;</span>)</span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].legend()</span>
+<span id="cb2-136"><a href="#cb2-136" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].grid(<span class="va">True</span>)</span>
+<span id="cb2-137"><a href="#cb2-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the second</span></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].plot(test_steps, test_loss, label<span class="op">=</span><span class="st">&quot;Test Loss, Average&quot;</span>, color<span class="op">=</span><span class="st">&quot;red&quot;</span>)</span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>interval <span class="op">=</span> <span class="bu">int</span>(np.ceil(<span class="bu">len</span>(train_dataset)<span class="op">/</span>batch_size))</span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xticks(<span class="bu">range</span>(<span class="dv">0</span>,interval<span class="op">*</span>(n_epochs<span class="op">+</span><span class="dv">1</span>),interval))</span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xticklabels(<span class="bu">range</span>(n_epochs<span class="op">+</span><span class="dv">1</span>))</span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_xlabel(<span class="st">&quot;Epoch&quot;</span>)</span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].set_ylabel(<span class="st">&quot;Loss&quot;</span>)</span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].legend()</span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].grid(<span class="va">True</span>)</span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="co"># Adjust layout and show the plot</span></span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="co"># plt.show()</span></span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;loss2.png&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 </section>
