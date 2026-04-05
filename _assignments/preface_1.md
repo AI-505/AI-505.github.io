@@ -39,11 +39,17 @@ categories: assignments
   ```{shell}
   asg1/
   ├── README.md
+  ├── deklarationsformular-nat-gai.pdf
   ├── data
   ├── src
   └── tex
       └── main.pdf
   ```
+
+  - `deklarationsformular-nat-gai.pdf` Generative AI declaration form from the
+    Faculty.  The document in Word can be found [here]({{
+    "/assets/deklarationsformular-nat-gai.docx" | absolute_url }}). It must be
+    submitted compiled in PDF form. {: style="color: blue"}
 
   - `data` must contain problem instances used for the analysis (not relevant
     for asg1)
@@ -66,12 +72,14 @@ categories: assignments
   color blue.
 
 
-- SDU rules on AI assistants [https://mitsdu.dk/en/aiatsdu] apply to this
+- SDU rules on AI assistants https://mitsdu.dk/en/aiatsdu apply to this
    exam. In particular:
 
-  - in your you have to add an Appendix where you declare to which extent you
-     have used AI tools. The Appendix must be present also if you did not
-     use AI and hence declare so.
+  - you have to add the [Generative AI declaration form]({{
+    "/assets/deklarationsformular-nat-gai.docx" | absolute_url }}) from the
+     Faculty or an Appendix where you declare to which extent you have used AI
+     tools. The Form or the Appendix must be present also if you did not use AI and hence
+     declare so.{: style="color: blue"}
 
   - if you do not declare but the teachers have suspects that you used AI
     tools, you will be reported for exam cheating
@@ -80,8 +88,8 @@ categories: assignments
     consideration and to lower consequently the final grade if they
     suspect that the learning goals have not been achieved.
 
-  In declaring the use you can share the conversation you had with the
-  tools and provide the link or copying it in the Appendix. The Appendix
-  is not subjected to page limits.
+  In declaring the use you can share the conversation you had with the tools and
+  provide the link or copying it in the Appendix or in the declaration form. The
+  Appendix and the declaration form are not subject to page limits.
 
 - You can write your answers in Danish or in English.
