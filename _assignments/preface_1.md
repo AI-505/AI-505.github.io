@@ -46,9 +46,8 @@ categories: assignments
       └── main.pdf
   ```
 
-  - <div style="color:DodgerBlue;">`deklarationsformular-nat-gai.pdf` Generative AI declaration form from the
-    Faculty.  The document in Word can be found [here]({{
-    "/assets/deklarationsformular-nat-gai.docx" | absolute_url }}). It must be
+  - <div style="color:SlateBlue;">`deklarationsformular-nat-gai.pdf` Generative AI declaration form from the
+    Faculty.  The document in Word is available from {{"/assets/deklarationsformular-nat-gai.docx" | absolute_url }}. It must be
     submitted compiled in PDF form.</div>
 
   - `data` must contain problem instances used for the analysis (not relevant
@@ -75,7 +74,7 @@ categories: assignments
 - SDU rules on AI assistants <https://mitsdu.dk/en/aiatsdu> apply to this
    exam. In particular:
 
-  - <div style="color:DodgerBlue;">you have to add the [Generative AI declaration form]({{
+  - <div style="color:SlateBlue;">you have to add the Generative AI declaration form ({{
     "/assets/deklarationsformular-nat-gai.docx" | absolute_url }}) from the
      Faculty or an Appendix where you declare to which extent you have used AI
      tools. The Form or the Appendix must be present also if you did not use AI and hence
