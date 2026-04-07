@@ -27,6 +27,7 @@ Resources:
 
 ### April 7: More on Optimization for ML
 
+- [Slides]({{ "/assets/ai505-lec12.pdf" | absolute_url }})
 
 ### April 8: Exercise Session: Machine Learning
 
