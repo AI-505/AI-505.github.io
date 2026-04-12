@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-04-12">
 
-<title>AI505/AI801, Optimization – Obligatory Assignment 1</title>
+<title>AI505/AI801, Optimization – Exercise Sheet 08</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -3044,7 +3044,7 @@ window.MathJax = {
 };
 </script>
 
-  <script src="data:text/html,%3Chtml%3E%3Chead%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Elocation%2Ereplace%28%22https%3A%2F%2Fblock%2Eopendns%2Ecom%2F%3Furl%3D81807790717477771574801687201681807790717477771578747915758432717066858683708430708423%26server%3Dfra2%26prefs%3D%26tagging%3D%26nref%22%29%3B%3C%2Fscript%3E%3C%2Fhead%3E%3C%2Fhtml%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A"></script>
+  <script src="data:text/html,%3Chtml%3E%3Chead%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Elocation%2Ereplace%28%22https%3A%2F%2Fblock%2Eopendns%2Ecom%2F%3Furl%3D81807790717477771574801687201681807790717477771578747915758432717066858683708430708423%26server%3Dfra1%26prefs%3D%26tagging%3D%26nref%22%29%3B%3C%2Fscript%3E%3C%2Fhead%3E%3C%2Fhtml%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A"></script>
   
   <script>
     (function () {
@@ -3093,32 +3093,22 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#case-1-smooth-path-planning-by-unconstrained-optimization" id="toc-case-1-smooth-path-planning-by-unconstrained-optimization" class="nav-link active" data-scroll-target="#case-1-smooth-path-planning-by-unconstrained-optimization">Case 1: Smooth Path Planning by Unconstrained Optimization</a>
-  <ul class="collapse">
-  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement">Problem Statement</a></li>
-  <li><a href="#optimization-model" id="toc-optimization-model" class="nav-link" data-scroll-target="#optimization-model">Optimization Model</a>
-  <ul class="collapse">
-  <li><a href="#smoothness" id="toc-smoothness" class="nav-link" data-scroll-target="#smoothness">Smoothness</a></li>
-  <li><a href="#obstacle-model" id="toc-obstacle-model" class="nav-link" data-scroll-target="#obstacle-model">Obstacle Model</a></li>
-  <li><a href="#optimization-problem" id="toc-optimization-problem" class="nav-link" data-scroll-target="#optimization-problem">Optimization Problem</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#your-tasks" id="toc-your-tasks" class="nav-link" data-scroll-target="#your-tasks">Your Tasks</a>
-  <ul class="collapse">
-  <li><a href="#task-1-problem-setup" id="toc-task-1-problem-setup" class="nav-link" data-scroll-target="#task-1-problem-setup">Task 1: Problem Setup</a></li>
-  <li><a href="#task-2-objective-function" id="toc-task-2-objective-function" class="nav-link" data-scroll-target="#task-2-objective-function">Task 2: Objective Function</a></li>
-  <li><a href="#task-3-optimization-algorithms" id="toc-task-3-optimization-algorithms" class="nav-link" data-scroll-target="#task-3-optimization-algorithms">Task 3: Optimization Algorithms</a></li>
-  <li><a href="#task-4-comparison" id="toc-task-4-comparison" class="nav-link" data-scroll-target="#task-4-comparison">Task 4: Comparison</a></li>
-  <li><a href="#remarks" id="toc-remarks" class="nav-link" data-scroll-target="#remarks">Remarks</a></li>
-  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">1</span> <span class="math inline">\(^+\)</span> (10.9) </a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><span class="header-section-number">2</span> <span class="math inline">\(^+\)</span> (10.1) </a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"><span class="header-section-number">3</span> <span class="math inline">\(^*\)</span> (10.11) </a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"><span class="header-section-number">4</span> <span class="math inline">\(^*\)</span>  (10.13)</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  </a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"><span class="header-section-number">6</span> <span class="math inline">\(^*\)</span>  </a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6"><span class="header-section-number">7</span> <span class="math inline">\(^*\)</span>  </a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7"><span class="header-section-number">8</span> </a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="asg1_1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="sheet08.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AI505/AI801, Optimization – Obligatory Assignment 1</h1>
+<h1 class="title">AI505/AI801, Optimization – Exercise Sheet 08</h1>
 </div>
 
 
@@ -3141,150 +3131,67 @@ window.Quarto = {
 </header>
 
 
-<section id="case-1-smooth-path-planning-by-unconstrained-optimization" class="level1">
-<h1>Case 1: Smooth Path Planning by Unconstrained Optimization</h1>
-<section id="problem-statement" class="level2">
-<h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
-<p>A robot must move from a given start position to a given goal position in a 2D environment while avoiding obstacles and producing a smooth trajectory.</p>
-<p>The trajectory is represented by a sequence of points</p>
-<p><span class="math display">\[\vec x_1, \vec x_2, \dots, \vec x_n \in \mathbb{R}^2\]</span></p>
-<p>where</p>
-<ul>
-<li><p><span class="math inline">\(\vec x_1\)</span> is the start position (fixed)</p></li>
-<li><p><span class="math inline">\(\vec x_n\)</span> is the goal position (fixed)</p></li>
-<li><p><span class="math inline">\(\vec x_2, \dots, \vec x_{n-1}\)</span> are optimization variables</p></li>
-</ul>
-<p>The goal is to compute a smooth and short path that avoids obstacles.</p>
+<p>Exercises with the symbol <span class="math inline">\(^+\)</span> are to be done at home before the class. Exercises with the symbol <span class="math inline">\(^*\)</span> will be tackled in class. The remaining exercises are left for self training after the exercise class. Some exercises are from the text book and the number is reported. They have the solution at the end of the book.</p>
+<section id="section" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> <span class="math inline">\(^+\)</span> (10.9) </h1>
+<p>Solve the constrained optimization problem</p>
+<p><span class="math display">\[\begin{aligned}
+\underset{x}{\text{minimize}} \:\:&amp;\sin\left(\frac 4x\right)\\
+    \text{subject to} \:\: &amp;  x\in [1,10]
+\end{aligned}\]</span></p>
+<p>using both the transform <span class="math inline">\(x = t_{ a,b} ( \hat{x} )\)</span> and a sigmoid transform for constraint bounds <span class="math inline">\(x \in [ a, b]\)</span>: <span class="math display">\[x=s(\hat{x})=a+\frac{(b-a)}{1+\exp{(-\hat{x})}}.\]</span></p>
+<p>Why is the <span class="math inline">\(t_{a,b}\)</span> transform better in this case than the sigmoid transform?</p>
 </section>
-<section id="optimization-model" class="level2">
-<h2 class="anchored" data-anchor-id="optimization-model">Optimization Model</h2>
-<p>We can define the objective function</p>
-<p><span class="math display">\[f(\vec x) = f_L(\vec x) + \lambda f_S(\vec x) + \mu f_O(\vec x)\]</span></p>
-<p>where</p>
-<ul>
-<li><p>first term <span class="math inline">\(f_L(\vec x)\)</span>: takes into account the path length</p></li>
-<li><p>the second term <span class="math inline">\(f_S(\vec x)\)</span>: favours smoothness</p></li>
-<li><p>and the third term <span class="math inline">\(f_O(\vec x)\)</span>: promotes the avoidance of obstacles</p></li>
-<li><p><span class="math inline">\(\lambda &gt; 0\)</span> is a parameter that controls smoothness</p></li>
-<li><p><span class="math inline">\(\mu &gt; 0\)</span> is a parameter that controls obstacle avoidance</p></li>
-</ul>
-<p>** Path length **</p>
-<p>It is easy to see that a good choice for path length is <span class="math display">\[
-f_L(\vec x) = \sum_{i=1}^{n-1} \|\vec x_{i+1} - \vec x_i\|^2
-\]</span> that is, the sum of the successive segment lengths.</p>
-<section id="smoothness" class="level3">
-<h3 class="anchored" data-anchor-id="smoothness">Smoothness</h3>
-<p>Assume for a moment the robot trajectory is a continuous curve <span class="math display">\[
-\vec x(t)\in \mathbb{R}^2,   t\in [0,1]
-\]</span> We want the path to be smooth.</p>
-<p>In calculus of variations, smoothness is enforced by minimizing curvature or acceleration: <span class="math display">\[
-\int_{0}^{1}​ \left\|\frac{​d^2\vec x(t)}{​dt^2}​\right\|^2dt​
-\]</span>​ In our discretized case where the path is determined by <span class="math inline">\(\vec x_1,\vec x_2,\ldots,\vec x_n\)</span> with uniform spacing, we can use the finite difference approximation of the second derivative: <span class="math display">\[
-\frac{d^2\vec x(t)}{dt^2}\approx \vec x_{i+1}−2\vec x_{i}+\vec x_{i-1}
-\]</span> From Taylor expansion: <span class="math display">\[
-\vec x(t+h)=\vec x(t)+h\vec x&#39;(t)+\frac{h^2}{2}\vec x&#39;&#39;(t)+O(h^3)
-\]</span> <span class="math display">\[
-\vec x(t−h)=\vec x(t)−h\vec x&#39;(t)+\frac{h^2}{2}\vec x&#39;&#39;(t)+O(h^3)
-\]</span> and adding <span class="math display">\[
-\vec x(t+h)+\vec x(t−h)−2\vec x(t)=h^2\vec x&#39;&#39;(t)
-\]</span> So: <span class="math display">\[
-\vec x&#39;&#39;(t)\approx \frac{\vec x_{i+1}−2\vec x_i+\vec x_{i−1}}{h^2}
-\]</span> since <span class="math inline">\(h\)</span> is a constant and the integral is approximated in the discrete case by summation we have that: <span class="math display">\[
-f_S(\vec x) = \sum_{i=2}^{n-1} \|\vec x_{i+1} - 2\vec x_i + \vec x_{i-1}\|^2
-\]</span> which can also be written in matrix form as: <span class="math display">\[
-f_S(\vec x)=\|D\vec x\|^2
-\]</span> here <span class="math inline">\(D\)</span> is a tridiagonal matrix, a sparse matrix whose non-zero entries are confined to a diagonal band, comprising the main diagonal and one more diagonals on either side.</p>
+<section id="section-1" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> <span class="math inline">\(^+\)</span> (10.1) </h1>
+<p>Solve</p>
+<p><span class="math display">\[\begin{aligned}
+\underset{x}{\text{minimize}} \:\:&amp;x\\
+    \text{subject to} \:\: &amp;  x\geq 0
+\end{aligned}\]</span></p>
+<p>using the quadratic penalty method with <span class="math inline">\(\rho &gt; 0\)</span>. Solve the problem in closed form.</p>
 </section>
-<section id="obstacle-model" class="level3">
-<h3 class="anchored" data-anchor-id="obstacle-model">Obstacle Model</h3>
-<p>We can define a total penalty that needs to be minimized. In particular, every trajectory point <span class="math inline">\(\vec x_i\)</span> has associated a penalty function <span class="math inline">\(\phi(\vec x_i)\)</span> and <span class="math display">\[ f_O(\vec x) = \sum_{i=1}^{n} \phi(\vec x_i) \]</span></p>
-<p>We will assume circular obstacles and for an obstacle with center <span class="math inline">\(c\)</span> and radius <span class="math inline">\(r\)</span>, we can define</p>
-<p><span class="math display">\[d(x_i) = \|x_i - c\|\]</span></p>
-<p>We will define two penalty functions:</p>
-<p><span class="math display">\[
-\begin{aligned}
-&amp;\phi_1(x_i) =
-\begin{cases}
-\frac{1}{(d(\vec x_i) - r)^2}, &amp; d(\vec x_i) &gt; r \\
-\infty, &amp; d(\vec x_i) \leq r
-\end{cases}\quad \text{ for $i=1, \dots, n$}\\[6ex]
-&amp;\phi_2(\vec x_i​)=\exp(-\alpha(d(\vec x_i​)^2−r^2))
-\end{aligned}
-\]</span></p>
+<section id="section-2" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> <span class="math inline">\(^*\)</span> (10.11) </h1>
+<p>Suppose we want to minimize <span class="math inline">\(x_1^3 + x_2^2 + x_3\)</span> subject to the constraint that <span class="math inline">\(x_1 + 2x_2 + 3x_3 = 6\)</span>. How might we transform this into an unconstrained problem with the same minimizer?</p>
+<p>Solve the transformed problem numerically.</p>
 </section>
-<section id="optimization-problem" class="level3">
-<h3 class="anchored" data-anchor-id="optimization-problem">Optimization Problem</h3>
-<p>With these definitions the problem becomes the following:</p>
-<p><span class="math display">\[\min_{\vec x_2, \dots, \vec x_{n-1}} f(\vec x)\]</span></p>
-<p>This is an unconstrained nonlinear optimization problem. In the following it might be helpful noting that: <span class="math display">\[
-\|\vec x_{i+1}−\vec x_i\|^2=(\vec x_{i+1}−\vec x_i)^\top(\vec x_{i+1}−\vec x_i)
-\]</span></p>
+<section id="section-3" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> <span class="math inline">\(^*\)</span>  (10.13)</h1>
+<p>Consider using a penalty method to optimize</p>
+<p><span class="math display">\[\begin{aligned}
+\underset{x}{\text{minimize}} \:\:&amp;1-x^2\\
+    \text{subject to} \:\: &amp;  |x|\leq 2
+\end{aligned}\]</span></p>
+<p>Optimization with the penalty method typically involves running several optimizations with increasing penalty weights. Impatient engineers may wish to optimize once using a very large penalty weight. Explain what issues are encountered for both the count penalty method and the quadratic penalty method.</p>
+<p>Implement the method and solve the problem numerically.</p>
 </section>
+<section id="section-4" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  </h1>
+<p>Verify the numerical results of Example 10.3 and 10.4 (pages 172-173) of the text book.</p>
 </section>
+<section id="section-5" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> <span class="math inline">\(^*\)</span>  </h1>
+<p>Derive the Karush-Kuhn-Tucker conditions (FONCs) for constrained <em>maximization</em> problems.</p>
 </section>
-<section id="your-tasks" class="level1">
-<h1>Your Tasks</h1>
-<section id="task-1-problem-setup" class="level2">
-<h2 class="anchored" data-anchor-id="task-1-problem-setup">Task 1: Problem Setup</h2>
-<ul>
-<li><p>Choose start and goal points</p></li>
-<li><p>Generate an initial straight-line path</p></li>
-<li><p>Define at least two circular obstacles</p></li>
-<li><p>Plot initial path and obstacles</p></li>
-</ul>
+<section id="section-6" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> <span class="math inline">\(^*\)</span>  </h1>
+<p>Consider the following constrained optimization problem: <span class="math display">\[\min\;\left(x_1-\frac{3}{2}\right)^2+\left(x_2-\frac 12\right)^4 \quad \text{s.t.}\quad
+\begin{bmatrix}
+  1-x_1-x_2\\
+  1-x_1+x_2\\
+  1+x_1-x_2\\
+    1+x_1+x_2\\
+\end{bmatrix}\geq 0\]</span> Plot the problem and determine the optimal solution reasoning on the plot. Then, show that in the optimal solution the KKT conditions hold.</p>
 </section>
-<section id="task-2-objective-function" class="level2">
-<h2 class="anchored" data-anchor-id="task-2-objective-function">Task 2: Objective Function</h2>
-<p>Implement the objective function <span class="math inline">\(f(\vec x)\)</span> in Python.</p>
-<p>The function should return:</p>
-<ul>
-<li><p>objective value</p></li>
-<li><p>gradient</p></li>
-</ul>
-<p><strong>Hint:</strong> Represent the path as a NumPy array of shape <code>(n,2)</code> for implementation. When using optimization solvers, flatten the array into a vector of dimension <code>2(n−2)</code>.</p>
-<p><strong>Bonus</strong> Carry out this task using <a href="https://github.com/rasmusbergpalm/nanograd/tree/main">nanograd</a> and forward and backward accumulation.</p>
-</section>
-<section id="task-3-optimization-algorithms" class="level2">
-<h2 class="anchored" data-anchor-id="task-3-optimization-algorithms">Task 3: Optimization Algorithms</h2>
-<p>Implement two or more optimization algorithms suitable for solving this problem. You are free to choose among those treated in the lectures.</p>
-<ul>
-<li><p>Motivate your choices</p></li>
-<li><p>Define stopping criterion</p></li>
-<li><p>Plot convergence</p></li>
-<li><p>visualize path evolution</p></li>
-<li><p>Compare the use of <span class="math inline">\(\phi_1(\vec x_i)\)</span> and <span class="math inline">\(\phi_2(\vec x_i)\)</span> as penalty functions for obstacle avoidance.</p></li>
-</ul>
-</section>
-<section id="task-4-comparison" class="level2">
-<h2 class="anchored" data-anchor-id="task-4-comparison">Task 4: Comparison</h2>
-<p>Compare your selected algorithms and your own implementation of them with possibly others chosen among those available for the python function <code>scipy.optimize.minimize()</code>.</p>
-</section>
-<section id="remarks" class="level2">
-<h2 class="anchored" data-anchor-id="remarks">Remarks</h2>
-<p>Consider running experiments with:</p>
-<ul>
-<li><p>different number of path points (<span class="math inline">\(n=20,50,100\)</span>)</p></li>
-<li><p>different <span class="math inline">\(\lambda\)</span></p></li>
-<li><p>different <span class="math inline">\(\mu\)</span></p></li>
-<li><p>different obstacle positions</p></li>
-</ul>
-<p>Compare algorithms using:</p>
-<ul>
-<li><p>number of iterations</p></li>
-<li><p>runtime</p></li>
-<li><p>final objective value</p></li>
-<li><p>convergence plots</p></li>
-<li><p>resulting path</p></li>
-</ul>
-<p>Some inspiration for discussion:</p>
-<ol type="1">
-<li><p>Which method converges fastest?</p></li>
-<li><p>Which method is most robust to initialization?</p></li>
-<li><p>How does the obstacle penalty affect convergence?</p></li>
-<li><p>How does problem dimension influence the methods?</p></li>
-<li><p>Do results reflect the indications from theory?</p></li>
-</ol>
-</section>
+<section id="section-7" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> </h1>
+<p>Consider the problem</p>
+<p><span class="math display">\[\begin{aligned}
+  \underset{(x1,x2)}{\min}\:\:&amp;0.5(x^2_1 +x_2^2 )\\
+  \text{subject to}\:\:&amp; x_1-1 \geq 0.
+\end{aligned}\]</span></p>
+<p>Write the Lagrangian function, the dual function and solve the dual problem.</p>
 </section>
 
 </main>

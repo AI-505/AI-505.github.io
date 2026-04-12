@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-28">
+<meta name="dcterms.date" content="2026-04-12">
 
 <title>AI505/AI801, Optimization – Obligatory Assignment 1</title>
 <style>
@@ -3078,7 +3078,7 @@ window.MathJax = {
 };
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="data:text/html,%3Chtml%3E%3Chead%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Elocation%2Ereplace%28%22https%3A%2F%2Fblock%2Eopendns%2Ecom%2F%3Furl%3D81807790717477771574801687201681807790717477771578747915758432717066858683708430708423%26server%3Dfra1%26prefs%3D%26tagging%3D%26nref%22%29%3B%3C%2Fscript%3E%3C%2Fhead%3E%3C%2Fhtml%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A"></script>
   
   <script>
     (function () {
@@ -3158,7 +3158,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 28, 2026</p>
+      <p class="date">April 12, 2026</p>
     </div>
   </div>
   
@@ -3191,7 +3191,7 @@ window.Quarto = {
 <p>You are also free to experiment with other algorithms from the course.</p>
 <section id="scenarios" class="level3">
 <h3 class="anchored" data-anchor-id="scenarios">Scenarios</h3>
-<p>You <strong>must not modify the LeNet-5 architecture</strong>. Instead, your task is to attain the best accuracy on the test set in the three scenarios:</p>
+<p>You <strong>must not modify the LeNet-5 architecture</strong>. Instead, your task is to attain the best accuracy on the test set in the two scenarios:</p>
 <ol type="1">
 <li><p><strong>Standard Cross-Entropy Loss</strong></p>
 <p>Use the loss function as implemented in the provided starter code.</p></li>
@@ -3256,7 +3256,7 @@ print(f&quot;Using {device} device&quot;)</code></pre>
 </section>
 <section id="starter-code" class="level2">
 <h2 class="anchored" data-anchor-id="starter-code">Starter Code</h2>
-<div id="3cb6bace" class="cell" data-execution_count="1">
+<div id="eda917a1" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn.functional <span class="im">as</span> F</span>
@@ -3409,6 +3409,24 @@ print(f&quot;Using {device} device&quot;)</code></pre>
 <span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a><span class="co"># plt.show()</span></span>
 <span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">&#39;loss2.png&#39;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div style="color:SlateBlue;">
+The script above has to be patched with the following changes:
+</div>
+<pre class="{diff}"><code>83c83
+&lt; model = LeNet5()
+---
+&gt; model = LeNet5().to(device)
+103a104
+&gt;         images, labels = images.to(device), labels.to(device)
+117a119
+&gt;             images, labels = images.to(device), labels.to(device)</code></pre>
+<div style="color:SlateBlue;">
+<p>where: - <code>XXcYY</code> means: change the line <code>XX</code> reported below in to the line given next. - <code>XXaYY</code> means: at (the end of) line XX append the contents of the line given below</p>
+</div>
+<div style="color:SlateBlue;">
+You can do this manually or using the program command line program <code>patch</code>: copy the previous lines in a file called <code>diff.txt</code>, let the script above be in a file called <code>FashionMNIST.py</code> then from command line:
+</div>
+<pre class="{bash}"><code>patch FashionMNIST.py diff.txt &gt; FashionMNIST.patched.py</code></pre>
 </section>
 </section>
 

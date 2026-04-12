@@ -32,10 +32,8 @@ Resources:
 ### April 8: Exercise Session: Machine Learning
 
 
-- [Sheet 07][57]. 
-<!--
-[Solutions][577].
--->
+- [Sheet 07][57]. [Solutions][577].
+
 
 
 [57]: {{ "/assets/exercises/sheet07/sheet07.html" | absolute_url }}
