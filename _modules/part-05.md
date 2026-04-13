@@ -20,10 +20,13 @@ Resources:
 
 ### April 15: Exercise Session on Constraints
 
-<!-- - [Sheet 08][58]. [Solutions][588] -->
+- [Sheet 08][58].
 
-[58]: {{ "/assets/sheets/ai505_sheet06.pdf" | absolute_url }}
-[588]: {{ "/assets/sheets/ai505_sheet06_sol.pdf" | absolute_url }}
+<!-- [Solutions][588] -->
+
+
+[58]: {{ "/assets/exercises/sheet08/sheet08.html" | absolute_url }}
+[588]: {{ "/assets/exercises/solutions/sheet08/sheet08.html" | absolute_url }}
 
 
 ### April 21: Linear Constrained Optimization
@@ -41,5 +44,7 @@ Resources:
 
 <!-- - [Sheet 07][57]. [Solutions][577] -->
 
-[57]: {{ "/assets/sheets/ai505_sheet07.pdf" | absolute_url }}
-[577]: {{ "/assets/sheets/ai505_sheet07_sol.pdf" | absolute_url }}
+
+[59]: {{ "/assets/exercises/sheet09/sheet09.html" | absolute_url }}
+[599]: {{ "/assets/exercises/solutions/sheet09/sheet09.html" | absolute_url }}
+
