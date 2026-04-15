@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-14">
+<meta name="dcterms.date" content="2026-04-15">
 
 <title>AI505/AI801, Optimization – Exercise Sheet 08</title>
 <style>
@@ -2328,10 +2328,10 @@ window.Quarto = {
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">1</span> <span class="math inline">\(^+\)</span> (10.9) </a></li>
   <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"><span class="header-section-number">2</span> <span class="math inline">\(^+\)</span> (10.1) </a></li>
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"><span class="header-section-number">3</span> <span class="math inline">\(^*\)</span> (10.11) </a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"><span class="header-section-number">4</span> <span class="math inline">\(^*\)</span></a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  (10.13)</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"><span class="header-section-number">4</span> <span class="math inline">\(^*\)</span>  (10.13)</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  </a></li>
   <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"><span class="header-section-number">6</span> <span class="math inline">\(^*\)</span>  </a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6"><span class="header-section-number">7</span> <span class="math inline">\(^*\)</span>  </a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6"><span class="header-section-number">7</span> </a></li>
   <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7"><span class="header-section-number">8</span> <span class="math inline">\(^*\)</span>  </a></li>
   <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8"><span class="header-section-number">9</span> </a></li>
   </ul>
@@ -2352,7 +2352,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 14, 2026</p>
+      <p class="date">April 15, 2026</p>
     </div>
   </div>
   
@@ -2390,20 +2390,7 @@ window.Quarto = {
 <p>Solve the transformed problem numerically.</p>
 </section>
 <section id="section-3" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> <span class="math inline">\(^*\)</span></h1>
-<p>Write the KKT conditions for the problem:</p>
-<p><span class="math display">\[
-    \begin{aligned}
-    \underset{\vec x}{\minimize} \:\:&amp;f(\vec x)\\
-    \text{subject to} \:\: &amp;  \vec g(\vec x)\leq \vec b \\
-    &amp;\vec h(\vec x)=\vec 0\\
-    &amp;\vec x \geq \vec 0.
-  \end{aligned}
-\]</span></p>
-<p>Note the additional requirements <span class="math inline">\(\vec x \geq \vec 0\)</span> and the right hand term <span class="math inline">\(\vec b\)</span> with respect to the problem saw in class.</p>
-</section>
-<section id="section-4" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  (10.13)</h1>
+<h1 data-number="4"><span class="header-section-number">4</span> <span class="math inline">\(^*\)</span>  (10.13)</h1>
 <p>Consider using a penalty method to optimize</p>
 <p><span class="math display">\[\begin{aligned}
 \underset{x}{\text{minimize}} \:\:&amp;1-x^2\\
@@ -2412,13 +2399,26 @@ window.Quarto = {
 <p>Optimization with the penalty method typically involves running several optimizations with increasing penalty weights. Impatient engineers may wish to optimize once using a very large penalty weight. Explain what issues are encountered for both the count penalty method and the quadratic penalty method.</p>
 <p>Implement the method and solve the problem numerically.</p>
 </section>
-<section id="section-5" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> <span class="math inline">\(^*\)</span>  </h1>
+<section id="section-4" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> <span class="math inline">\(^*\)</span>  </h1>
 <p>Verify the numerical results of Example 10.3 and 10.4 (pages 172-173) of the text book.</p>
 </section>
-<section id="section-6" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> <span class="math inline">\(^*\)</span>  </h1>
+<section id="section-5" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> <span class="math inline">\(^*\)</span>  </h1>
 <p>Derive the Karush-Kuhn-Tucker conditions (FONCs) for constrained <em>maximization</em> problems.</p>
+</section>
+<section id="section-6" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> </h1>
+<p>Write the KKT conditions for the problem:</p>
+<p><span class="math display">\[
+    \begin{aligned}
+    \underset{\vec x}{\text{minimize}} \:\:&amp;f(\vec x)\\
+    \text{subject to} \:\: &amp;  \vec g(\vec x)\leq \vec b \\
+    &amp;\vec h(\vec x)=\vec 0\\
+    &amp;\vec x \geq \vec 0.
+  \end{aligned}
+\]</span></p>
+<p>Note the additional requirements <span class="math inline">\(\vec x \geq \vec 0\)</span> and the right hand term <span class="math inline">\(\vec b\)</span> with respect to the problem saw in class.</p>
 </section>
 <section id="section-7" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> <span class="math inline">\(^*\)</span>  </h1>
