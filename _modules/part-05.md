@@ -20,9 +20,7 @@ Resources:
 
 ### April 15: Exercise Session on Constraints
 
-- [Sheet 08][58].
-
-<!-- [Solutions][588] -->
+- [Sheet 08][58]. [Solutions][588].
 
 
 [58]: {{ "/assets/exercises/sheet08/sheet08.html" | absolute_url }}
@@ -37,12 +35,14 @@ Resources:
 
 Resources:
 
-<!-- - [Slides]({{ "/assets/ai505-lec14.pdf" | absolute_url }}) -->
+- [Slides]({{ "/assets/ai505-lec14.pdf" | absolute_url }})
 - Chapter 11 [KW]
 
 ### April 22: Exercises: Linear Programming
 
-<!-- - [Sheet 07][57]. [Solutions][577] -->
+- [Sheet 09][59]. 
+
+<!-- [Solutions][577] -->
 
 
 [59]: {{ "/assets/exercises/sheet09/sheet09.html" | absolute_url }}
