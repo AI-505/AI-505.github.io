@@ -3044,7 +3044,7 @@ window.MathJax = {
 };
 </script>
 
-  <script src="data:text/html,%3Chtml%3E%3Chead%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3Elocation%2Ereplace%28%22https%3A%2F%2Fblock%2Eopendns%2Ecom%2F%3Furl%3D81807790717477771574801687201681807790717477771578747915758432717066858683708430708423%26server%3Dams2%26prefs%3D%26tagging%3D%26nref%22%29%3B%3C%2Fscript%3E%3C%2Fhead%3E%3C%2Fhtml%3E%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   
   <script>
     (function () {
@@ -3100,9 +3100,10 @@ window.Quarto = {
   <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"><span class="header-section-number">5</span> <span class="math inline">\(^+\)</span> (11.4)</a></li>
   <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"><span class="header-section-number">6</span> <span class="math inline">\(^+\)</span> (11.5)</a></li>
   <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6"><span class="header-section-number">7</span> </a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7"><span class="header-section-number">8</span> <span class="math inline">\(^*\)</span></a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7"><span class="header-section-number">8</span> </a></li>
   <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8"><span class="header-section-number">9</span> <span class="math inline">\(^*\)</span></a></li>
-  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9"><span class="header-section-number">10</span> </a></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9"><span class="header-section-number">10</span> <span class="math inline">\(^*\)</span></a></li>
+  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10"><span class="header-section-number">11</span> </a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="sheet09.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
@@ -3179,7 +3180,18 @@ d\)</span> and you want to conduct a line search. However, you know that there i
 <p>Note that we can choose <span class="math inline">\(\vec x(0) = \vec 0\)</span> as our initial point. You can generate instances of this problem by choosing <span class="math inline">\(a_i\)</span> from some distribution on <span class="math inline">\(\mathbb{R}^n\)</span> and then solving the problem with <code>scipy.optimize.minimize</code>.</p>
 </section>
 <section id="section-7" class="level1" data-number="8">
-<h1 data-number="8"><span class="header-section-number">8</span> <span class="math inline">\(^*\)</span></h1>
+<h1 data-number="8"><span class="header-section-number">8</span> </h1>
+<p>Write the Lagrangian function for the following problem and derive the dual function <span class="math inline">\(\cal D\)</span>. Determine <span class="math inline">\(\vec x(\vec \lambda)\)</span>, the minimizer of <span class="math inline">\(\cal D\)</span> and the gradient of <span class="math inline">\(\cal D\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{minimize} &amp; (x_1 - 1)^2 + (x_2 - 1)^2\\
+\text{subject to} &amp;x_1 + 2x_2 - 1 = 0\\
+&amp;2x_1 + x_2 - 1 = 0
+\end{aligned}
+\]</span></p>
+</section>
+<section id="section-8" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> <span class="math inline">\(^*\)</span></h1>
 <p>A pharmaceutical company produces three types of drugs: A, B, and C. These drugs require raw materials, chemical processing time, and packaging units. The goal is to maximize profit, taking into account restrictions due to resource availability and production balance.</p>
 <p>Drug A contributes 60 DKK per unit to the profit, drug B contributes 100 DKK per unit, drug C contributes 80 DKK per unit. The consumptions per units of drug of raw materials, chemical processing time, and packaging units are given in Table <a href="#tab" data-reference-type="ref" data-reference="tab">[tab]</a> together with the quantities available. While consumptions of raw material and processing time cannot exceed the amount available, excess of packaging units is allowed. Extra packaging units can be bought but each extra unit reduces profit at 5 DKK per unit while packaging units left can be reused in the next production period and hence contribute positively to the profit with the same amount of DKK per unit. Due to contractual obligations, Drug B must be produced in exactly twice the amount of Drug A.</p>
 <p>Formulate the problem in linear programming terms. Write first the <em>instantiated</em> model and then the abstract, <em>general</em> model separating model from data.</p>
@@ -3231,8 +3243,8 @@ d\)</span> and you want to conduct a line search. However, you know that there i
 </tbody>
 </table>
 </section>
-<section id="section-8" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> <span class="math inline">\(^*\)</span></h1>
+<section id="section-9" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> <span class="math inline">\(^*\)</span></h1>
 <p>Consider the following linear programming problem: <span class="math display">\[\begin{aligned}
   \maximize \;&amp; Z=60x_1+100x_2+80x_3-5x_4\\
   \text{ s.t.}\;  &amp;5x_1+8x_2+6x_3\leq 600\\
@@ -3249,8 +3261,8 @@ d\)</span> and you want to conduct a line search. However, you know that there i
 <li><p>Solve the problem numerically with <code>scipy.optimize.linprog</code>. Read this <a href="https://docs.scipy.org/doc/scipy/tutorial/optimize.html#linear-programming-linprog">tutorial</a>.</p></li>
 </ul>
 </section>
-<section id="section-9" class="level1" data-number="10">
-<h1 data-number="10"><span class="header-section-number">10</span> </h1>
+<section id="section-10" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> </h1>
 <p>Two opponents, say Antigonus and Brasidas, are fighting a battle over three mountain passes. Each of them commands seven legions. The one who sends more legions to a pass occupies it, but when the same number of legions meet, there will be a draw. Finally, the one who occupies more passes than the other wins the battle, with a draw occurring if both occupy the same number of passes.</p>
 <p>They must simultaneously decide how to allocate their legions over the passes without knowing what the other will do. The goal is to win the most passes (or maximize some payoff based on the passes won). It makes sense to randomize the allocations to avoid being predictable. By randomized allocations, we mean that Antigonus is making his choices at random according to some probability distribution. Of course, the same applies to Brasidas. The problem is that they must decide on the probability distributions for their allocations. The probability distributions are defined over the set of all possible allocations of legions to the three passes.</p>
 <p>(You can rethink the problem in the context of election or marketing competitions, if you like.)</p>
