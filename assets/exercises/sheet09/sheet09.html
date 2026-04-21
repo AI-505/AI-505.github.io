@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-04-21">
+<meta name="dcterms.date" content="2026-04-22">
 
 <title>AI505/AI801, Optimization – Exercise Sheet 09</title>
 <style>
@@ -3122,7 +3122,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 21, 2026</p>
+      <p class="date">April 22, 2026</p>
     </div>
   </div>
   
@@ -3141,7 +3141,7 @@ window.Quarto = {
 </section>
 <section id="section-1" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> <span class="math inline">\(^+\)</span> (11.2)</h1>
-<p>If the program in example 11.1 is bounded below, argue that the simplex method must converge.</p>
+<p>If the program in Example 11.1 of [KW] is bounded below, argue that the simplex method must converge.</p>
 </section>
 <section id="section-2" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> <span class="math inline">\(^+\)</span> (11.3)</h1>
@@ -3155,7 +3155,8 @@ window.Quarto = {
 <p>Consider the following problem: <span class="math display">\[\begin{aligned}
   \text{minimize} \; &amp;5x_1 + 4x_2\\
   \text{ s.t.}\;&amp; 2x_1 + 3x_2 \leq 5\\
-  &amp;4x_1 + x_2 \leq  11
+  &amp;4x_1 + x_2 \leq  11\\
+  &amp;x_1,x_2\geq 0
 \end{aligned}\]</span> Solve the problem numerically implementing the simplex algorithm.</p>
 </section>
 <section id="section-4" class="level1" data-number="5">
@@ -3246,7 +3247,7 @@ d\)</span> and you want to conduct a line search. However, you know that there i
 <section id="section-9" class="level1" data-number="10">
 <h1 data-number="10"><span class="header-section-number">10</span> <span class="math inline">\(^*\)</span></h1>
 <p>Consider the following linear programming problem: <span class="math display">\[\begin{aligned}
-  \maximize \;&amp; Z=60x_1+100x_2+80x_3-5x_4\\
+  \text{maximize} \;&amp; Z=60x_1+100x_2+80x_3-5x_4\\
   \text{ s.t.}\;  &amp;5x_1+8x_2+6x_3\leq 600\\
   &amp;3x_1+4x_2+5x_3\leq 400\\
   &amp;2x_1+3x_2+x_3=200+x_4\\
