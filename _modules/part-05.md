@@ -40,9 +40,7 @@ Resources:
 
 ### April 22: Exercises: Linear Programming
 
-- [Sheet 09][59]. 
-
-<!-- [Solutions][577] -->
+- [Sheet 09][59]. [Solutions][599]
 
 
 [59]: {{ "/assets/exercises/sheet09/sheet09.html" | absolute_url }}

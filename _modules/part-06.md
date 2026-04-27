@@ -2,7 +2,7 @@
 title: "Unit 6: Discrete Optimization and Heuristics" 
 ---
 
-### Discrete Optimization
+### April 28: Discrete Optimization
 
 - Integer Programs
 - Rounding
@@ -13,18 +13,21 @@ title: "Unit 6: Discrete Optimization and Heuristics"
 
 Resources:
 
-<!-- - [Slides]({{ "/assets/ai505-lec16.pdf" | absolute_url }}) -->
+- [Slides]({{ "/assets/ai505-lec15.pdf" | absolute_url }}) 
 - Chapter 19 of [KW]
 
 
-### Exercises
+### April 29: Exercises
 
-<!-- - [Sheet 09][59]. [Solutions][599] -->
+- [Sheet 10][60]. 
 
-[59]: {{ "/assets/sheets/ai505_sheet09.pdf" | absolute_url }}
-[599]: {{ "/assets/sheets/ai505_sheet09_sol.pdf" | absolute_url }}
+<!-- [Solutions][600] -->
 
-### Heuristics
+[60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
+[600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
+
+
+### April 30: Heuristics
 
 <!--
 - Constraint Programming
@@ -45,7 +48,7 @@ Resources:
   Heidelberg, 2007. Chapters 1, 2, 3, 4, 7 go more in depth than we did in class.
 -->
 
-### Exercises
+### May 5: Exercises
 
 <!--
 - [Sheet 10][60]. [Solutions][600]
@@ -59,7 +62,7 @@ Resources:
 [60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
 [600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
 
-### Exercises
+### May 6: Exercises
 
 - Modeling in the ROAR-NET API specification [ROAR-NET API, MAK]
 - Routing
@@ -83,13 +86,15 @@ Resources:
 - [Slides]({{ "/assets/ai505-lec18.pdf" | absolute_url }})
 -->
 
-### Lecture 18 --- Metaheuristics
+### May 12: Metaheuristics
 
-- Metaheuristics [MAK, GP]
+- Metaheuristics 
 
-Resources:
+
 
 <!--
+
+Resources:
 - [Slides]({{ "/assets/ai505-lec19.pdf" | absolute_url }})
 - [MAK] W. Michiels, E. Aarts and J. Korst. [Theoretical Aspects of Local
   Search](http://dx.doi.org/10.1007/978-3-540-35854-1). Springer Berlin
@@ -101,3 +106,6 @@ Resources:
   exam, the slides should be sufficient.
 
 -->
+
+
+### May 13: Metaheuristics
