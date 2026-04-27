@@ -23,8 +23,10 @@ Resources:
 
 <!-- [Solutions][600] -->
 
-[60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
-[600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
+
+[60]: {{ "/assets/exercises/sheet10/sheet10.html" | absolute_url }}
+[600]: {{ "/assets/exercises/solutions/sheet10/sheet10.html" | absolute_url }}
+
 
 
 ### April 30: Heuristics
