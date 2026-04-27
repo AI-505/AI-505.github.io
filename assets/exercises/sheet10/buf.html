@@ -3101,7 +3101,7 @@ window.MathJax = {
 <h1 data-number="1"><span class="header-section-number">1</span> </h1>
 <p>In this exercise, you have to implement the dynamic programming algorithm for TSP with the help of the code below. How far can you go solving the TSP to optimality by enumeration (implemented below) and with dynamic programming?</p>
 <p>Some typing preliminaries. Cities are points in the 2D plane represented by complex numbers, a builtin type for a two-dimensional data.</p>
-<div id="260489ef" class="cell" data-execution_count="1">
+<div id="f3ccd434" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> functools</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> itertools</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pathlib</span>
@@ -3139,7 +3139,7 @@ window.MathJax = {
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> Counter(tour) <span class="op">==</span> Counter(cities)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then we can randomly generate a problem instance as follows.</p>
-<div id="398833e6" class="cell" data-execution_count="2">
+<div id="e92255fe" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># generate instance</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> random_cities(n, seed<span class="op">=</span><span class="dv">1234</span>, width<span class="op">=</span><span class="dv">9999</span>, height<span class="op">=</span><span class="dv">6666</span>) <span class="op">-&gt;</span> Cities:</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;Make a set of n cities, sampled uniformly from a (width x height) rectangle.&quot;</span></span>
@@ -3148,7 +3148,7 @@ window.MathJax = {
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                  <span class="cf">for</span> c <span class="kw">in</span> <span class="bu">range</span>(n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We can find optimal solutions by exhaustive search, ie, enumeration of all permutations of points.</p>
-<div id="df6ef4ab" class="cell" data-execution_count="3">
+<div id="f0d488fe" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> exhaustive_tsp(cities) <span class="op">-&gt;</span> Tour:</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">&quot;Generate all possible tours of the cities and choose the shortest one.&quot;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> shortest(itertools.permutations(cities))</span>
@@ -3160,7 +3160,7 @@ window.MathJax = {
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co">#print(&quot;Tour length:&quot;, tour_length(optimal_tour))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Finally, we can visualize the tour.</p>
-<div id="6ca2012d" class="cell" data-execution_count="4">
+<div id="e2298484" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Segment <span class="op">=</span> <span class="bu">list</span> <span class="co"># A portion of a tour; it does not loop back to the start.</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot_tour(tour: Tour, style<span class="op">=</span><span class="st">&#39;bo-&#39;</span>, hilite<span class="op">=</span><span class="st">&#39;rs&#39;</span>, title<span class="op">=</span><span class="st">&#39;&#39;</span>): </span>
