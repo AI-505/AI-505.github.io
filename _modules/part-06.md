@@ -21,8 +21,8 @@ Resources:
 
 - [Sheet 10][60]. 
 
-<!-- [Solutions][600] -->
 
+<!-- [Solutions][600] -->
 
 [60]: {{ "/assets/exercises/sheet10/sheet10.html" | absolute_url }}
 [600]: {{ "/assets/exercises/solutions/sheet10/sheet10.html" | absolute_url }}
@@ -61,8 +61,6 @@ Resources:
 - [ROAR-NET API Specification Implementation for SMTWTP]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 -->
 
-[60]: {{ "/assets/sheets/ai505_sheet10.pdf" | absolute_url }}
-[600]: {{ "/assets/sheets/ai505_sheet10_sol.pdf" | absolute_url }}
 
 ### May 6: Exercises
 
