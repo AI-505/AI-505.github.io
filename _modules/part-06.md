@@ -4,12 +4,11 @@ title: "Unit 6: Discrete Optimization and Heuristics"
 
 ### April 28: Discrete Optimization
 
+- Finished slides from previous lecture: Duality and PDHG
 - Integer Programs
 - Rounding
 - Cutting Planes
 - Branch and Bound
-- Dynamic Programming
-
 
 Resources:
 
@@ -35,6 +34,7 @@ Resources:
 - Constraint Programming
 - Backtracking 
 -->
+- Dynamic Programming
 - Construction Heuristics
 - Local Search [MAK]
 
