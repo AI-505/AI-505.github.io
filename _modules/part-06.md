@@ -40,6 +40,11 @@ Resources:
 
 Resources:
 
+
+- [Slides]({{ "/assets/ai505-lec16.pdf" | absolute_url }}) 
+  
+- [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }}) 
+  
 <!--
 - [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
 - [Minizinc](https://www.minizinc.org/).
