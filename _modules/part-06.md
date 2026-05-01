@@ -18,10 +18,7 @@ Resources:
 
 ### April 29: Exercises
 
-- [Sheet 10][60]. 
-
-
-<!-- [Solutions][600] -->
+- [Sheet 10][60]. [Solutions][600]. 
 
 [60]: {{ "/assets/exercises/sheet10/sheet10.html" | absolute_url }}
 [600]: {{ "/assets/exercises/solutions/sheet10/sheet10.html" | absolute_url }}
@@ -35,15 +32,14 @@ Resources:
 - Backtracking 
 -->
 - Dynamic Programming
-- Construction Heuristics
-- Local Search [MAK]
+- Constraint Programming
+
 
 Resources:
 
-
 - [Slides]({{ "/assets/ai505-lec16.pdf" | absolute_url }}) 
   
-- [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }}) 
+
   
 <!--
 - [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
@@ -55,7 +51,17 @@ Resources:
   Heidelberg, 2007. Chapters 1, 2, 3, 4, 7 go more in depth than we did in class.
 -->
 
-### May 5: Exercises
+### May 5: Construction Heuristics
+
+  
+- Modeling in the ROAR-NET API specification [ROAR-NET API, MAK]
+- Construction Heuristics
+
+
+Resources
+
+- [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }}) 
+
 
 <!--
 - [Sheet 10][60]. [Solutions][600]
@@ -66,10 +72,9 @@ Resources:
 - [ROAR-NET API Specification Implementation for SMTWTP]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 -->
 
+### May 6: Local Search
 
-### May 6: Exercises
-
-- Modeling in the ROAR-NET API specification [ROAR-NET API, MAK]
+- Local Search [MAK]
 - Routing
 
 Resources:
@@ -78,9 +83,9 @@ Resources:
 - [Sheet 11][61]. [Solutions]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 -->
 
-[61]: {{ "/assets/sheets/ai505_sheet11.pdf" | absolute_url }}
 
-### Exercises
+
+### May 12:
 
 - Modeling in the ROAR-NET API specification
 - Scheduling
@@ -91,7 +96,7 @@ Resources:
 - [Slides]({{ "/assets/ai505-lec18.pdf" | absolute_url }})
 -->
 
-### May 12: Metaheuristics
+### May 13: Metaheuristics
 
 - Metaheuristics 
 
