@@ -14,7 +14,7 @@ Portfolio consisting of:
 - two mandatory assignments in groups of 2:
 
     - [mandatory assignment 1]({{ "/assignments/preface_1/" | absolute_url }})
-    - mandatory assignment 2
+    - [mandatory assignment 2]({{ "/assignments/preface_2/" | absolute_url }})
 
 - oral exam on June 29-30, 2026
 
