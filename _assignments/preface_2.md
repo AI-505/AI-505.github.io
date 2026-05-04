@@ -1,6 +1,6 @@
 ---
 layout: assignment_plain
-title:  "Preface asg 1"
+title:  "Preface asg 2"
 date: 2025-03-08 11:00:00 +0100
 date_show: 2025-03-07 08:27:19 +0100
 mathjax: true
@@ -14,7 +14,7 @@ categories: assignments
 
 
 
-# Obligatory Assignment 1
+# Obligatory Assignment 2
 
 ## Preface
 
