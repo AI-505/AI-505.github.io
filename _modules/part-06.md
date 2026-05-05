@@ -60,13 +60,20 @@ Resources:
 
 Resources
 
-- [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }}) 
+- [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
+- [ROAR-NET API Specification](https://github.com/roar-net/roar-net-api-spec)
+
+
+- [Sheet 11][61].
+
+[61]: {{ "/assets/exercises/sheet11/sheet11.html" | absolute_url }}
+
+
+
 
 
 <!--
 - [Sheet 10][60]. [Solutions][600]
-- [ROAR-NET API Specification]({{ "/assets/book/index.html" | absolute_url }})
-- [ROAR-NET API Specification]({{ "/assets/ROAR-NET_API_Specification.pdf" | absolute_url }})
 - [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
 - [ROAR-NET API Specification Implementation for TSP]({{ "/assets/spec.tsp.tgz" | absolute_url }})
 - [ROAR-NET API Specification Implementation for SMTWTP]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
