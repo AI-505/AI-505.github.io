@@ -81,7 +81,10 @@ Resources:
 
 - [ROAR-NET API Python Implmentation](https://github.com/roar-net/roar-net-api-py)
 - [Slides]({{ "/assets/api_constr_search.pdf" | absolute_url }})
+
+<!--
 - [Code from the Session]({{ "/assets/live_constr_search.py" | absolute_url }})
+-->
 
 ### May 12: Local Search
 
