@@ -63,9 +63,7 @@ Resources
 - [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
 - [ROAR-NET API Specification](https://github.com/roar-net/roar-net-api-spec)
 
-- [Sheet 11][61].
-
-<!-- [Solutions]({{ "/assets/spec.smtwt.tgz" | absolute_url }}) -->
+- [Sheet 11][61]. [Solutions]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 
 [61]: {{ "/assets/exercises/sheet11/sheet11.html" | absolute_url }}
 
