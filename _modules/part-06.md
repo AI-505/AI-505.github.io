@@ -63,37 +63,29 @@ Resources
 - [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
 - [ROAR-NET API Specification](https://github.com/roar-net/roar-net-api-spec)
 
-
 - [Sheet 11][61].
+
+<!-- [Solutions]({{ "/assets/spec.smtwt.tgz" | absolute_url }}) -->
 
 [61]: {{ "/assets/exercises/sheet11/sheet11.html" | absolute_url }}
 
-
-
-
-
 <!--
-- [Sheet 10][60]. [Solutions][600]
 - [ROAR-NET API Specification Implementation]({{ "/assets/spec.tgz" | absolute_url }})
 - [ROAR-NET API Specification Implementation for TSP]({{ "/assets/spec.tsp.tgz" | absolute_url }})
 - [ROAR-NET API Specification Implementation for SMTWTP]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
 -->
 
-### May 6: Local Search
-
-- Local Search [MAK]
-- Routing
+### May 6: Construction Heuristics Practice
 
 Resources:
 
-<!--
-- [Sheet 11][61]. [Solutions]({{ "/assets/spec.smtwt.tgz" | absolute_url }})
--->
+- [ROAR-NET API Python Implmentation](https://github.com/roar-net/roar-net-api-py)
+- [Slides]({{ "/assets/api_constr_search.pdf" | absolute_url }})
+- [Code from the Session]({{ "/assets/live_constr_search.py" | absolute_url }})
 
+### May 12: Local Search
 
-
-### May 12:
-
+- Local Search [MAK]
 - Modeling in the ROAR-NET API specification
 - Scheduling
 
@@ -103,7 +95,7 @@ Resources:
 - [Slides]({{ "/assets/ai505-lec18.pdf" | absolute_url }})
 -->
 
-### May 13: Metaheuristics
+### May 13: Local Search Practice
 
 - Metaheuristics 
 
