@@ -75,10 +75,11 @@ categories: assignments
 - SDU rules on AI assistants <https://mitsdu.dk/en/aiatsdu> apply to this
    exam. In particular:
 
-  - you have to add the Generative AI declaration form from the
-     Faculty or an Appendix where you declare to which extent you have used AI
-     tools. The Form or the Appendix must be present also if you did not use AI and hence
-     declare so.
+  - you have to add the [Generative AI declaration
+     form](https://mitsdu.dk/-/media/mitsdu/filer/mit_studie/nat/declaration-form-science-gai.docx)
+     from the Faculty or an Appendix where you declare to which extent you have
+     used AI tools. The Form or the Appendix must be present also if you did not
+     use AI and hence declare so.
 
   - if you do not declare but the teachers have suspects that you used AI
     tools, you will be reported for exam cheating
