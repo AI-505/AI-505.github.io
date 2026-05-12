@@ -20,7 +20,10 @@ Resources:
 
 ### May 4: Distributed Gradient Descent
 
-
+- Recap of Previous Lecture
+- Motivation for Large-scale Distributed Learning
+- Parallel SGD
+- Synchronous SGD
 
 Resources:
 
@@ -31,7 +34,12 @@ Resources:
 
 ### May 11: Communication-Efficient Gradient Descent
 
+Resources:
 
+- Recap of Previous Lecture
+- Towards Communication-Efficient Gradient Descent
+- Local SGD
+- FedProx for Heterogeneous Clients
 
 Resources:
 
