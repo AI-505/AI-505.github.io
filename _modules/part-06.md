@@ -88,17 +88,21 @@ Resources:
 
 - Local Search [MAK]
 - Modeling in the ROAR-NET API specification
-- Scheduling
+
 
 Resources:
 
-<!--
+
 - [Slides]({{ "/assets/ai505-lec18.pdf" | absolute_url }})
--->
+
+
 
 ### May 13: Local Search Practice
 
-- Metaheuristics 
+- Community Detection / Clique Partitioning
+
+- [Slides]({{ "/assets/api_local_search.pdf" | absolute_url }})
+
 
 
 
@@ -119,3 +123,5 @@ Resources:
 
 
 ### May 13: Metaheuristics
+
+- Metaheuristics 

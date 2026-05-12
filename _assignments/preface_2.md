@@ -93,3 +93,22 @@ categories: assignments
   Appendix and the declaration form are not subject to page limits.
 
 - You can write your answers in Danish or in English.
+
+<!--
+- You must declare the use of generative AI (GAI) using the [GAI declaration
+  form](https://mitsdu.dk/-/media/mitsdu/filer/mit_studie/nat/declaration-form-science-gai.docx)
+  developed at the Faculty of Science. If no declaration is attached, and it is
+  not otherwise clearly stated that SDU's declaration rules have been followed,
+  and the assignment shows signs of GAI use or there is suspicion of such use,
+  the case must be reported as cheating in exams in accordance with SDU's rules
+   on the use of GAI.  You can read more about SDU's rules on the use of
+   generative AI at https://mitsdu.dk/en/aiatsdu.  
+   
+In this course, you must restrict the use of AI tools to questions about the
+    programming language python and about writing style of the report. You must
+    not get aid on the technical part of the tasks (ie, the modelling and the
+    decomposition aspects). If you use AI, the teachers will be allowed to take
+    this in consideration and to lower consequently the final grade if they
+    suspect that the learning goals have not been achieved.
+
+-->
