@@ -16,7 +16,7 @@ title: "Unit 7: Special Topics in Gradient Descent"
 Resources:
 
 - [Slides]({{ "/assets/ai801-lec01.pdf" | absolute_url }})
-- Elad Hazan. [Introduction to Online Convex Optimization](https://arxiv.org/pdf/1909.05207) (2023)
+- Elad Hazan. [Introduction to Online Convex Optimization](https://arxiv.org/pdf/1909.05207) (2019)
 
 ### May 4: Distributed Gradient Descent
 
@@ -44,9 +44,9 @@ Resources:
 Resources:
 
 - [Slides]({{ "/assets/ai801-lec03.pdf" | absolute_url }})
-- H. Brendan McMahan, Eider Moore, Daniel Ramage, Seth Hampson, Blaise Agüera y Arcas. [communication-Efficient Learning of Deep Networks from Decentralized Data](https://arxiv.org/pdf/1602.05629)
+- H. Brendan McMahan, Eider Moore, Daniel Ramage, Seth Hampson, Blaise Agüera y Arcas. [communication-Efficient Learning of Deep Networks from Decentralized Data](https://arxiv.org/pdf/1602.05629) (2016)
 - Sebastian U. Stich. [Local SGD Converges Fast and Communicates Little](https://arxiv.org/pdf/1805.09767) (2019)
-- Tian Li, Anit Kumar Sahu, Manzil Zaheer, Maziar Sanjabi, Ameet Talwalkar, virginia Smith. [Federated Optimization in Heterogeneous Networks](https://proceedings.mlsys.org/paper_files/paper/2020/file/1f5fe83998a09396ebe6477d9475ba0c-Paper.pdf)
+- Tian Li, Anit Kumar Sahu, Manzil Zaheer, Maziar Sanjabi, Ameet Talwalkar, Virginia Smith. [Federated Optimization in Heterogeneous Networks](https://proceedings.mlsys.org/paper_files/paper/2020/file/1f5fe83998a09396ebe6477d9475ba0c-Paper.pdf) (2023)
 
 
 ### May 31: Obligatory Assignment 3
