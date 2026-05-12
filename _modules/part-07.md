@@ -43,7 +43,7 @@ Resources:
 
 ### May 31: Obligatory Assignment 3
 
-- [Assignment]({{ "/assets/ai801-lec03.pdf" | absolute_url }})
+- [Assignment]({{ "/assets/ai801-assignment3.pdf" | absolute_url }})
 - SDU rules on AI assistants <https://mitsdu.dk/en/aiatsdu> apply to this
    exam. In particular:
 
