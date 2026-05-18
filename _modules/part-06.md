@@ -125,3 +125,8 @@ Resources:
 ### May 13: Metaheuristics
 
 - Metaheuristics 
+
+
+Resources:
+
+- [Slides]({{ "/assets/ai505-lec19.pdf" | absolute_url }})
