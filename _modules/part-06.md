@@ -130,3 +130,5 @@ Resources:
 Resources:
 
 - [Slides]({{ "/assets/ai505-lec19.pdf" | absolute_url }})
+
+- [Property-based Testing Tool for the ROAR-NET Python API](https://github.com/apguerreiro/roar-net-py-api-ptests)
