@@ -60,6 +60,7 @@ Resources:
 
 Resources
 
+
 - [Slides]({{ "/assets/ai505-lec17.pdf" | absolute_url }})
 - [ROAR-NET API Specification](https://github.com/roar-net/roar-net-api-spec)
 
@@ -75,27 +76,24 @@ Resources
 
 ### May 6: Construction Heuristics Practice
 
+- Community Detection / Clique Partitioning
+
 Resources:
 
 - [ROAR-NET API Python Implmentation](https://github.com/roar-net/roar-net-api-py)
 - [Slides]({{ "/assets/api_constr_search.pdf" | absolute_url }})
 
-<!--
-- [Code from the Session]({{ "/assets/live_constr_search.py" | absolute_url }})
--->
+- [Code from the Session on Clique Partitioning Problem]({{ "/assets/live_constr_search.py" | absolute_url }})
+
 
 ### May 12: Local Search
 
 - Local Search [MAK]
 - Modeling in the ROAR-NET API specification
 
-
 Resources:
 
-
 - [Slides]({{ "/assets/ai505-lec18.pdf" | absolute_url }})
-
-
 
 ### May 13: Local Search Practice
 
@@ -103,6 +101,7 @@ Resources:
 
 - [Slides]({{ "/assets/api_local_search.pdf" | absolute_url }})
 
+- [Code from the Session on Clique Partitioning Problem]({{ "/assets/live_local_search.py" | absolute_url }})
 
 
 
