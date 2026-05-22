@@ -121,7 +121,7 @@ Resources:
 -->
 
 
-### May 19: Metaheuristics
+### May 19 and 20: Metaheuristics
 
 - Metaheuristics 
 
