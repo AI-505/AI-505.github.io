@@ -16,7 +16,7 @@ Portfolio consisting of:
     - [mandatory assignment 1]({{ "/assignments/preface_1/" | absolute_url }})
     - [mandatory assignment 2]({{ "/assignments/preface_2/" | absolute_url }})
 
-- oral exam on June 29-30, 2026
+- oral exam on June 29-30, 2026 in U230
 
 ### Reexam
 
