@@ -1,10 +1,10 @@
 ---
 layout: assignment_plain
 title:  "Topics"
-date: 2025-03-08 11:00:00 +0100
-date_show: 2025-03-07 08:27:19 +0100
+date: 2026-06-08 11:00:00 +0100
+date_show: 2026-06-07 08:27:19 +0100
 mathjax: true
-week: 10
+week: 25
 nav_exclude: true
 sol_url: ""
 comments: false
@@ -13,12 +13,16 @@ categories: assignments
 
 # Topics covered in the course
 
-The level of detail in the course is not uniform. Some topics are covered in depth, while others are only briefly mentioned. The following list provides a comprehensive overview of the topics discussed in the course.
+The level of detail in the course is not uniform. Some topics are covered in
+depth, while others are only briefly mentioned. The following list provides a
+comprehensive overview of the topics discussed in the course.
 
 ### Definitions
 
   - Univariate, Multi-variate, real-valued, vector-valued functions
   - Convex, Non-Convex, Concave functions
+  - Conditions for Local Minima
+  - Taylor expansion
   - Unimodal, Multimodal
   - Lipschitz Continuity
   - Strongly Convex
@@ -40,7 +44,7 @@ Finding an Initial Bracket:
   - Quadratic Fit Search
   - Bisection Method
 
-### Descent Direction Iteration
+### Local Descent
 
 Line Search:
 
@@ -48,14 +52,15 @@ Line Search:
   - Approximate Line Search:
     - Backtracking line search (Armijo line search)
     - Strong backtracking line search (bracketing + zoom)
-    - Trust Region Methods
+  - Rate of convergence: linear, superlinear, quadratic
+  - Trust Region Methods
   - Termination Conditions
 
 First-Order Methods:
 
   - Gradient Descent
   - Conjugate Gradient
-  - Momentum:
+  - Momentum (general ideas only):
     - Nesterov Momentum
     - Adagrad
     - RMSProp
@@ -65,7 +70,7 @@ First-Order Methods:
 
 Second-Order Methods:
 
-  - Newton’s Method
+  - Newton’s Method and convergence results
   - Secant Method
   - Quasi-Newton Methods:
     - DFP
@@ -74,12 +79,13 @@ Second-Order Methods:
 
 Direct Methods:
 
+  - Black box optimization
   - Cyclic Coordinate Search
   - Powell's Method
   - Hooke-Jeeves
   - Generalized Pattern Search
   - Nelder-Mead Simplex Method
-  - (Divided Rectangles)
+
 
 ### Beyond Local Optima
 
@@ -94,33 +100,6 @@ Direct Methods:
   - Differential Evolution
   - Particle Swarm Optimization
 
-### Optimization for ML
-
-ML tasks: 
-
-  - empirical risk minimization
-  
-Convergence analysis of stochastic gradient
-
-  - convergence rate
-  - definitions and results
-  
-Beyond stochastic gradient:
-
-  - noise reduction methods (dynamic sample size, gradient aggregation, iterated averaging) 
-  - second order methods 
-
-### Constrained Optimization
-
-  -	Duality
-  - Penalty Methods
-  - Interior Point Methods
-  - Augmented Lagrange Method
-  - Linear Programming
-  - Simplex Method
-  - Modeling in LP
-  - Dual certificates
-
 ### Sampling Methods
 
   - Full Factorial 
@@ -131,11 +110,40 @@ Beyond stochastic gradient:
   - Space-Filling Subsets
   - Quasi-Random Sequences
 
+### Optimization for ML
+
+ML tasks: 
+
+  - empirical risk minimization
+  - stochastic gradient
+  - batch gradient 
+  - mini-batch approach
+  
+Beyond stochastic gradient:
+
+  - noise reduction methods (dynamic sample size, gradient aggregation, iterated averaging) 
+
+### Constrained Optimization
+
+  - Lagrangian multiplier method
+  - KKT conditions
+  -	Min-max inequality and Duality
+  - Penalty Methods
+  - Interior Point Methods
+  - Linear Programming
+  - Duality in LP
+  - Simplex Method
+  - Modeling in LP
+  - Primal-Dual Hybrid Gradient (PDHG) Method
+
+
 ### Discrete Optimization
 
   -	Integer Linear Programming
     - Branch and Bound
     - Cutting Planes
   - Dynamic Programming
-  - (Constraint Programming and Backtracking) 
-  - Construction Heuristics and Local Search
+  - ROAR-NET API Specification
+  - Construction Heuristics 
+  - Local Search
+  - Metaheuristics (only some ideas)
